@@ -1922,7 +1922,7 @@
             <Reference ReferenceType="HasTypeDefinition">i=17598</Reference>
         </References>
     </UAObject>
-    <UAObject SymbolicName="S_DictionaryEntryName_" NodeId="ns=1;s=&lt;DictionaryEntryName>" BrowseName="1:&lt;DictionaryEntryName>" ParentNodeId="i=17594">
+    <UAObject SymbolicName="S_DictionaryEntryName_" NodeId="ns=1;s=&lt;DictionaryEntryName&gt;" BrowseName="1:&lt;DictionaryEntryName&gt;" ParentNodeId="i=17594">
         <DisplayName>&lt;DictionaryEntryName&gt;</DisplayName>
         <Description>Placeholder, not intended to be referenced by instances</Description>
         <References>
