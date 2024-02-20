@@ -45,7 +45,7 @@
             <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="JobOrderID"/>
             <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfLocalizedText" name="Description"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfISA95WorkMasterDataType" name="WorkMasterID"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfVariant" name="WorkMasterID"/>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="StartTime"/>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="EndTime"/>
             <xs:element minOccurs="0" maxOccurs="1" type="xs:short" name="Priority"/>
@@ -212,22 +212,4 @@
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:ListOfISA95StateDataType" name="ListOfISA95StateDataType" nillable="true"/>
-    <xs:complexType name="ISA95WorkMasterDataType">
-        <xs:annotation>
-            <xs:documentation>Defines a Work Master ID and the defined parameters for the Work Master.</xs:documentation>
-        </xs:annotation>
-        <xs:sequence>
-            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ID"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="Description"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfISA95ParameterDataType" name="Parameters"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:element type="tns:ISA95WorkMasterDataType" name="ISA95WorkMasterDataType"/>
-    <xs:complexType name="ListOfISA95WorkMasterDataType">
-        <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ISA95WorkMasterDataType" name="ISA95WorkMasterDataType" nillable="true"/>
-        </xs:sequence>
-    </xs:complexType>
-    <xs:element type="tns:ListOfISA95WorkMasterDataType" name="ListOfISA95WorkMasterDataType" nillable="true"/>
 </xs:schema>

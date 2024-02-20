@@ -40,7 +40,7 @@
         <opc:Field SwitchField="DescriptionSpecified" TypeName="opc:Int32" Name="NoOfDescription"/>
         <opc:Field LengthField="NoOfDescription" SwitchField="DescriptionSpecified" TypeName="ua:LocalizedText" Name="Description"/>
         <opc:Field SwitchField="WorkMasterIDSpecified" TypeName="opc:Int32" Name="NoOfWorkMasterID"/>
-        <opc:Field LengthField="NoOfWorkMasterID" SwitchField="WorkMasterIDSpecified" TypeName="tns:ISA95WorkMasterDataType" Name="WorkMasterID"/>
+        <opc:Field LengthField="NoOfWorkMasterID" SwitchField="WorkMasterIDSpecified" TypeName="ua:Variant" Name="WorkMasterID"/>
         <opc:Field SwitchField="StartTimeSpecified" TypeName="opc:DateTime" Name="StartTime"/>
         <opc:Field SwitchField="EndTimeSpecified" TypeName="opc:DateTime" Name="EndTime"/>
         <opc:Field SwitchField="PrioritySpecified" TypeName="opc:Int16" Name="Priority"/>
@@ -175,15 +175,5 @@
         <opc:Field TypeName="ua:RelativePath" Name="BrowsePath"/>
         <opc:Field TypeName="ua:LocalizedText" Name="StateText"/>
         <opc:Field TypeName="opc:UInt32" Name="StateNumber"/>
-    </opc:StructuredType>
-    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ISA95WorkMasterDataType">
-        <opc:Documentation>Defines a Work Master ID and the defined parameters for the Work Master.</opc:Documentation>
-        <opc:Field TypeName="opc:Bit" Name="DescriptionSpecified"/>
-        <opc:Field TypeName="opc:Bit" Name="ParametersSpecified"/>
-        <opc:Field Length="30" TypeName="opc:Bit" Name="Reserved1"/>
-        <opc:Field TypeName="opc:CharArray" Name="ID"/>
-        <opc:Field SwitchField="DescriptionSpecified" TypeName="ua:LocalizedText" Name="Description"/>
-        <opc:Field SwitchField="ParametersSpecified" TypeName="opc:Int32" Name="NoOfParameters"/>
-        <opc:Field LengthField="NoOfParameters" SwitchField="ParametersSpecified" TypeName="tns:ISA95ParameterDataType" Name="Parameters"/>
     </opc:StructuredType>
 </opc:TypeDictionary>
