@@ -1,0 +1,3379 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
+ *
+ * OPC Foundation MIT License 1.00
+ * 
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without
+ * restriction, including without limitation the rights to use,
+ * copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the
+ * Software is furnished to do so, subject to the following
+ * conditions:
+ * 
+ * The above copyright notice and this permission notice shall be
+ * included in all copies or substantial portions of the Software.
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+ * HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+ * WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ * The complete license agreement can be found here:
+ * http://opcfoundation.org/License/MIT/1.00/
+-->
+
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" LastModified="2024-10-08T14:06:39.768Z" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd">
+  <NamespaceUris>
+    <Uri>http://opcfoundation.org/UA/DI/</Uri>
+    <Uri>http://opcfoundation.org/UA/PNENC/</Uri>
+    <Uri>http://opcfoundation.org/UA/PDRV/</Uri>
+  </NamespaceUris>
+  <Models>
+    <Model ModelUri="http://opcfoundation.org/UA/PDRV/" Version="1.0.0" PublicationDate="2024-07-04T00:00:00Z" ModelVersion="1.0.0">
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.04.10" PublicationDate="2021-09-15T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.04.0" PublicationDate="2022-11-03T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/PNENC/" Version="1.0.0" PublicationDate="2022-10-21T00:00:00Z" />
+    </Model>
+  </Models>
+  <Aliases>
+    <Alias Alias="Boolean">i=1</Alias>
+    <Alias Alias="Byte">i=3</Alias>
+    <Alias Alias="UInt16">i=5</Alias>
+    <Alias Alias="Int32">i=6</Alias>
+    <Alias Alias="Float">i=10</Alias>
+    <Alias Alias="DateTime">i=13</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="LocalizedText">i=21</Alias>
+    <Alias Alias="Number">i=26</Alias>
+    <Alias Alias="UInteger">i=28</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="HasSubtype">i=45</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="HasModellingRule">i=37</Alias>
+    <Alias Alias="HasInterface">i=17603</Alias>
+    <Alias Alias="GeneratesEvent">i=41</Alias>
+    <Alias Alias="IdType">i=256</Alias>
+    <Alias Alias="Duration">i=290</Alias>
+    <Alias Alias="NumericRange">i=291</Alias>
+    <Alias Alias="Argument">i=296</Alias>
+    <Alias Alias="EUInformation">i=887</Alias>
+    <Alias Alias="LogEntryDataType">ns=2;i=3013</Alias>
+  </Aliases>
+  <UAObject NodeId="ns=3;i=5000" BrowseName="3:http://opcfoundation.org/UA/PDRV/" SymbolicName="http___opcfoundation_org_UA_PDRV_" ParentNodeId="i=11715">
+    <DisplayName>http://opcfoundation.org/UA/PDRV/</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/11.1</Documentation>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">i=11715</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=11616</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6000" BrowseName="IsNamespaceSubset" ParentNodeId="ns=3;i=5000" DataType="Boolean">
+    <DisplayName>IsNamespaceSubset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=5000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:Boolean xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">false</uax:Boolean>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6001" BrowseName="NamespacePublicationDate" ParentNodeId="ns=3;i=5000" DataType="DateTime">
+    <DisplayName>NamespacePublicationDate</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=5000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2024-07-04T00:00:00Z</uax:DateTime>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6002" BrowseName="NamespaceUri" ParentNodeId="ns=3;i=5000" DataType="String">
+    <DisplayName>NamespaceUri</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=5000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">http://opcfoundation.org/UA/PDRV/</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6003" BrowseName="NamespaceVersion" ParentNodeId="ns=3;i=5000" DataType="String">
+    <DisplayName>NamespaceVersion</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=5000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0.0</uax:String>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6004" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=3;i=5000" DataType="IdType" ValueRank="1" ArrayDimensions="1">
+    <DisplayName>StaticNodeIdTypes</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=5000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:ListOfInt32 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:Int32>0</uax:Int32>
+            </uax:ListOfInt32>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6005" BrowseName="StaticNumericNodeIdRange" ParentNodeId="ns=3;i=5000" DataType="NumericRange" ValueRank="1" ArrayDimensions="1">
+    <DisplayName>StaticNumericNodeIdRange</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=5000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+    <Value>
+      <uax:ListOfString xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:String>1:2147483647</uax:String>
+            </uax:ListOfString>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6006" BrowseName="StaticStringNodeIdPattern" ParentNodeId="ns=3;i=5000" DataType="String">
+    <DisplayName>StaticStringNodeIdPattern</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=5000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6007" BrowseName="DefaultRolePermissions" ParentNodeId="ns=3;i=5000" DataType="i=96" ValueRank="1">
+    <DisplayName>DefaultRolePermissions</DisplayName>
+    <References>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=3;i=5000</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=3;i=1000" BrowseName="3:DriveAxisType" IsAbstract="true">
+    <DisplayName>DriveAxisType</DisplayName>
+    <Category>PDRV Measurement</Category>
+    <Category>PDRV Diagnosis Events</Category>
+    <Category>PDRV Signals</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/7.1</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=3;i=1012</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5001</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6020</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5002</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5004</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5005</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5006</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5007</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5009</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=7000</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5045</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6153</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5003</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5044</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=3;i=5001" BrowseName="3:Monitoring" ParentNodeId="ns=3;i=1000">
+    <DisplayName>Monitoring</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6029</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6030</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6031</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6032</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6033</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6034</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6035</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6139</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6053</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6074</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6015</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6016</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6017</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6160</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6019</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6208</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6210</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6212</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6221</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6246</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6020" BrowseName="3:ApplicationTag" ParentNodeId="ns=3;i=1000" DataType="String">
+    <DisplayName>ApplicationTag</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5002" BrowseName="3:Lock" ParentNodeId="ns=3;i=1000">
+    <DisplayName>Lock</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=1;i=6388</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6400</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6398</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6393</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6534</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6390</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6391</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6392</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6396</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5004" BrowseName="3:PNSignals" ParentNodeId="ns=3;i=1000">
+    <DisplayName>PNSignals</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6040</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5005" BrowseName="3:Maintenance" ParentNodeId="ns=3;i=1000">
+    <DisplayName>Maintenance</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasInterface">ns=1;i=480</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6027</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6036</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6037</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6161</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6162</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5006" BrowseName="3:LimitSupervision" ParentNodeId="ns=3;i=1000">
+    <DisplayName>LimitSupervision</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5007" BrowseName="3:Logbook" ParentNodeId="ns=3;i=1000">
+    <DisplayName>Logbook</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1010</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=2;i=6069</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;i=6068</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5008" BrowseName="3:Safety" ParentNodeId="ns=3;i=1000">
+    <DisplayName>Safety</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5009" BrowseName="3:CharacteristicsConverter" ParentNodeId="ns=3;i=1000">
+    <DisplayName>CharacteristicsConverter</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6169</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6173</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6174</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6175</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6039</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6055</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6027" BrowseName="1:PowerOnDuration" ParentNodeId="ns=3;i=5005" DataType="Duration">
+    <DisplayName>PowerOnDuration</DisplayName>
+    <Description>PowerOnDuration is the duration the Device has been powered. The main purpose is to determine the time in which degradation of the Device occurred. The details, when the time is counted, is implementation-specific. Companion specifications might define specific rules. Typically, when the Device has supply voltage and the main CPU is running, the time is counted. This may include any kind of sleep mode, but may not include pure Wake on LAN. This value shall only increase during the lifetime of the Device and shall not be reset when the Device is restarted. The PowerOnDuration is provided as Duration, i.e., in milliseconds or even fractions of a millisecond. However, the Server is not expected to update the value in such a high frequency, but maybe once a minute or once an hour, depending on the application.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6029" BrowseName="3:AxisState" ParentNodeId="ns=3;i=5001" DataType="UInt16">
+    <DisplayName>AxisState</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2376</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6009</Reference>
+    </References>
+    <Value>
+      <uax:UInt16 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt16>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6030" BrowseName="3:OutputCurrent" ParentNodeId="ns=3;i=5001" DataType="Float">
+    <DisplayName>OutputCurrent</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6031" BrowseName="3:Torque" ParentNodeId="ns=3;i=5001" DataType="Float">
+    <DisplayName>Torque</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6032" BrowseName="3:Power" ParentNodeId="ns=3;i=5001" DataType="Float">
+    <DisplayName>Power</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6033" BrowseName="3:MotorTemperature" ParentNodeId="ns=3;i=5001" DataType="Float">
+    <DisplayName>MotorTemperature</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=2001</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6034" BrowseName="3:ConverterTemperature" ParentNodeId="ns=3;i=5001" DataType="Float">
+    <DisplayName>ConverterTemperature</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=2001</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6035" BrowseName="3:DcBusVoltage" ParentNodeId="ns=3;i=5001" DataType="UInt16">
+    <DisplayName>DcBusVoltage</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6036" BrowseName="1:OperationDuration" ParentNodeId="ns=3;i=5005" DataType="Duration">
+    <DisplayName>OperationDuration</DisplayName>
+    <Description>OperationDuration is the duration the Device has been powered and performing an activity. This counter is intended for Devices where a distinction is made between switched on and in operation. For example, a drive might be powered on but not operating. It is not intended for Devices always performing an activity like sensors always measuring data. This value shall only increase during the lifetime of the Device and shall not be reset when the Device is restarted. The OperationDuration is provided as Duration, i.e., in milliseconds or even fractions of a millisecond. However, the Server is not expected to update the value in such a high frequency, but maybe once a minute or once an hour, depending on the application.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6037" BrowseName="1:OperationCycleCounter" ParentNodeId="ns=3;i=5005" DataType="UInteger">
+    <DisplayName>OperationCycleCounter</DisplayName>
+    <Description>OperationCycleCounter is counting the times the Device switches from not performing an activity to performing an activity. For example, each time a valve starts moving, is counted. This value shall only increase during the lifetime of the Device and shall not be reset when the Device is restarted.</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAMethod NodeId="ns=3;i=7000" BrowseName="3:SetApplicationTag" ParentNodeId="ns=3;i=1000">
+    <DisplayName>SetApplicationTag</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/7.1</Documentation>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6038</Reference>
+    </References>
+  </UAMethod>
+  <UAVariable NodeId="ns=3;i=6038" BrowseName="InputArguments" ParentNodeId="ns=3;i=7000" DataType="Argument" ValueRank="1" ArrayDimensions="1">
+    <DisplayName>InputArguments</DisplayName>
+    <Description>the definition of the input argument of method 3:DriveAxisType.3:SetApplicationTag</Description>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfExtensionObject xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:ExtensionObject>
+                    <uax:TypeId>
+                        <uax:Identifier>i=297</uax:Identifier>
+                    </uax:TypeId>
+                    <uax:Body>
+                        <uax:Argument>
+                            <uax:Name>ApplicationTag</uax:Name>
+                            <uax:DataType>
+                                <uax:Identifier>i=12</uax:Identifier>
+                            </uax:DataType>
+                            <uax:ValueRank>-1</uax:ValueRank>
+                            <uax:ArrayDimensions />
+                            <uax:Description />
+                        </uax:Argument>
+                    </uax:Body>
+                </uax:ExtensionObject>
+            </uax:ListOfExtensionObject>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6040" BrowseName="3:&lt;SignalName&gt;" SymbolicName="S_SignalName_" ParentNodeId="ns=3;i=5004" DataType="Number">
+    <DisplayName>&lt;SignalName&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11510</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6041</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6041" BrowseName="3:SignalNumber" ParentNodeId="ns=3;i=6040" DataType="UInt16">
+    <DisplayName>SignalNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=3;i=1002" BrowseName="3:VelocityDriveAxisType">
+    <DisplayName>VelocityDriveAxisType</DisplayName>
+    <Category>PDRV Measurement</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/7.2</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1000</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=3;i=1016</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=3;i=1017</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5014</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5016</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5018</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=3;i=5014" BrowseName="3:Monitoring" ParentNodeId="ns=3;i=1002">
+    <DisplayName>Monitoring</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6139</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6029</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6030</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6046</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6035</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6031</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6032</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6033</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6034</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6048</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6049</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6050</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6051</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6052</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6015</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6046" BrowseName="3:VelocitySetpoint" ParentNodeId="ns=3;i=5014" DataType="Float">
+    <DisplayName>VelocitySetpoint</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6048" BrowseName="3:VelocityCommandValue" ParentNodeId="ns=3;i=5014" DataType="Float">
+    <DisplayName>VelocityCommandValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6049" BrowseName="3:VelocityActualValue" ParentNodeId="ns=3;i=5014" DataType="Float">
+    <DisplayName>VelocityActualValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6050" BrowseName="3:OutputFrequency" ParentNodeId="ns=3;i=5014" DataType="Float">
+    <DisplayName>OutputFrequency</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6051" BrowseName="3:OutputVoltage" ParentNodeId="ns=3;i=5014" DataType="Float">
+    <DisplayName>OutputVoltage</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6052" BrowseName="3:OutputCosPhi" ParentNodeId="ns=3;i=5014" DataType="Float">
+    <DisplayName>OutputCosPhi</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=15318</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5016" BrowseName="3:LimitSupervision" ParentNodeId="ns=3;i=1002">
+    <DisplayName>LimitSupervision</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6056</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6057</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6058</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6059</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6056" BrowseName="3:MotorCurrentLimitHigh" ParentNodeId="ns=3;i=5016" DataType="Float">
+    <DisplayName>MotorCurrentLimitHigh</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6057" BrowseName="3:MotorCurrentLimitLow" ParentNodeId="ns=3;i=5016" DataType="Float">
+    <DisplayName>MotorCurrentLimitLow</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6058" BrowseName="3:TorqueLimitLow" ParentNodeId="ns=3;i=5016" DataType="Float">
+    <DisplayName>TorqueLimitLow</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6059" BrowseName="3:TorqueLimitHigh" ParentNodeId="ns=3;i=5016" DataType="Float">
+    <DisplayName>TorqueLimitHigh</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=3;i=1005" BrowseName="3:FrequencyDriveAxisType">
+    <DisplayName>FrequencyDriveAxisType</DisplayName>
+    <Category>PDRV Measurement</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/7.3</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1000</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=3;i=1017</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5017</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5019</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5010</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=3;i=5017" BrowseName="3:Monitoring" ParentNodeId="ns=3;i=1005">
+    <DisplayName>Monitoring</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6139</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6029</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6030</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6035</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6034</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6033</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6032</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6031</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6068</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6069</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6070</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6071</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6072</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6073</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6015</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6068" BrowseName="3:FrequencyCommandValue" ParentNodeId="ns=3;i=5017" DataType="Float">
+    <DisplayName>FrequencyCommandValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6069" BrowseName="3:VelocityActualValue" ParentNodeId="ns=3;i=5017" DataType="Float">
+    <DisplayName>VelocityActualValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6070" BrowseName="3:FrequencySetpoint" ParentNodeId="ns=3;i=5017" DataType="Float">
+    <DisplayName>FrequencySetpoint</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6071" BrowseName="3:OutputFrequency" ParentNodeId="ns=3;i=5017" DataType="Float">
+    <DisplayName>OutputFrequency</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6072" BrowseName="3:OutputVoltage" ParentNodeId="ns=3;i=5017" DataType="Float">
+    <DisplayName>OutputVoltage</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6073" BrowseName="3:OutputCosPhi" ParentNodeId="ns=3;i=5017" DataType="Float">
+    <DisplayName>OutputCosPhi</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=15318</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5019" BrowseName="3:LimitSupervision" ParentNodeId="ns=3;i=1005">
+    <DisplayName>LimitSupervision</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6077</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6078</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6079</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6080</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6077" BrowseName="3:MotorCurrentLimitHigh" ParentNodeId="ns=3;i=5019" DataType="Float">
+    <DisplayName>MotorCurrentLimitHigh</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6078" BrowseName="3:MotorCurrentLimitLow" ParentNodeId="ns=3;i=5019" DataType="Float">
+    <DisplayName>MotorCurrentLimitLow</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6079" BrowseName="3:TorqueLimitLow" ParentNodeId="ns=3;i=5019" DataType="Float">
+    <DisplayName>TorqueLimitLow</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6080" BrowseName="3:TorqueLimitHigh" ParentNodeId="ns=3;i=5019" DataType="Float">
+    <DisplayName>TorqueLimitHigh</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=3;i=1006" BrowseName="3:PositioningDriveAxisType">
+    <DisplayName>PositioningDriveAxisType</DisplayName>
+    <Category>PDRV Measurement</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/7.4</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1000</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=3;i=1016</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=3;i=1017</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5021</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5022</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5026</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5027</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5043</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5020</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5011</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=3;i=5021" BrowseName="3:LimitSupervision" ParentNodeId="ns=3;i=1006">
+    <DisplayName>LimitSupervision</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6102</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6103</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6104</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6105</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6106</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6107</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6245</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5022" BrowseName="3:Monitoring" ParentNodeId="ns=3;i=1006">
+    <DisplayName>Monitoring</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6139</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6029</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6030</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6035</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6031</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6032</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6033</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6034</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6087</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6088</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6089</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6090</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5023</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6015</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6202</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6087" BrowseName="3:PositionActualValue" ParentNodeId="ns=3;i=5022" DataType="Float">
+    <DisplayName>PositionActualValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6088" BrowseName="3:PositionSetpoint" ParentNodeId="ns=3;i=5022" DataType="Float">
+    <DisplayName>PositionSetpoint</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6089" BrowseName="3:VelocityActualValue" ParentNodeId="ns=3;i=5022" DataType="Float">
+    <DisplayName>VelocityActualValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6090" BrowseName="3:AccelerationActualValue" ParentNodeId="ns=3;i=5022" DataType="Float">
+    <DisplayName>AccelerationActualValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=3;i=1007" BrowseName="3:TraversingTaskType">
+    <DisplayName>TraversingTaskType</DisplayName>
+    <Category>PDRV Measurement</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/7.7</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6092</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6093</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6094</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6095</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6096</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6097</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=3;i=6092" BrowseName="3:TraversingTaskNumber" ParentNodeId="ns=3;i=1007" DataType="Int32">
+    <DisplayName>TraversingTaskNumber</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6093" BrowseName="3:TargetPosition" ParentNodeId="ns=3;i=1007" DataType="Float">
+    <DisplayName>TargetPosition</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6094" BrowseName="3:Velocity" ParentNodeId="ns=3;i=1007" DataType="Float">
+    <DisplayName>Velocity</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6095" BrowseName="3:Acceleration" ParentNodeId="ns=3;i=1007" DataType="Float">
+    <DisplayName>Acceleration</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6096" BrowseName="3:Deceleration" ParentNodeId="ns=3;i=1007" DataType="Float">
+    <DisplayName>Deceleration</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6097" BrowseName="3:PositioningMode" ParentNodeId="ns=3;i=1007" DataType="UInt16">
+    <DisplayName>PositioningMode</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2376</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6168</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5023" BrowseName="3:TraversingTask" ParentNodeId="ns=3;i=5022">
+    <DisplayName>TraversingTask</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=1007</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6097</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6092</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5026" BrowseName="3:CharacteristicsMechanics" ParentNodeId="ns=3;i=1006">
+    <DisplayName>CharacteristicsMechanics</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6108</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6109</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6255</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5027" BrowseName="3:MotionProgram" ParentNodeId="ns=3;i=1006">
+    <DisplayName>MotionProgram</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=11575</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">i=11583</Reference>
+      <Reference ReferenceType="HasComponent">i=11590</Reference>
+      <Reference ReferenceType="HasComponent">i=11580</Reference>
+      <Reference ReferenceType="HasProperty">i=11579</Reference>
+      <Reference ReferenceType="HasComponent">i=11585</Reference>
+      <Reference ReferenceType="HasComponent">i=11593</Reference>
+      <Reference ReferenceType="HasProperty">i=11576</Reference>
+      <Reference ReferenceType="HasProperty">i=12687</Reference>
+      <Reference ReferenceType="HasProperty">i=12686</Reference>
+      <Reference ReferenceType="HasComponent">i=11588</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6102" BrowseName="3:MotorCurrentLimitHigh" ParentNodeId="ns=3;i=5021" DataType="Float">
+    <DisplayName>MotorCurrentLimitHigh</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6103" BrowseName="3:MotorCurrentLimitLow" ParentNodeId="ns=3;i=5021" DataType="Float">
+    <DisplayName>MotorCurrentLimitLow</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6104" BrowseName="3:TorqueLimitLow" ParentNodeId="ns=3;i=5021" DataType="Float">
+    <DisplayName>TorqueLimitLow</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6105" BrowseName="3:TorqueLimitHigh" ParentNodeId="ns=3;i=5021" DataType="Float">
+    <DisplayName>TorqueLimitHigh</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6106" BrowseName="3:SoftwareUpperPosLimit" ParentNodeId="ns=3;i=5021" DataType="Float">
+    <DisplayName>SoftwareUpperPosLimit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6107" BrowseName="3:SoftwareLowerPosLimit" ParentNodeId="ns=3;i=5021" DataType="Float">
+    <DisplayName>SoftwareLowerPosLimit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6108" BrowseName="3:Gearfactor" ParentNodeId="ns=3;i=5026" DataType="Float">
+    <DisplayName>Gearfactor</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6109" BrowseName="3:SpindlePitch" ParentNodeId="ns=3;i=5026" DataType="Float">
+    <DisplayName>SpindlePitch</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=3;i=1008" BrowseName="3:VelocityServoDriveAxisType">
+    <DisplayName>VelocityServoDriveAxisType</DisplayName>
+    <Category>PDRV Measurement</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/7.5</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1000</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=3;i=1014</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=3;i=1013</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=3;i=1016</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5028</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5029</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5031</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5032</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5054</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5056</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=3;i=5028" BrowseName="3:Monitoring" ParentNodeId="ns=3;i=1008">
+    <DisplayName>Monitoring</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6139</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6029</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6030</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6035</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6031</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6032</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6033</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6034</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6113</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6114</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6115</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6116</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6117</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6015</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6212</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5029" BrowseName="3:LimitSupervision" ParentNodeId="ns=3;i=1008">
+    <DisplayName>LimitSupervision</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6118</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6119</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6075</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5031" BrowseName="3:EncoderChannelMotor" ParentNodeId="ns=3;i=1008">
+    <DisplayName>EncoderChannelMotor</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=2;i=1006</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;i=5011</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5032" BrowseName="3:Homing" ParentNodeId="ns=3;i=1008">
+    <DisplayName>Homing</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6123</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6113" BrowseName="3:VelocitySetpoint" ParentNodeId="ns=3;i=5028" DataType="Float">
+    <DisplayName>VelocitySetpoint</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6114" BrowseName="3:VelocityCommandValue" ParentNodeId="ns=3;i=5028" DataType="Float">
+    <DisplayName>VelocityCommandValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6115" BrowseName="3:VelocityActualValue" ParentNodeId="ns=3;i=5028" DataType="Float">
+    <DisplayName>VelocityActualValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6116" BrowseName="3:AccelerationActualValue" ParentNodeId="ns=3;i=5028" DataType="Float">
+    <DisplayName>AccelerationActualValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6117" BrowseName="3:BrakeStatus" ParentNodeId="ns=3;i=5028" DataType="Byte">
+    <DisplayName>BrakeStatus</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2376</Reference>
+      <Reference ReferenceType="HasProperty">i=2377</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6118" BrowseName="3:TorqueLimitHigh" ParentNodeId="ns=3;i=5029" DataType="Float">
+    <DisplayName>TorqueLimitHigh</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6119" BrowseName="3:TorqueLimitLow" ParentNodeId="ns=3;i=5029" DataType="Float">
+    <DisplayName>TorqueLimitLow</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6123" BrowseName="3:HomingMode" ParentNodeId="ns=3;i=5032" DataType="Byte">
+    <DisplayName>HomingMode</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=2003</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6258</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=3;i=1009" BrowseName="3:PositionServoDriveAxisType">
+    <DisplayName>PositionServoDriveAxisType</DisplayName>
+    <Category>PDRV Measurement</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/7.6</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1000</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=3;i=1013</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=3;i=1014</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=3;i=1016</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5033</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5035</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5036</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5037</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5058</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5060</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5024</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5030</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=3;i=5033" BrowseName="3:&lt;EncoderChannelAuxiliary&gt;" SymbolicName="S_EncoderChannelAuxiliary_" ParentNodeId="ns=3;i=1009">
+    <DisplayName>&lt;EncoderChannelAuxiliary&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=2;i=1006</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent">ns=2;i=5011</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5035" BrowseName="3:CharacteristicsConverter" ParentNodeId="ns=3;i=1009">
+    <DisplayName>CharacteristicsConverter</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6174</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6055</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5036" BrowseName="3:LimitSupervision" ParentNodeId="ns=3;i=1009">
+    <DisplayName>LimitSupervision</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6133</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6134</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6135</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6082</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5037" BrowseName="3:Monitoring" ParentNodeId="ns=3;i=1009">
+    <DisplayName>Monitoring</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6139</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6029</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6030</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6035</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6032</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6031</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6033</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6034</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6125</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6126</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6128</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6129</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6130</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6131</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6132</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6015</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6076</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6125" BrowseName="3:PositionCommandValue" ParentNodeId="ns=3;i=5037" DataType="Float">
+    <DisplayName>PositionCommandValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6126" BrowseName="3:VelocitySetpoint" ParentNodeId="ns=3;i=5037" DataType="Float">
+    <DisplayName>VelocitySetpoint</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6128" BrowseName="3:PositionActualValue" ParentNodeId="ns=3;i=5037" DataType="Float">
+    <DisplayName>PositionActualValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6129" BrowseName="3:VelocityActualValue" ParentNodeId="ns=3;i=5037" DataType="Float">
+    <DisplayName>VelocityActualValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6130" BrowseName="3:PositionSetpoint" ParentNodeId="ns=3;i=5037" DataType="Float">
+    <DisplayName>PositionSetpoint</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6131" BrowseName="3:AccelerationActualValue" ParentNodeId="ns=3;i=5037" DataType="Float">
+    <DisplayName>AccelerationActualValue</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6132" BrowseName="3:BrakeStatus" ParentNodeId="ns=3;i=5037" DataType="Byte">
+    <DisplayName>BrakeStatus</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2376</Reference>
+      <Reference ReferenceType="HasProperty">i=2377</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6133" BrowseName="3:TorqueLimit" ParentNodeId="ns=3;i=5036" DataType="Float">
+    <DisplayName>TorqueLimit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6134" BrowseName="3:SoftwareUpperPosLimit" ParentNodeId="ns=3;i=5036" DataType="Float">
+    <DisplayName>SoftwareUpperPosLimit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6135" BrowseName="3:SoftwareLowerPosLimit" ParentNodeId="ns=3;i=5036" DataType="Float">
+    <DisplayName>SoftwareLowerPosLimit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6139" BrowseName="3:ControlPriority" ParentNodeId="ns=3;i=5001" DataType="UInt16">
+    <DisplayName>ControlPriority</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2376</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6149</Reference>
+    </References>
+    <Value>
+      <uax:UInt16 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt16>
+    </Value>
+  </UAVariable>
+  <UAObjectType NodeId="ns=3;i=1012" BrowseName="3:DiagnosisAlarmType">
+    <DisplayName>DiagnosisAlarmType</DisplayName>
+    <Category>PDRV Diagnosis Alarms</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/8.7</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2915</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6026</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=3;i=6026" BrowseName="3:LogEntry" ParentNodeId="ns=3;i=1012" DataType="LogEntryDataType">
+    <DisplayName>LogEntry</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5012" BrowseName="3:STO" ParentNodeId="ns=3;i=5008">
+    <DisplayName>STO</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5008</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6028" BrowseName="3:STOSelection">
+    <DisplayName>STOSelection</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5012</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6042" BrowseName="3:STOActive">
+    <DisplayName>STOActive</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5012</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5013" BrowseName="3:SS1" ParentNodeId="ns=3;i=5008">
+    <DisplayName>SS1</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5008</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6043" BrowseName="3:SS1Selection">
+    <DisplayName>SS1Selection</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5013</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6044" BrowseName="3:SS1Active">
+    <DisplayName>SS1Active</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5013</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5015" BrowseName="3:SS2" ParentNodeId="ns=3;i=5008">
+    <DisplayName>SS2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5008</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6045" BrowseName="3:SS2Selection">
+    <DisplayName>SS2Selection</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5015</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6047" BrowseName="3:SS2Active">
+    <DisplayName>SS2Active</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5015</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5038" BrowseName="3:SOS" ParentNodeId="ns=3;i=5008">
+    <DisplayName>SOS</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5008</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6067" BrowseName="3:SOSSelection">
+    <DisplayName>SOSSelection</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5038</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6086" BrowseName="3:SOSActive">
+    <DisplayName>SOSActive</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5038</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5039" BrowseName="3:SLS" ParentNodeId="ns=3;i=5008">
+    <DisplayName>SLS</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5008</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6112" BrowseName="3:SLSSelection">
+    <DisplayName>SLSSelection</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5039</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6124" BrowseName="3:SLSActive">
+    <DisplayName>SLSActive</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5039</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6138" BrowseName="3:SLSLimit" ParentNodeId="ns=3;i=5039" DataType="Number">
+    <DisplayName>SLSLimit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5039</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=15318</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5040" BrowseName="3:SDI" ParentNodeId="ns=3;i=5008">
+    <DisplayName>SDI</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5008</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6140" BrowseName="3:SDISelection">
+    <DisplayName>SDISelection</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5040</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6141" BrowseName="3:SDIActive">
+    <DisplayName>SDIActive</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5040</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5041" BrowseName="3:SLA" ParentNodeId="ns=3;i=5008">
+    <DisplayName>SLA</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5008</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6142" BrowseName="3:SLASelection">
+    <DisplayName>SLASelection</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5041</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6143" BrowseName="3:SLAActive">
+    <DisplayName>SLAActive</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5041</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6144" BrowseName="3:SLALimit" ParentNodeId="ns=3;i=5041" DataType="Number">
+    <DisplayName>SLALimit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5041</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=15318</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5042" BrowseName="3:SLP" ParentNodeId="ns=3;i=5008">
+    <DisplayName>SLP</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5008</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6145" BrowseName="3:SLPSelection">
+    <DisplayName>SLPSelection</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5042</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6146" BrowseName="3:SLPActive">
+    <DisplayName>SLPActive</DisplayName>
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=3;i=5042</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=3;i=1013" BrowseName="3:AxisSwOvertravelEventType">
+    <DisplayName>AxisSwOvertravelEventType</DisplayName>
+    <Category>PDRV Limit Events</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/8.2</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1001</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6147</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=3;i=6147" BrowseName="3:IsUpperSwLimit" ParentNodeId="ns=3;i=1013" DataType="Boolean">
+    <DisplayName>IsUpperSwLimit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=3;i=1014" BrowseName="3:AxisHwOvertravelEventType">
+    <DisplayName>AxisHwOvertravelEventType</DisplayName>
+    <Category>PDRV Limit Events</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/8.3</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1001</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6148</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=3;i=6148" BrowseName="3:IsUpperHwLimit" ParentNodeId="ns=3;i=1014" DataType="Boolean">
+    <DisplayName>IsUpperHwLimit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=3;i=1015" BrowseName="3:SafetyType">
+    <DisplayName>SafetyType</DisplayName>
+    <Category>PDRV Measurement</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/7.8</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5046</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5047</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5048</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5049</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5050</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5051</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5052</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5053</Reference>
+    </References>
+  </UAObjectType>
+  <UAObject NodeId="ns=3;i=5045" BrowseName="3:Safety" ParentNodeId="ns=3;i=1000">
+    <DisplayName>Safety</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=1015</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5046</Reference>
+    </References>
+  </UAObject>
+  <UAObjectType NodeId="ns=3;i=1016" BrowseName="3:TorqueLimitEventType">
+    <DisplayName>TorqueLimitEventType</DisplayName>
+    <Category>PDRV Limit Events</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/8.4</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1001</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6270</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6271</Reference>
+    </References>
+  </UAObjectType>
+  <UAObjectType NodeId="ns=3;i=1017" BrowseName="3:MotorCurrentLimitEventType">
+    <DisplayName>MotorCurrentLimitEventType</DisplayName>
+    <Category>PDRV Limit Events</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/8.6</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1001</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6164</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6273</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=3;i=6164" BrowseName="3:MotorCurrentLimitHigh" ParentNodeId="ns=3;i=1017" DataType="Float">
+    <DisplayName>MotorCurrentLimitHigh</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=3;i=2000" BrowseName="3:AxisTypeVariableType" DataType="Byte">
+    <DisplayName>AxisTypeVariableType</DisplayName>
+    <Category>PDRV Measurement</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/9.1</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2376</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6152</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=3;i=6152" BrowseName="EnumStrings" ParentNodeId="ns=3;i=2000" DataType="LocalizedText" ValueRank="1" ArrayDimensions="3">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>LINEAR</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>ROTATORY</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>ROTATORY_MODULO</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6153" BrowseName="3:AxisType" ParentNodeId="ns=3;i=1000" DataType="Byte">
+    <DisplayName>AxisType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=2000</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6152</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6009" BrowseName="EnumStrings" ParentNodeId="ns=3;i=6029" DataType="LocalizedText" ValueRank="1" ArrayDimensions="13">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>S1_SWITCHING_ON_INHIBITED</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>S2_READY_FOR_SWITCHING_ON</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>S3_SWITCHED_ON</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>S4_OPERATION</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>S51_RAMP_STOP</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>S52_QUICK_STOP</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>S41_POS_BASIC_STATE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>S42_POS_JOGGING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>S43_POS_BRAKING_WITH_RAMP</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>S44_POS_HOMING_PROCEDURE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>S451_POS_TRAVERSING_TASK_ACTIVE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>S452_POS_BRAKING_WITH_RAMP</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>S453_POS_INTERMEDIATE_STOP</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAObjectType NodeId="ns=3;i=1018" BrowseName="3:SafetyFunctionType">
+    <DisplayName>SafetyFunctionType</DisplayName>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/7.9</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6151</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6154</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6155</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=3;i=6151" BrowseName="3:SelectionState" ParentNodeId="ns=3;i=1018" DataType="UInt16">
+    <DisplayName>SelectionState</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2376</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6166</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6154" BrowseName="3:ActivationState" ParentNodeId="ns=3;i=1018" DataType="UInt16">
+    <DisplayName>ActivationState</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2376</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6165</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6155" BrowseName="3:Limit" ParentNodeId="ns=3;i=1018" DataType="Float">
+    <DisplayName>Limit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6165" BrowseName="EnumStrings" ParentNodeId="ns=3;i=6154" DataType="LocalizedText" ValueRank="1" ArrayDimensions="17">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>NONE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>POWER_REMOVED</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SS1_ACTIVE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SS1_ACTIVE_FAULTED</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SS2_ACTIVE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SS2_ACTIVE_FAULTED</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SOS_ACTIVE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SOS_ACTIVE_FAULTED</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SLS_ACTIVE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SLS_ACTIVE_FAULTED</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SDI_POS_ACTIVE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SDI_NEG_ACTIVE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SLA_ACTIVE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SLA_ACTIVE_FAULTED</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SLP_ACTIVE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SLP_ACTIVE_FAULTED</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SLP_INOPERABLE</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6166" BrowseName="EnumStrings" ParentNodeId="ns=3;i=6151" DataType="LocalizedText" ValueRank="1" ArrayDimensions="10">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>NONE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SELECTED</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SELECTED_INTERN</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SELECTED_EXTERN</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SELECTED_LIMIT_1</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SELECTED_LIMIT_2</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SELECTED_LIMIT_3</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SELECTED_LIMIT_4</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SELECTED_POS</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SELECTED_NEG</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5046" BrowseName="3:STO" ParentNodeId="ns=3;i=1015">
+    <DisplayName>STO</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=1018</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6154</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6151</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5047" BrowseName="3:SS1" ParentNodeId="ns=3;i=1015">
+    <DisplayName>SS1</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=1018</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6154</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6151</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5048" BrowseName="3:SS2" ParentNodeId="ns=3;i=1015">
+    <DisplayName>SS2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=1018</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6154</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6151</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5049" BrowseName="3:SOS" ParentNodeId="ns=3;i=1015">
+    <DisplayName>SOS</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=1018</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6154</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6151</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5050" BrowseName="3:SLS" ParentNodeId="ns=3;i=1015">
+    <DisplayName>SLS</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=1018</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6154</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6151</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5051" BrowseName="3:SDI" ParentNodeId="ns=3;i=1015">
+    <DisplayName>SDI</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=1018</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6154</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6151</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5052" BrowseName="3:SLA" ParentNodeId="ns=3;i=1015">
+    <DisplayName>SLA</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=1018</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6154</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6151</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5053" BrowseName="3:SLP" ParentNodeId="ns=3;i=1015">
+    <DisplayName>SLP</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=1018</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6154</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6151</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6168" BrowseName="EnumStrings" ParentNodeId="ns=3;i=6097" DataType="LocalizedText" ValueRank="1" ArrayDimensions="5">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>INACTIVE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>RELATIVE_POSITIONING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>ABSOLUTE_SHORTEST_PATH_MODULO_DIRECTION _POSITIONING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>ABSOLUTE_POSITIVE_MODULO_DIRECTION _POSITIONING</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>ABSOLUTE_NEGATIVE_ MODULO_DIRECTION _POSITIONING</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6053" BrowseName="3:DeviceTemperature" ParentNodeId="ns=3;i=5001" DataType="Float">
+    <DisplayName>DeviceTemperature</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=2001</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6149" BrowseName="EnumStrings" ParentNodeId="ns=3;i=6139" DataType="LocalizedText" ValueRank="1" ArrayDimensions="7">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>NONE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>PROFIBUS_PRIORITY</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>PROFIBUS_CONTROL</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>PROFINET_PRIORITY</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>PROFINET_CONTROL</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>LOCAL_CONTROL</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SETUP_TOOL_CONTROL</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6074" BrowseName="3:Force" ParentNodeId="ns=3;i=5001" DataType="Float">
+    <DisplayName>Force</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5054" BrowseName="3:EncoderChannelMechanic" ParentNodeId="ns=3;i=1008">
+    <DisplayName>EncoderChannelMechanic</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=2;i=1006</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5055</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5055" BrowseName="2:Sensor" ParentNodeId="ns=3;i=5054">
+    <DisplayName>Sensor</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1013</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6156</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6156" BrowseName="2:PositionOffset" ParentNodeId="ns=3;i=5055" DataType="Number">
+    <DisplayName>PositionOffset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5056" BrowseName="3:&lt;EncoderChannelAuxiliary&gt;" SymbolicName="S_EncoderChannelAuxiliary_" ParentNodeId="ns=3;i=1008">
+    <DisplayName>&lt;EncoderChannelAuxiliary&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=2;i=1006</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5057</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5057" BrowseName="2:Sensor" ParentNodeId="ns=3;i=5056">
+    <DisplayName>Sensor</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1013</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6157</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6157" BrowseName="2:PositionOffset" ParentNodeId="ns=3;i=5057" DataType="Number">
+    <DisplayName>PositionOffset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5058" BrowseName="3:EncoderChannelMechanic" ParentNodeId="ns=3;i=1009">
+    <DisplayName>EncoderChannelMechanic</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=2;i=1006</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5059</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5059" BrowseName="2:Sensor" ParentNodeId="ns=3;i=5058">
+    <DisplayName>Sensor</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1013</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6158</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6158" BrowseName="2:PositionOffset" ParentNodeId="ns=3;i=5059" DataType="Number">
+    <DisplayName>PositionOffset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5060" BrowseName="3:EncoderChannelMotor" ParentNodeId="ns=3;i=1009">
+    <DisplayName>EncoderChannelMotor</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1002</Reference>
+      <Reference ReferenceType="GeneratesEvent">ns=2;i=1006</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=5061</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5061" BrowseName="2:Sensor" ParentNodeId="ns=3;i=5060">
+    <DisplayName>Sensor</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=1013</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6159</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6159" BrowseName="2:PositionOffset" ParentNodeId="ns=3;i=5061" DataType="Number">
+    <DisplayName>PositionOffset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5003" BrowseName="3:CharacteristicsMotorAndControl" ParentNodeId="ns=3;i=1000">
+    <DisplayName>CharacteristicsMotorAndControl</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6176</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6177</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6180</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6181</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6183</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6184</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6186</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6188</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6192</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6195</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6196</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6197</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6198</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6199</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6215</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6217</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6219</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6015" BrowseName="3:LimitFollowingError" ParentNodeId="ns=3;i=5001" DataType="Number">
+    <DisplayName>LimitFollowingError</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=15318</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6016" BrowseName="3:PositionFollowingError" ParentNodeId="ns=3;i=5001" DataType="Float">
+    <DisplayName>PositionFollowingError</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6017" BrowseName="3:ControlMode" ParentNodeId="ns=3;i=5001" DataType="UInt16">
+    <DisplayName>ControlMode</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2376</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6018</Reference>
+    </References>
+    <Value>
+      <uax:UInt16 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt16>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6018" BrowseName="EnumStrings" ParentNodeId="ns=3;i=6017" DataType="LocalizedText" ValueRank="1" ArrayDimensions="5">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>TORQUE_CONTROL</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>FORCE_CONTROL</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SPEED_CONTROL</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SPEED_CONTROL_DSC</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>POSITION_CONTROL</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6160" BrowseName="3:BrakeResistorTemperature" ParentNodeId="ns=3;i=5001" DataType="Float">
+    <DisplayName>BrakeResistorTemperature</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=2001</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6161" BrowseName="3:MotorCapacityUtilization" ParentNodeId="ns=3;i=5005" DataType="UInt16">
+    <DisplayName>MotorCapacityUtilization</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6162" BrowseName="3:ConverterCapacityUtilization" ParentNodeId="ns=3;i=5005" DataType="UInt16">
+    <DisplayName>ConverterCapacityUtilization</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6169" BrowseName="3:IntermediateCircuitVoltageConfigured" ParentNodeId="ns=3;i=5009" DataType="UInt16">
+    <DisplayName>IntermediateCircuitVoltageConfigured</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6173" BrowseName="3:ConverterThermalLoadLimitConfigured" ParentNodeId="ns=3;i=5009" DataType="Float">
+    <DisplayName>ConverterThermalLoadLimitConfigured</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6174" BrowseName="3:ConverterExcessCurrentConfigured" ParentNodeId="ns=3;i=5009" DataType="Float">
+    <DisplayName>ConverterExcessCurrentConfigured</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6175" BrowseName="3:BrakeResistorExcessCurrentLimit" ParentNodeId="ns=3;i=5009" DataType="Float">
+    <DisplayName>BrakeResistorExcessCurrentLimit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6176" BrowseName="3:PowerRated" ParentNodeId="ns=3;i=5003" DataType="Float">
+    <DisplayName>PowerRated</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6177" BrowseName="3:SpeedRated" ParentNodeId="ns=3;i=5003" DataType="Float">
+    <DisplayName>SpeedRated</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6180" BrowseName="3:TorqueRated" ParentNodeId="ns=3;i=5003" DataType="Float">
+    <DisplayName>TorqueRated</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6181" BrowseName="3:MaxCurrent" ParentNodeId="ns=3;i=5003" DataType="Float">
+    <DisplayName>MaxCurrent</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6182</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6182" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6181" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6183" BrowseName="3:UfRatio" ParentNodeId="ns=3;i=5003" DataType="Float">
+    <DisplayName>UfRatio</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6184" BrowseName="3:RunUpVoltage" ParentNodeId="ns=3;i=5003" DataType="Float">
+    <DisplayName>RunUpVoltage</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6185</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6185" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6184" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6186" BrowseName="3:DcBrakingCurrent" ParentNodeId="ns=3;i=5003" DataType="Float">
+    <DisplayName>DcBrakingCurrent</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6187</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6187" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6186" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6188" BrowseName="3:DcBrakingTime" ParentNodeId="ns=3;i=5003" DataType="UInt16">
+    <DisplayName>DcBrakingTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6189</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6189" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6188" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6192" BrowseName="3:FeedbackMode" ParentNodeId="ns=3;i=5003" DataType="UInt16">
+    <DisplayName>FeedbackMode</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=2376</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6194</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6194" BrowseName="EnumStrings" ParentNodeId="ns=3;i=6192" DataType="LocalizedText" ValueRank="1" ArrayDimensions="4">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Text>FEEDBACK_SENSOR_1</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>FEEDBACK_SENSOR_2</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>FEEDBACK_SENSOR_3</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>SENSORLESS</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6195" BrowseName="3:SpeedMaxConfigured" ParentNodeId="ns=3;i=5003" DataType="Float">
+    <DisplayName>SpeedMaxConfigured</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6196" BrowseName="3:TorqueMaxConfigured" ParentNodeId="ns=3;i=5003" DataType="Float">
+    <DisplayName>TorqueMaxConfigured</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6197" BrowseName="3:MotorThermalLoadLimitConfigured" ParentNodeId="ns=3;i=5003" DataType="Float">
+    <DisplayName>MotorThermalLoadLimitConfigured</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6198" BrowseName="3:MotorExcessCurrentConfigured" ParentNodeId="ns=3;i=5003" DataType="Float">
+    <DisplayName>MotorExcessCurrentConfigured</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6199" BrowseName="3:MotorType" ParentNodeId="ns=3;i=5003" DataType="Byte">
+    <DisplayName>MotorType</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2376</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6200</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6200" BrowseName="EnumStrings" ParentNodeId="ns=3;i=6199" DataType="LocalizedText" ValueRank="1" ArrayDimensions="10">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Text>PM_SYNCHRONOUS_ROTARY</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>PM_SYNCHRONOUS_LINEAR</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>STEPPER_ROTARY</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>STEPPER_LINEAR</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>INDUCTION_ROTATORY</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>INDUCTION_LINEAR</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>HYDRAULIC_MOTOR_ROTARY</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>HYDRAULIC_CYLINDER_LINEAR</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>PNEUMATIC_MOTOR_ROTARY</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>PNEUMATIC_CYLINDER_LINEAR</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAObjectType NodeId="ns=3;i=1019" BrowseName="3:ForceLimitEventType">
+    <DisplayName>ForceLimitEventType</DisplayName>
+    <Category>PDRV Limit Events</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/8.5</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=3;i=1001</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6201</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6272</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=3;i=6201" BrowseName="3:ForceLimit" ParentNodeId="ns=3;i=1019" DataType="Float">
+    <DisplayName>ForceLimit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6202" BrowseName="3:Override" ParentNodeId="ns=3;i=5022" DataType="Float">
+    <DisplayName>Override</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5043" BrowseName="3:CharacteristicsMotorAndControl" ParentNodeId="ns=3;i=1006">
+    <DisplayName>CharacteristicsMotorAndControl</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6176</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6199</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6274</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=3;i=5044" BrowseName="3:VelocityProfile" ParentNodeId="ns=3;i=1000">
+    <DisplayName>VelocityProfile</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6013</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6014</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6193</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6203</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6204</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6013" BrowseName="3:RfgRampDownTime" ParentNodeId="ns=3;i=5044" DataType="Float">
+    <DisplayName>RfgRampDownTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=15318</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6014" BrowseName="3:QuickStopRampDownTime" ParentNodeId="ns=3;i=5044" DataType="Float">
+    <DisplayName>QuickStopRampDownTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=15318</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6193" BrowseName="3:NominalSpeed" ParentNodeId="ns=3;i=5044" DataType="Float">
+    <DisplayName>NominalSpeed</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=15318</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6203" BrowseName="3:RampDeceleration" ParentNodeId="ns=3;i=5044" DataType="Float">
+    <DisplayName>RampDeceleration</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6204" BrowseName="3:QuickStopRampDeceleration" ParentNodeId="ns=3;i=5044" DataType="Float">
+    <DisplayName>QuickStopRampDeceleration</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=3;i=2001" BrowseName="3:TemperatureVariableType" DataType="Float">
+    <DisplayName>TemperatureVariableType</DisplayName>
+    <Category>PDRV Measurement</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/9.4</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6205</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6206</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=3;i=6205" BrowseName="3:WarningThreshold" ParentNodeId="ns=3;i=2001" DataType="Float">
+    <DisplayName>WarningThreshold</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6206" BrowseName="3:FaultThreshold" ParentNodeId="ns=3;i=2001" DataType="Float">
+    <DisplayName>FaultThreshold</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6019" BrowseName="3:FeedbackSensor1Temperature" ParentNodeId="ns=3;i=5001" DataType="Float">
+    <DisplayName>FeedbackSensor1Temperature</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=2001</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6207</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6207" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6019" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6208" BrowseName="3:FeedbackSensor2Temperature" ParentNodeId="ns=3;i=5001" DataType="Float">
+    <DisplayName>FeedbackSensor2Temperature</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=2001</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6209</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6209" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6208" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6210" BrowseName="3:FeedbackSensor3Temperature" ParentNodeId="ns=3;i=5001" DataType="Float">
+    <DisplayName>FeedbackSensor3Temperature</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=2001</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6211</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6211" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6210" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6212" BrowseName="3:VelocityFollowingError" ParentNodeId="ns=3;i=5001" DataType="Float">
+    <DisplayName>VelocityFollowingError</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6213</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6213" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6212" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6215" BrowseName="3:ForceRated" ParentNodeId="ns=3;i=5003" DataType="Float">
+    <DisplayName>ForceRated</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6216</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6216" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6215" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6217" BrowseName="3:PositionFollowingErrorLimit" ParentNodeId="ns=3;i=5003" DataType="Float">
+    <DisplayName>PositionFollowingErrorLimit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6218</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6218" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6217" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6219" BrowseName="3:VelocityFollowingErrorLimit" ParentNodeId="ns=3;i=5003" DataType="Float">
+    <DisplayName>VelocityFollowingErrorLimit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6220</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6220" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6219" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6221" BrowseName="3:FeedbackMode" ParentNodeId="ns=3;i=5001" DataType="UInt16">
+    <DisplayName>FeedbackMode</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2376</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6222</Reference>
+    </References>
+    <Value>
+      <uax:UInt16 xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">0</uax:UInt16>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6222" BrowseName="EnumStrings" ParentNodeId="ns=3;i=6221" DataType="LocalizedText" ValueRank="1" ArrayDimensions="4">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>FEEDBACK_SENSOR_1</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>FEEDBACK_SENSOR_2</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>FEEDBACK_SENSOR_3</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>SENSORLESS</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6245" BrowseName="3:TorqueLimiting" ParentNodeId="ns=3;i=5021" DataType="Boolean">
+    <DisplayName>TorqueLimiting</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6246" BrowseName="3:BrakeStatus" ParentNodeId="ns=3;i=5001" DataType="Byte">
+    <DisplayName>BrakeStatus</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=2376</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6247</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6247" BrowseName="EnumStrings" ParentNodeId="ns=3;i=6246" DataType="LocalizedText" ValueRank="1" ArrayDimensions="5">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>NO_BRAKE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>OPEN_BRAKE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>MECHANIC_BRAKE_APPLIED</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>DC_BRAKE_APPLIED</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Locale>en</uax:Locale>
+                    <uax:Text>ROTOR_SHORT_APPLIED</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6255" BrowseName="3:UnitOfLength" ParentNodeId="ns=3;i=5026" DataType="Float">
+    <DisplayName>UnitOfLength</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6256</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6256" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6255" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariableType NodeId="ns=3;i=2002" BrowseName="3:HomingDirectionType" DataType="Byte">
+    <DisplayName>HomingDirectionType</DisplayName>
+    <Category>PDRV Measurement</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/9.2</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2376</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6257</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=3;i=6257" BrowseName="EnumStrings" ParentNodeId="ns=3;i=2002" DataType="LocalizedText" ValueRank="1" ArrayDimensions="2">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Text>POSITIVE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>NEGATIVE</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAVariableType NodeId="ns=3;i=2003" BrowseName="3:HomingModeType" DataType="Byte">
+    <DisplayName>HomingModeType</DisplayName>
+    <Category>PDRV Measurement</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/9.3</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2376</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6258</Reference>
+    </References>
+  </UAVariableType>
+  <UAVariable NodeId="ns=3;i=6258" BrowseName="EnumStrings" ParentNodeId="ns=3;i=2003" DataType="LocalizedText" ValueRank="1" ArrayDimensions="4">
+    <DisplayName>EnumStrings</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+    <Value>
+      <uax:ListOfLocalizedText xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                <uax:LocalizedText>
+                    <uax:Text>ABSOLUTE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>REF_MARK</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>DIST_CODE</uax:Text>
+                </uax:LocalizedText>
+                <uax:LocalizedText>
+                    <uax:Text>FLY</uax:Text>
+                </uax:LocalizedText>
+            </uax:ListOfLocalizedText>
+    </Value>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5020" BrowseName="3:Homing" ParentNodeId="ns=3;i=1006">
+    <DisplayName>Homing</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6259</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6260</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6262</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6264</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6266</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6259" BrowseName="3:HomingDirection" ParentNodeId="ns=3;i=5020" DataType="Byte">
+    <DisplayName>HomingDirection</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=2002</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6257</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6260" BrowseName="3:HomingMode" ParentNodeId="ns=3;i=5020" DataType="Byte">
+    <DisplayName>HomingMode</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=2003</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6258</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6262" BrowseName="3:HomingSpeedToCam" ParentNodeId="ns=3;i=5020" DataType="Float">
+    <DisplayName>HomingSpeedToCam</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6264" BrowseName="3:HomingSpeedToMark" ParentNodeId="ns=3;i=5020" DataType="Float">
+    <DisplayName>HomingSpeedToMark</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6265</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6265" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6264" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6266" BrowseName="3:HomingPointOffset" ParentNodeId="ns=3;i=5020" DataType="Float">
+    <DisplayName>HomingPointOffset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6267</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6267" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6266" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6039" BrowseName="3:InputConverterAcInputVoltage" ParentNodeId="ns=3;i=5009" DataType="UInt16">
+    <DisplayName>InputConverterAcInputVoltage</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6054</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6054" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6039" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6055" BrowseName="3:OutputConverterPulseFrequency" ParentNodeId="ns=3;i=5009" DataType="UInt16">
+    <DisplayName>OutputConverterPulseFrequency</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6060</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6060" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6055" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6075" BrowseName="3:TorqueLimiting" ParentNodeId="ns=3;i=5029" DataType="Boolean">
+    <DisplayName>TorqueLimiting</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6076" BrowseName="3:ContouringError" ParentNodeId="ns=3;i=5037" DataType="Float">
+    <DisplayName>ContouringError</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6081</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6081" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6076" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6082" BrowseName="3:TorqueLimiting" ParentNodeId="ns=3;i=5036" DataType="Boolean">
+    <DisplayName>TorqueLimiting</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5024" BrowseName="3:CharacteristicsMotorAndControl" ParentNodeId="ns=3;i=1009">
+    <DisplayName>CharacteristicsMotorAndControl</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6199</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6176</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6083</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6083" BrowseName="3:UnitOfLength" ParentNodeId="ns=3;i=5024" DataType="Float">
+    <DisplayName>UnitOfLength</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5030" BrowseName="3:Homing" ParentNodeId="ns=3;i=1009">
+    <DisplayName>Homing</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6091</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6099</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6100</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6111</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6121</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6091" BrowseName="3:HomingDirection" ParentNodeId="ns=3;i=5030" DataType="Byte">
+    <DisplayName>HomingDirection</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=2002</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6257</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6099" BrowseName="3:HomingSpeedToCam" ParentNodeId="ns=3;i=5030" DataType="Float">
+    <DisplayName>HomingSpeedToCam</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6100" BrowseName="3:HomingSpeedToMark" ParentNodeId="ns=3;i=5030" DataType="Float">
+    <DisplayName>HomingSpeedToMark</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6110</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6110" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6100" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6111" BrowseName="3:HomingPointOffset" ParentNodeId="ns=3;i=5030" DataType="Float">
+    <DisplayName>HomingPointOffset</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6120</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6120" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6111" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6121" BrowseName="3:HomingMode" ParentNodeId="ns=3;i=5030" DataType="Byte">
+    <DisplayName>HomingMode</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=2003</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6258</Reference>
+    </References>
+  </UAVariable>
+  <UAObjectType NodeId="ns=3;i=1001" BrowseName="3:AxisEventType" IsAbstract="true">
+    <DisplayName>AxisEventType</DisplayName>
+    <Category>PDRV Limit Events</Category>
+    <Documentation>https://reference.opcfoundation.org/PNDRV/v100/docs/8.1</Documentation>
+    <References>
+      <Reference ReferenceType="HasSubtype" IsForward="false">i=2041</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6136</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6150</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6167</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6171</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6172</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6178</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6179</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6190</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6191</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6214</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6227</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6261</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6263</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6268</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6269</Reference>
+    </References>
+  </UAObjectType>
+  <UAVariable NodeId="ns=3;i=6136" BrowseName="3:AxisState" ParentNodeId="ns=3;i=1001" DataType="UInt16">
+    <DisplayName>AxisState</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6150" BrowseName="3:ControlPriority" ParentNodeId="ns=3;i=1001" DataType="UInt16">
+    <DisplayName>ControlPriority</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6167" BrowseName="3:OutputCurrent" ParentNodeId="ns=3;i=1001" DataType="Float">
+    <DisplayName>OutputCurrent</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6171" BrowseName="3:Torque" ParentNodeId="ns=3;i=1001" DataType="Float">
+    <DisplayName>Torque</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6172" BrowseName="3:Force" ParentNodeId="ns=3;i=1001" DataType="Float">
+    <DisplayName>Force</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6178" BrowseName="3:Power" ParentNodeId="ns=3;i=1001" DataType="Float">
+    <DisplayName>Power</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6179" BrowseName="3:MotorTemperature" ParentNodeId="ns=3;i=1001" DataType="Float">
+    <DisplayName>MotorTemperature</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6190" BrowseName="3:ConverterTemperature" ParentNodeId="ns=3;i=1001" DataType="Float">
+    <DisplayName>ConverterTemperature</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6191" BrowseName="3:DeviceTemperature" ParentNodeId="ns=3;i=1001" DataType="Float">
+    <DisplayName>DeviceTemperature</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6214" BrowseName="3:DcBusVoltage" ParentNodeId="ns=3;i=1001" DataType="Float">
+    <DisplayName>DcBusVoltage</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6227" BrowseName="3:PositionFollowingError" ParentNodeId="ns=3;i=1001" DataType="Float">
+    <DisplayName>PositionFollowingError</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6261" BrowseName="3:VelocityFollowingError" ParentNodeId="ns=3;i=1001" DataType="Float">
+    <DisplayName>VelocityFollowingError</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6263" BrowseName="3:ControlMode" ParentNodeId="ns=3;i=1001" DataType="UInt16">
+    <DisplayName>ControlMode</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6268" BrowseName="3:&lt;FeedbackSensor1..3Temperature&gt;" SymbolicName="S_FeedbackSensor1__3Temperature_" ParentNodeId="ns=3;i=1001" DataType="Float">
+    <DisplayName>&lt;FeedbackSensor1..3Temperature&gt;</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=11508</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6269" BrowseName="3:BrakeResistorTemperature" ParentNodeId="ns=3;i=1001" DataType="Float">
+    <DisplayName>BrakeResistorTemperature</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6270" BrowseName="3:TorqueLimit" ParentNodeId="ns=3;i=1016" DataType="Float">
+    <DisplayName>TorqueLimit</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6271" BrowseName="3:Torque" ParentNodeId="ns=3;i=1016" DataType="Float">
+    <DisplayName>Torque</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6272" BrowseName="3:Force" ParentNodeId="ns=3;i=1019" DataType="Float">
+    <DisplayName>Force</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6273" BrowseName="3:OutputCurrent" ParentNodeId="ns=3;i=1017" DataType="Float">
+    <DisplayName>OutputCurrent</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6274" BrowseName="3:UnitOfLength" ParentNodeId="ns=3;i=5043" DataType="Float">
+    <DisplayName>UnitOfLength</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5010" BrowseName="3:VelocityProfile" ParentNodeId="ns=3;i=1005">
+    <DisplayName>VelocityProfile</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6193</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6204</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6014</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6203</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6013</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6008</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6010</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6012</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6022</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6024</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6061</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6008" BrowseName="3:JogSpeed1" ParentNodeId="ns=3;i=5010" DataType="Float">
+    <DisplayName>JogSpeed1</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6010" BrowseName="3:JogSpeed2" ParentNodeId="ns=3;i=5010" DataType="Float">
+    <DisplayName>JogSpeed2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6011</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6011" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6010" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6012" BrowseName="3:RfgRampUpTime" ParentNodeId="ns=3;i=5010" DataType="Float">
+    <DisplayName>RfgRampUpTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6021</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6021" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6012" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6022" BrowseName="3:RfgAcceleration" ParentNodeId="ns=3;i=5010" DataType="Float">
+    <DisplayName>RfgAcceleration</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6023</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6023" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6022" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6024" BrowseName="3:MinimumVelocity" ParentNodeId="ns=3;i=5010" DataType="Float">
+    <DisplayName>MinimumVelocity</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6025</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6025" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6024" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6061" BrowseName="3:MaximumVelocity" ParentNodeId="ns=3;i=5010" DataType="Float">
+    <DisplayName>MaximumVelocity</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6062</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6062" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6061" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5011" BrowseName="3:VelocityProfile" ParentNodeId="ns=3;i=1006">
+    <DisplayName>VelocityProfile</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6193</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6204</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6014</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6203</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6013</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6063</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6064</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6066</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6085</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6063" BrowseName="3:JogSpeed1" ParentNodeId="ns=3;i=5011" DataType="Float">
+    <DisplayName>JogSpeed1</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6064" BrowseName="3:JogSpeed2" ParentNodeId="ns=3;i=5011" DataType="Float">
+    <DisplayName>JogSpeed2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6065</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6065" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6064" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6066" BrowseName="3:JogPosInc1" ParentNodeId="ns=3;i=5011" DataType="Float">
+    <DisplayName>JogPosInc1</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6084</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6084" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6066" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6085" BrowseName="3:JogPosInc2" ParentNodeId="ns=3;i=5011" DataType="Float">
+    <DisplayName>JogPosInc2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6098</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6098" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6085" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAObject NodeId="ns=3;i=5018" BrowseName="3:VelocityProfile" ParentNodeId="ns=3;i=1002">
+    <DisplayName>VelocityProfile</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6193</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6204</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6014</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6203</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6013</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6101</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6122</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6137</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6170</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6224</Reference>
+      <Reference ReferenceType="HasComponent">ns=3;i=6226</Reference>
+    </References>
+  </UAObject>
+  <UAVariable NodeId="ns=3;i=6101" BrowseName="3:JogSpeed1" ParentNodeId="ns=3;i=5018" DataType="Float">
+    <DisplayName>JogSpeed1</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">i=17502</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6122" BrowseName="3:JogSpeed2" ParentNodeId="ns=3;i=5018" DataType="Float">
+    <DisplayName>JogSpeed2</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6127</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6127" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6122" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6137" BrowseName="3:RfgRampUpTime" ParentNodeId="ns=3;i=5018" DataType="Float">
+    <DisplayName>RfgRampUpTime</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=15318</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6170" BrowseName="3:RfgAcceleration" ParentNodeId="ns=3;i=5018" DataType="Float">
+    <DisplayName>RfgAcceleration</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6223</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6223" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6170" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6224" BrowseName="3:MinimumVelocity" ParentNodeId="ns=3;i=5018" DataType="Float">
+    <DisplayName>MinimumVelocity</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6225</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6225" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6224" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6226" BrowseName="3:MaximumVelocity" ParentNodeId="ns=3;i=5018" DataType="Float">
+    <DisplayName>MaximumVelocity</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=17497</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasProperty">ns=3;i=6228</Reference>
+    </References>
+  </UAVariable>
+  <UAVariable NodeId="ns=3;i=6228" BrowseName="EngineeringUnits" ParentNodeId="ns=3;i=6226" DataType="EUInformation">
+    <DisplayName>EngineeringUnits</DisplayName>
+    <References>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+    </References>
+  </UAVariable>
+</UANodeSet>
