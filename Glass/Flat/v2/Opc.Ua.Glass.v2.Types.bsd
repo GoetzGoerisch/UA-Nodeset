@@ -1,0 +1,91 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/Glass/Flat/v2/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/Glass/Flat/v2/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="EClassTermDataType">
+        <opc:Field TypeName="opc:CharArray" Name="ID"/>
+        <opc:Field TypeName="opc:CharArray" Name="Description"/>
+        <opc:Field TypeName="opc:CharArray" Name="EClass"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="FileFormatDataType">
+        <opc:Field TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field TypeName="opc:CharArray" Name="FileExtension"/>
+        <opc:Field TypeName="opc:CharArray" Name="Version"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ProcessingCategoryDataType">
+        <opc:Field TypeName="opc:CharArray" Name="ID"/>
+        <opc:Field TypeName="opc:CharArray" Name="Description"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfSupportedParameter"/>
+        <opc:Field LengthField="NoOfSupportedParameter" TypeName="tns:ProcessingParameterDataType" Name="SupportedParameter"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfSupportedAssignment"/>
+        <opc:Field LengthField="NoOfSupportedAssignment" TypeName="opc:CharArray" Name="SupportedAssignment"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfSupportedVariable"/>
+        <opc:Field LengthField="NoOfSupportedVariable" TypeName="tns:ProcessingParameterDataType" Name="SupportedVariable"/>
+        <opc:Field TypeName="opc:Int32" Name="SupportsTransformation"/>
+        <opc:Field TypeName="opc:Int32" Name="SupportsSubProcessing"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ProcessingParameterDataType">
+        <opc:Field TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field TypeName="opc:CharArray" Name="Description"/>
+        <opc:Field TypeName="tns:ValueDataType" Name="ValueType"/>
+        <opc:Field TypeName="opc:CharArray" Name="TypicalValue"/>
+        <opc:Field TypeName="opc:Boolean" Name="Mandatory"/>
+        <opc:Field TypeName="tns:EClassTermDataType" Name="EClass"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ReasonDescriptionType">
+        <opc:Field TypeName="opc:Bit" Name="ReferenceSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="CategorySpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="VendorCodeSpecified"/>
+        <opc:Field Length="29" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="ua:LocalizedText" Name="Description"/>
+        <opc:Field SwitchField="ReferenceSpecified" TypeName="opc:CharArray" Name="Reference"/>
+        <opc:Field SwitchField="CategorySpecified" TypeName="opc:CharArray" Name="Category"/>
+        <opc:Field SwitchField="VendorCodeSpecified" TypeName="opc:CharArray" Name="VendorCode"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="UserProfileDataType">
+        <opc:Field TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field TypeName="opc:DateTime" Name="LoginTime"/>
+        <opc:Field TypeName="opc:CharArray" Name="Language"/>
+        <opc:Field TypeName="opc:CharArray" Name="MeasurementFormat"/>
+        <opc:Field TypeName="opc:CharArray" Name="AccessLevel"/>
+        <opc:Field TypeName="opc:Boolean" Name="OpcUaUser"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ValueDataType">
+        <opc:Field TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field TypeName="opc:CharArray" Name="Description"/>
+        <opc:Field TypeName="opc:CharArray" Name="BaseUnit"/>
+        <opc:Field TypeName="opc:CharArray" Name="PossibleValue"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="CoatingClassEnumeration">
+        <opc:EnumeratedValue Name="HardCoating" Value="0"/>
+        <opc:EnumeratedValue Name="SoftCoating" Value="1"/>
+        <opc:EnumeratedValue Name="CoatedWithFoilProtection" Value="2"/>
+        <opc:EnumeratedValue Name="UserDefined" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="CoordinateSystemEnumeration">
+        <opc:EnumeratedValue Name="Unknown" Value="0"/>
+        <opc:EnumeratedValue Name="System1" Value="1"/>
+        <opc:EnumeratedValue Name="System2" Value="2"/>
+        <opc:EnumeratedValue Name="System3" Value="3"/>
+        <opc:EnumeratedValue Name="System4" Value="4"/>
+        <opc:EnumeratedValue Name="System5" Value="5"/>
+        <opc:EnumeratedValue Name="System6" Value="6"/>
+        <opc:EnumeratedValue Name="System7" Value="7"/>
+        <opc:EnumeratedValue Name="System8" Value="8"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="SignificantSideEnumeration">
+        <opc:EnumeratedValue Name="Indifferent" Value="0"/>
+        <opc:EnumeratedValue Name="Top" Value="1"/>
+        <opc:EnumeratedValue Name="Down" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="SpacerMaterialClass">
+        <opc:EnumeratedValue Name="Other" Value="0"/>
+        <opc:EnumeratedValue Name="Metallic" Value="1"/>
+        <opc:EnumeratedValue Name="TPS" Value="2"/>
+        <opc:EnumeratedValue Name="Plastic" Value="3"/>
+        <opc:EnumeratedValue Name="Elastic" Value="4"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="StructureAlignmentEnumeration">
+        <opc:EnumeratedValue Name="Indifferent" Value="0"/>
+        <opc:EnumeratedValue Name="Longitudinal" Value="1"/>
+        <opc:EnumeratedValue Name="Transverse" Value="2"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>

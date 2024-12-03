@@ -1,0 +1,193 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/Glass/Flat/v2/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/Glass/Flat/v2/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="CoatingClassEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="HardCoating_0"/>
+            <xs:enumeration value="SoftCoating_1"/>
+            <xs:enumeration value="CoatedWithFoilProtection_2"/>
+            <xs:enumeration value="UserDefined_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:CoatingClassEnumeration" name="CoatingClassEnumeration"/>
+    <xs:complexType name="ListOfCoatingClassEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CoatingClassEnumeration" name="CoatingClassEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCoatingClassEnumeration" name="ListOfCoatingClassEnumeration" nillable="true"/>
+    <xs:simpleType name="CoordinateSystemEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Unknown_0"/>
+            <xs:enumeration value="System1_1"/>
+            <xs:enumeration value="System2_2"/>
+            <xs:enumeration value="System3_3"/>
+            <xs:enumeration value="System4_4"/>
+            <xs:enumeration value="System5_5"/>
+            <xs:enumeration value="System6_6"/>
+            <xs:enumeration value="System7_7"/>
+            <xs:enumeration value="System8_8"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:CoordinateSystemEnumeration" name="CoordinateSystemEnumeration"/>
+    <xs:complexType name="ListOfCoordinateSystemEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CoordinateSystemEnumeration" name="CoordinateSystemEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCoordinateSystemEnumeration" name="ListOfCoordinateSystemEnumeration" nillable="true"/>
+    <xs:simpleType name="SignificantSideEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Indifferent_0"/>
+            <xs:enumeration value="Top_1"/>
+            <xs:enumeration value="Down_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:SignificantSideEnumeration" name="SignificantSideEnumeration"/>
+    <xs:complexType name="ListOfSignificantSideEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SignificantSideEnumeration" name="SignificantSideEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSignificantSideEnumeration" name="ListOfSignificantSideEnumeration" nillable="true"/>
+    <xs:simpleType name="SpacerMaterialClass">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Other_0"/>
+            <xs:enumeration value="Metallic_1"/>
+            <xs:enumeration value="TPS_2"/>
+            <xs:enumeration value="Plastic_3"/>
+            <xs:enumeration value="Elastic_4"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:SpacerMaterialClass" name="SpacerMaterialClass"/>
+    <xs:complexType name="ListOfSpacerMaterialClass">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SpacerMaterialClass" name="SpacerMaterialClass" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSpacerMaterialClass" name="ListOfSpacerMaterialClass" nillable="true"/>
+    <xs:simpleType name="StructureAlignmentEnumeration">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Indifferent_0"/>
+            <xs:enumeration value="Longitudinal_1"/>
+            <xs:enumeration value="Transverse_2"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:StructureAlignmentEnumeration" name="StructureAlignmentEnumeration"/>
+    <xs:complexType name="ListOfStructureAlignmentEnumeration">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:StructureAlignmentEnumeration" name="StructureAlignmentEnumeration" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfStructureAlignmentEnumeration" name="ListOfStructureAlignmentEnumeration" nillable="true"/>
+    <xs:complexType name="EClassTermDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ID"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Description"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="EClass"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:EClassTermDataType" name="EClassTermDataType"/>
+    <xs:complexType name="ListOfEClassTermDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:EClassTermDataType" name="EClassTermDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfEClassTermDataType" name="ListOfEClassTermDataType" nillable="true"/>
+    <xs:complexType name="FileFormatDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Name"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="FileExtension"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Version"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:FileFormatDataType" name="FileFormatDataType"/>
+    <xs:complexType name="ListOfFileFormatDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:FileFormatDataType" name="FileFormatDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfFileFormatDataType" name="ListOfFileFormatDataType" nillable="true"/>
+    <xs:complexType name="ProcessingCategoryDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ID"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Description"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfProcessingParameterDataType" name="SupportedParameter"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="SupportedAssignment"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfProcessingParameterDataType" name="SupportedVariable"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:int" name="SupportsTransformation"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:int" name="SupportsSubProcessing"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ProcessingCategoryDataType" name="ProcessingCategoryDataType"/>
+    <xs:complexType name="ListOfProcessingCategoryDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProcessingCategoryDataType" name="ProcessingCategoryDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfProcessingCategoryDataType" name="ListOfProcessingCategoryDataType" nillable="true"/>
+    <xs:complexType name="ProcessingParameterDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Name"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Description"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ValueDataType" name="ValueType"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="TypicalValue"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="Mandatory"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:EClassTermDataType" name="EClass"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ProcessingParameterDataType" name="ProcessingParameterDataType"/>
+    <xs:complexType name="ListOfProcessingParameterDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProcessingParameterDataType" name="ProcessingParameterDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfProcessingParameterDataType" name="ListOfProcessingParameterDataType" nillable="true"/>
+    <xs:complexType name="ReasonDescriptionType">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:LocalizedText" name="Description"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Reference"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Category"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="VendorCode"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ReasonDescriptionType" name="ReasonDescriptionType"/>
+    <xs:complexType name="ListOfReasonDescriptionType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ReasonDescriptionType" name="ReasonDescriptionType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfReasonDescriptionType" name="ListOfReasonDescriptionType" nillable="true"/>
+    <xs:complexType name="UserProfileDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Name"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="LoginTime"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Language"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="MeasurementFormat"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="AccessLevel"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="OpcUaUser"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:UserProfileDataType" name="UserProfileDataType"/>
+    <xs:complexType name="ListOfUserProfileDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:UserProfileDataType" name="UserProfileDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfUserProfileDataType" name="ListOfUserProfileDataType" nillable="true"/>
+    <xs:complexType name="ValueDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Name"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Description"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="BaseUnit"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="PossibleValue"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ValueDataType" name="ValueDataType"/>
+    <xs:complexType name="ListOfValueDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ValueDataType" name="ValueDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfValueDataType" name="ListOfValueDataType" nillable="true"/>
+</xs:schema>
