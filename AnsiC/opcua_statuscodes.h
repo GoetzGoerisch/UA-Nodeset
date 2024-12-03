@@ -535,7 +535,7 @@ OPCUA_BEGIN_EXTERN_C
 /*============================================================================
  * The semaphore file specified by the client is not valid.
  *===========================================================================*/
-#define OpcUa_BadSempahoreFileMissing 0x80520000
+#define OpcUa_BadSemaphoreFileMissing 0x80520000
 
 /*============================================================================
  * The security token request type is not valid.

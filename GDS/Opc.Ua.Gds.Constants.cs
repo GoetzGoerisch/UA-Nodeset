@@ -1,5 +1,5 @@
 /* ========================================================================
- * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -71,6 +71,96 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public const uint OPCUAGDSNamespaceMetadata_NamespaceFile_SetPosition = 748;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_AddIdentity = 1668;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_RemoveIdentity = 1670;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_AddApplication = 1672;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_RemoveApplication = 1674;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_AddEndpoint = 1676;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_RemoveEndpoint = 1678;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_AddIdentity = 1687;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_RemoveIdentity = 1689;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_AddApplication = 1691;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_RemoveApplication = 1693;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_AddEndpoint = 1695;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_RemoveEndpoint = 1697;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_AddIdentity = 1706;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_RemoveIdentity = 1708;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_AddApplication = 1710;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_RemoveApplication = 1712;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_AddEndpoint = 1714;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_RemoveEndpoint = 1716;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_AddIdentity = 1725;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_RemoveIdentity = 1727;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_AddApplication = 1729;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_RemoveApplication = 1731;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_AddEndpoint = 1733;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_RemoveEndpoint = 1735;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_AddIdentity = 1744;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_RemoveIdentity = 1746;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_AddApplication = 1748;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_RemoveApplication = 1750;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_AddEndpoint = 1752;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_RemoveEndpoint = 1754;
 
         /// <remarks />
         public const uint DirectoryType_FindApplications = 15;
@@ -343,12 +433,6 @@ namespace Opc.Ua.Gds
         public const uint KeyCredentialManagementFolderType_ServiceName_Placeholder_FinishRequest = 196;
 
         /// <remarks />
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_StartRequest = 1012;
-
-        /// <remarks />
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_FinishRequest = 1015;
-
-        /// <remarks />
         public const uint KeyCredentialServiceType_StartRequest = 1023;
 
         /// <remarks />
@@ -359,9 +443,6 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public const uint AuthorizationServicesFolderType_ServiceName_Placeholder_GetServiceDescription = 238;
-
-        /// <remarks />
-        public const uint AuthorizationServices_ServiceName_Placeholder_GetServiceDescription = 1001;
 
         /// <remarks />
         public const uint AuthorizationServiceType_GetServiceDescription = 1004;
@@ -636,6 +717,21 @@ namespace Opc.Ua.Gds
         public const uint OPCUAGDSNamespaceMetadata = 721;
 
         /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin = 1661;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin = 1680;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin = 1699;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin = 1718;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin = 1737;
+
+        /// <remarks />
         public const uint DirectoryType_Applications = 14;
 
         /// <remarks />
@@ -826,6 +922,171 @@ namespace Opc.Ua.Gds
         public const uint OPCUAGDSNamespaceMetadata_DefaultAccessRestrictions = 864;
 
         /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_Identities = 1662;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_ApplicationsExclude = 1663;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_Applications = 1664;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_EndpointsExclude = 1665;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_Endpoints = 1666;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_AddIdentity_InputArguments = 1669;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_RemoveIdentity_InputArguments = 1671;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_AddApplication_InputArguments = 1673;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_RemoveApplication_InputArguments = 1675;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_AddEndpoint_InputArguments = 1677;
+
+        /// <remarks />
+        public const uint WellKnownRole_DiscoveryAdmin_RemoveEndpoint_InputArguments = 1679;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_Identities = 1681;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_ApplicationsExclude = 1682;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_Applications = 1683;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_EndpointsExclude = 1684;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_Endpoints = 1685;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_AddIdentity_InputArguments = 1688;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_RemoveIdentity_InputArguments = 1690;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_AddApplication_InputArguments = 1692;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_RemoveApplication_InputArguments = 1694;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_AddEndpoint_InputArguments = 1696;
+
+        /// <remarks />
+        public const uint WellKnownRole_CertificateAuthorityAdmin_RemoveEndpoint_InputArguments = 1698;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_Identities = 1700;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_ApplicationsExclude = 1701;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_Applications = 1702;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_EndpointsExclude = 1703;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_Endpoints = 1704;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_AddIdentity_InputArguments = 1707;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_RemoveIdentity_InputArguments = 1709;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_AddApplication_InputArguments = 1711;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_RemoveApplication_InputArguments = 1713;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_AddEndpoint_InputArguments = 1715;
+
+        /// <remarks />
+        public const uint WellKnownRole_RegistrationAuthorityAdmin_RemoveEndpoint_InputArguments = 1717;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_Identities = 1719;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_ApplicationsExclude = 1720;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_Applications = 1721;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_EndpointsExclude = 1722;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_Endpoints = 1723;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_AddIdentity_InputArguments = 1726;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_RemoveIdentity_InputArguments = 1728;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_AddApplication_InputArguments = 1730;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_RemoveApplication_InputArguments = 1732;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_AddEndpoint_InputArguments = 1734;
+
+        /// <remarks />
+        public const uint WellKnownRole_KeyCredentialAdmin_RemoveEndpoint_InputArguments = 1736;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_Identities = 1738;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_ApplicationsExclude = 1739;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_Applications = 1740;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_EndpointsExclude = 1741;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_Endpoints = 1742;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_AddIdentity_InputArguments = 1745;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_RemoveIdentity_InputArguments = 1747;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_AddApplication_InputArguments = 1749;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_RemoveApplication_InputArguments = 1751;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_AddEndpoint_InputArguments = 1753;
+
+        /// <remarks />
+        public const uint WellKnownRole_AuthorizationServiceAdmin_RemoveEndpoint_InputArguments = 1755;
+
+        /// <remarks />
         public const uint DirectoryType_FindApplications_InputArguments = 16;
 
         /// <remarks />
@@ -860,42 +1121,6 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public const uint DirectoryType_QueryServers_OutputArguments = 25;
-
-        /// <remarks />
-        public const uint CertificateDirectoryType_FindApplications_InputArguments = 66;
-
-        /// <remarks />
-        public const uint CertificateDirectoryType_FindApplications_OutputArguments = 67;
-
-        /// <remarks />
-        public const uint CertificateDirectoryType_RegisterApplication_InputArguments = 69;
-
-        /// <remarks />
-        public const uint CertificateDirectoryType_RegisterApplication_OutputArguments = 70;
-
-        /// <remarks />
-        public const uint CertificateDirectoryType_UpdateApplication_InputArguments = 194;
-
-        /// <remarks />
-        public const uint CertificateDirectoryType_UnregisterApplication_InputArguments = 72;
-
-        /// <remarks />
-        public const uint CertificateDirectoryType_GetApplication_InputArguments = 214;
-
-        /// <remarks />
-        public const uint CertificateDirectoryType_GetApplication_OutputArguments = 215;
-
-        /// <remarks />
-        public const uint CertificateDirectoryType_QueryApplications_InputArguments = 872;
-
-        /// <remarks />
-        public const uint CertificateDirectoryType_QueryApplications_OutputArguments = 873;
-
-        /// <remarks />
-        public const uint CertificateDirectoryType_QueryServers_InputArguments = 74;
-
-        /// <remarks />
-        public const uint CertificateDirectoryType_QueryServers_OutputArguments = 75;
 
         /// <remarks />
         public const uint CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustList_Size = 514;
@@ -992,6 +1217,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public const uint CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionClassName = 15019;
+
+        /// <remarks />
+        public const uint CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassId = 15020;
+
+        /// <remarks />
+        public const uint CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassName = 15021;
 
         /// <remarks />
         public const uint CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionName = 15022;
@@ -1154,6 +1385,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public const uint CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionClassName = 15167;
+
+        /// <remarks />
+        public const uint CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassId = 15168;
+
+        /// <remarks />
+        public const uint CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassName = 15169;
 
         /// <remarks />
         public const uint CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionName = 15170;
@@ -1384,6 +1621,12 @@ namespace Opc.Ua.Gds
         public const uint CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionClassName = 15315;
 
         /// <remarks />
+        public const uint CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassId = 15316;
+
+        /// <remarks />
+        public const uint CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassName = 15317;
+
+        /// <remarks />
         public const uint CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionName = 15318;
 
         /// <remarks />
@@ -1544,6 +1787,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public const uint CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionClassName = 15463;
+
+        /// <remarks />
+        public const uint CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassId = 15464;
+
+        /// <remarks />
+        public const uint CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassName = 15465;
 
         /// <remarks />
         public const uint CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionName = 15466;
@@ -1774,6 +2023,12 @@ namespace Opc.Ua.Gds
         public const uint CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionClassName = 15611;
 
         /// <remarks />
+        public const uint CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassId = 15612;
+
+        /// <remarks />
+        public const uint CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassName = 15613;
+
+        /// <remarks />
         public const uint CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionName = 15614;
 
         /// <remarks />
@@ -1934,6 +2189,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public const uint CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionClassName = 15759;
+
+        /// <remarks />
+        public const uint CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassId = 15760;
+
+        /// <remarks />
+        public const uint CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassName = 15761;
 
         /// <remarks />
         public const uint CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionName = 15762;
@@ -2152,27 +2413,6 @@ namespace Opc.Ua.Gds
         public const uint KeyCredentialManagementFolderType_ServiceName_Placeholder_Revoke_InputArguments = 229;
 
         /// <remarks />
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_ResourceUri = 1010;
-
-        /// <remarks />
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_ProfileUris = 1011;
-
-        /// <remarks />
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_StartRequest_InputArguments = 1013;
-
-        /// <remarks />
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_StartRequest_OutputArguments = 1014;
-
-        /// <remarks />
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_FinishRequest_InputArguments = 1016;
-
-        /// <remarks />
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_FinishRequest_OutputArguments = 1017;
-
-        /// <remarks />
-        public const uint KeyCredentialManagement_ServiceName_Placeholder_Revoke_InputArguments = 1019;
-
-        /// <remarks />
         public const uint KeyCredentialServiceType_ResourceUri = 1021;
 
         /// <remarks />
@@ -2210,21 +2450,6 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public const uint AuthorizationServicesFolderType_ServiceName_Placeholder_RequestAccessToken_OutputArguments = 242;
-
-        /// <remarks />
-        public const uint AuthorizationServices_ServiceName_Placeholder_ServiceUri = 1000;
-
-        /// <remarks />
-        public const uint AuthorizationServices_ServiceName_Placeholder_ServiceCertificate = 962;
-
-        /// <remarks />
-        public const uint AuthorizationServices_ServiceName_Placeholder_GetServiceDescription_OutputArguments = 1002;
-
-        /// <remarks />
-        public const uint AuthorizationServices_ServiceName_Placeholder_RequestAccessToken_InputArguments = 964;
-
-        /// <remarks />
-        public const uint AuthorizationServices_ServiceName_Placeholder_RequestAccessToken_OutputArguments = 965;
 
         /// <remarks />
         public const uint AuthorizationServiceType_ServiceUri = 1003;
@@ -2375,6 +2600,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public const uint Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionClassName = 15924;
+
+        /// <remarks />
+        public const uint Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassId = 15925;
+
+        /// <remarks />
+        public const uint Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassName = 15926;
 
         /// <remarks />
         public const uint Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionName = 15927;
@@ -2537,6 +2768,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public const uint Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionClassName = 16072;
+
+        /// <remarks />
+        public const uint Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassId = 16073;
+
+        /// <remarks />
+        public const uint Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassName = 16074;
 
         /// <remarks />
         public const uint Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionName = 16075;
@@ -2767,6 +3004,12 @@ namespace Opc.Ua.Gds
         public const uint Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionClassName = 16220;
 
         /// <remarks />
+        public const uint Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassId = 16221;
+
+        /// <remarks />
+        public const uint Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassName = 16222;
+
+        /// <remarks />
         public const uint Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionName = 16223;
 
         /// <remarks />
@@ -2927,6 +3170,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public const uint Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionClassName = 16368;
+
+        /// <remarks />
+        public const uint Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassId = 16369;
+
+        /// <remarks />
+        public const uint Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassName = 16370;
 
         /// <remarks />
         public const uint Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionName = 16371;
@@ -3157,6 +3406,12 @@ namespace Opc.Ua.Gds
         public const uint Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionClassName = 16516;
 
         /// <remarks />
+        public const uint Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassId = 16517;
+
+        /// <remarks />
+        public const uint Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassName = 16518;
+
+        /// <remarks />
         public const uint Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionName = 16519;
 
         /// <remarks />
@@ -3317,6 +3572,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public const uint Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionClassName = 16664;
+
+        /// <remarks />
+        public const uint Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassId = 16665;
+
+        /// <remarks />
+        public const uint Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassName = 16666;
 
         /// <remarks />
         public const uint Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionName = 16667;
@@ -3561,6 +3822,96 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public static readonly ExpandedNodeId OPCUAGDSNamespaceMetadata_NamespaceFile_SetPosition = new ExpandedNodeId(Opc.Ua.Gds.Methods.OPCUAGDSNamespaceMetadata_NamespaceFile_SetPosition, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_AddIdentity = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_DiscoveryAdmin_AddIdentity, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_RemoveIdentity = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_DiscoveryAdmin_RemoveIdentity, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_AddApplication = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_DiscoveryAdmin_AddApplication, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_RemoveApplication = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_DiscoveryAdmin_RemoveApplication, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_AddEndpoint = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_DiscoveryAdmin_AddEndpoint, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_RemoveEndpoint = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_DiscoveryAdmin_RemoveEndpoint, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_AddIdentity = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_CertificateAuthorityAdmin_AddIdentity, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_RemoveIdentity = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_CertificateAuthorityAdmin_RemoveIdentity, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_AddApplication = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_CertificateAuthorityAdmin_AddApplication, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_RemoveApplication = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_CertificateAuthorityAdmin_RemoveApplication, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_AddEndpoint = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_CertificateAuthorityAdmin_AddEndpoint, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_RemoveEndpoint = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_CertificateAuthorityAdmin_RemoveEndpoint, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_AddIdentity = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_RegistrationAuthorityAdmin_AddIdentity, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_RemoveIdentity = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_RegistrationAuthorityAdmin_RemoveIdentity, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_AddApplication = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_RegistrationAuthorityAdmin_AddApplication, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_RemoveApplication = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_RegistrationAuthorityAdmin_RemoveApplication, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_AddEndpoint = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_RegistrationAuthorityAdmin_AddEndpoint, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_RemoveEndpoint = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_RegistrationAuthorityAdmin_RemoveEndpoint, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_AddIdentity = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_KeyCredentialAdmin_AddIdentity, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_RemoveIdentity = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_KeyCredentialAdmin_RemoveIdentity, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_AddApplication = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_KeyCredentialAdmin_AddApplication, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_RemoveApplication = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_KeyCredentialAdmin_RemoveApplication, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_AddEndpoint = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_KeyCredentialAdmin_AddEndpoint, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_RemoveEndpoint = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_KeyCredentialAdmin_RemoveEndpoint, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_AddIdentity = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_AuthorizationServiceAdmin_AddIdentity, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_RemoveIdentity = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_AuthorizationServiceAdmin_RemoveIdentity, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_AddApplication = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_AuthorizationServiceAdmin_AddApplication, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_RemoveApplication = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_AuthorizationServiceAdmin_RemoveApplication, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_AddEndpoint = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_AuthorizationServiceAdmin_AddEndpoint, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_RemoveEndpoint = new ExpandedNodeId(Opc.Ua.Gds.Methods.WellKnownRole_AuthorizationServiceAdmin_RemoveEndpoint, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
         public static readonly ExpandedNodeId DirectoryType_FindApplications = new ExpandedNodeId(Opc.Ua.Gds.Methods.DirectoryType_FindApplications, Opc.Ua.Gds.Namespaces.OpcUaGds);
@@ -3833,12 +4184,6 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId KeyCredentialManagementFolderType_ServiceName_Placeholder_FinishRequest = new ExpandedNodeId(Opc.Ua.Gds.Methods.KeyCredentialManagementFolderType_ServiceName_Placeholder_FinishRequest, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
-        public static readonly ExpandedNodeId KeyCredentialManagement_ServiceName_Placeholder_StartRequest = new ExpandedNodeId(Opc.Ua.Gds.Methods.KeyCredentialManagement_ServiceName_Placeholder_StartRequest, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId KeyCredentialManagement_ServiceName_Placeholder_FinishRequest = new ExpandedNodeId(Opc.Ua.Gds.Methods.KeyCredentialManagement_ServiceName_Placeholder_FinishRequest, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
         public static readonly ExpandedNodeId KeyCredentialServiceType_StartRequest = new ExpandedNodeId(Opc.Ua.Gds.Methods.KeyCredentialServiceType_StartRequest, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
@@ -3849,9 +4194,6 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public static readonly ExpandedNodeId AuthorizationServicesFolderType_ServiceName_Placeholder_GetServiceDescription = new ExpandedNodeId(Opc.Ua.Gds.Methods.AuthorizationServicesFolderType_ServiceName_Placeholder_GetServiceDescription, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId AuthorizationServices_ServiceName_Placeholder_GetServiceDescription = new ExpandedNodeId(Opc.Ua.Gds.Methods.AuthorizationServices_ServiceName_Placeholder_GetServiceDescription, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
         public static readonly ExpandedNodeId AuthorizationServiceType_GetServiceDescription = new ExpandedNodeId(Opc.Ua.Gds.Methods.AuthorizationServiceType_GetServiceDescription, Opc.Ua.Gds.Namespaces.OpcUaGds);
@@ -4126,6 +4468,21 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId OPCUAGDSNamespaceMetadata = new ExpandedNodeId(Opc.Ua.Gds.Objects.OPCUAGDSNamespaceMetadata, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin = new ExpandedNodeId(Opc.Ua.Gds.Objects.WellKnownRole_DiscoveryAdmin, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin = new ExpandedNodeId(Opc.Ua.Gds.Objects.WellKnownRole_CertificateAuthorityAdmin, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin = new ExpandedNodeId(Opc.Ua.Gds.Objects.WellKnownRole_RegistrationAuthorityAdmin, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin = new ExpandedNodeId(Opc.Ua.Gds.Objects.WellKnownRole_KeyCredentialAdmin, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin = new ExpandedNodeId(Opc.Ua.Gds.Objects.WellKnownRole_AuthorizationServiceAdmin, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
         public static readonly ExpandedNodeId DirectoryType_Applications = new ExpandedNodeId(Opc.Ua.Gds.Objects.DirectoryType_Applications, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
@@ -4316,6 +4673,171 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId OPCUAGDSNamespaceMetadata_DefaultAccessRestrictions = new ExpandedNodeId(Opc.Ua.Gds.Variables.OPCUAGDSNamespaceMetadata_DefaultAccessRestrictions, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_Identities = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_DiscoveryAdmin_Identities, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_ApplicationsExclude = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_DiscoveryAdmin_ApplicationsExclude, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_Applications = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_DiscoveryAdmin_Applications, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_EndpointsExclude = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_DiscoveryAdmin_EndpointsExclude, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_Endpoints = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_DiscoveryAdmin_Endpoints, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_AddIdentity_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_DiscoveryAdmin_AddIdentity_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_RemoveIdentity_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_DiscoveryAdmin_RemoveIdentity_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_AddApplication_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_DiscoveryAdmin_AddApplication_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_RemoveApplication_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_DiscoveryAdmin_RemoveApplication_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_AddEndpoint_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_DiscoveryAdmin_AddEndpoint_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_DiscoveryAdmin_RemoveEndpoint_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_DiscoveryAdmin_RemoveEndpoint_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_Identities = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_CertificateAuthorityAdmin_Identities, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_ApplicationsExclude = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_CertificateAuthorityAdmin_ApplicationsExclude, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_Applications = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_CertificateAuthorityAdmin_Applications, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_EndpointsExclude = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_CertificateAuthorityAdmin_EndpointsExclude, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_Endpoints = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_CertificateAuthorityAdmin_Endpoints, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_AddIdentity_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_CertificateAuthorityAdmin_AddIdentity_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_RemoveIdentity_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_CertificateAuthorityAdmin_RemoveIdentity_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_AddApplication_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_CertificateAuthorityAdmin_AddApplication_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_RemoveApplication_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_CertificateAuthorityAdmin_RemoveApplication_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_AddEndpoint_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_CertificateAuthorityAdmin_AddEndpoint_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_CertificateAuthorityAdmin_RemoveEndpoint_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_CertificateAuthorityAdmin_RemoveEndpoint_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_Identities = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_RegistrationAuthorityAdmin_Identities, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_ApplicationsExclude = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_RegistrationAuthorityAdmin_ApplicationsExclude, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_Applications = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_RegistrationAuthorityAdmin_Applications, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_EndpointsExclude = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_RegistrationAuthorityAdmin_EndpointsExclude, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_Endpoints = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_RegistrationAuthorityAdmin_Endpoints, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_AddIdentity_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_RegistrationAuthorityAdmin_AddIdentity_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_RemoveIdentity_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_RegistrationAuthorityAdmin_RemoveIdentity_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_AddApplication_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_RegistrationAuthorityAdmin_AddApplication_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_RemoveApplication_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_RegistrationAuthorityAdmin_RemoveApplication_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_AddEndpoint_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_RegistrationAuthorityAdmin_AddEndpoint_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_RegistrationAuthorityAdmin_RemoveEndpoint_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_RegistrationAuthorityAdmin_RemoveEndpoint_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_Identities = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_KeyCredentialAdmin_Identities, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_ApplicationsExclude = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_KeyCredentialAdmin_ApplicationsExclude, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_Applications = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_KeyCredentialAdmin_Applications, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_EndpointsExclude = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_KeyCredentialAdmin_EndpointsExclude, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_Endpoints = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_KeyCredentialAdmin_Endpoints, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_AddIdentity_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_KeyCredentialAdmin_AddIdentity_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_RemoveIdentity_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_KeyCredentialAdmin_RemoveIdentity_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_AddApplication_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_KeyCredentialAdmin_AddApplication_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_RemoveApplication_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_KeyCredentialAdmin_RemoveApplication_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_AddEndpoint_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_KeyCredentialAdmin_AddEndpoint_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_KeyCredentialAdmin_RemoveEndpoint_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_KeyCredentialAdmin_RemoveEndpoint_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_Identities = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_AuthorizationServiceAdmin_Identities, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_ApplicationsExclude = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_AuthorizationServiceAdmin_ApplicationsExclude, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_Applications = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_AuthorizationServiceAdmin_Applications, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_EndpointsExclude = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_AuthorizationServiceAdmin_EndpointsExclude, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_Endpoints = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_AuthorizationServiceAdmin_Endpoints, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_AddIdentity_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_AuthorizationServiceAdmin_AddIdentity_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_RemoveIdentity_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_AuthorizationServiceAdmin_RemoveIdentity_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_AddApplication_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_AuthorizationServiceAdmin_AddApplication_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_RemoveApplication_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_AuthorizationServiceAdmin_RemoveApplication_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_AddEndpoint_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_AuthorizationServiceAdmin_AddEndpoint_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId WellKnownRole_AuthorizationServiceAdmin_RemoveEndpoint_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.WellKnownRole_AuthorizationServiceAdmin_RemoveEndpoint_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
         public static readonly ExpandedNodeId DirectoryType_FindApplications_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.DirectoryType_FindApplications_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
@@ -4350,42 +4872,6 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public static readonly ExpandedNodeId DirectoryType_QueryServers_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.DirectoryType_QueryServers_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId CertificateDirectoryType_FindApplications_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_FindApplications_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId CertificateDirectoryType_FindApplications_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_FindApplications_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId CertificateDirectoryType_RegisterApplication_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_RegisterApplication_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId CertificateDirectoryType_RegisterApplication_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_RegisterApplication_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId CertificateDirectoryType_UpdateApplication_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_UpdateApplication_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId CertificateDirectoryType_UnregisterApplication_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_UnregisterApplication_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId CertificateDirectoryType_GetApplication_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_GetApplication_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId CertificateDirectoryType_GetApplication_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_GetApplication_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId CertificateDirectoryType_QueryApplications_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_QueryApplications_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId CertificateDirectoryType_QueryApplications_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_QueryApplications_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId CertificateDirectoryType_QueryServers_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_QueryServers_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId CertificateDirectoryType_QueryServers_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_QueryServers_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
         public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustList_Size = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustList_Size, Opc.Ua.Gds.Namespaces.OpcUaGds);
@@ -4482,6 +4968,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassId = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassId, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
         public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionName, Opc.Ua.Gds.Namespaces.OpcUaGds);
@@ -4644,6 +5136,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassId = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassId, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
         public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionName, Opc.Ua.Gds.Namespaces.OpcUaGds);
@@ -4874,6 +5372,12 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
+        public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassId = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassId, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
         public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
@@ -5034,6 +5538,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassId = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassId, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
         public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionName, Opc.Ua.Gds.Namespaces.OpcUaGds);
@@ -5264,6 +5774,12 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
+        public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassId = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassId, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
         public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
@@ -5424,6 +5940,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassId = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassId, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
         public static readonly ExpandedNodeId CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionName = new ExpandedNodeId(Opc.Ua.Gds.Variables.CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionName, Opc.Ua.Gds.Namespaces.OpcUaGds);
@@ -5642,27 +6164,6 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId KeyCredentialManagementFolderType_ServiceName_Placeholder_Revoke_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialManagementFolderType_ServiceName_Placeholder_Revoke_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
-        public static readonly ExpandedNodeId KeyCredentialManagement_ServiceName_Placeholder_ResourceUri = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialManagement_ServiceName_Placeholder_ResourceUri, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId KeyCredentialManagement_ServiceName_Placeholder_ProfileUris = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialManagement_ServiceName_Placeholder_ProfileUris, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId KeyCredentialManagement_ServiceName_Placeholder_StartRequest_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialManagement_ServiceName_Placeholder_StartRequest_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId KeyCredentialManagement_ServiceName_Placeholder_StartRequest_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialManagement_ServiceName_Placeholder_StartRequest_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId KeyCredentialManagement_ServiceName_Placeholder_FinishRequest_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialManagement_ServiceName_Placeholder_FinishRequest_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId KeyCredentialManagement_ServiceName_Placeholder_FinishRequest_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialManagement_ServiceName_Placeholder_FinishRequest_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId KeyCredentialManagement_ServiceName_Placeholder_Revoke_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialManagement_ServiceName_Placeholder_Revoke_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
         public static readonly ExpandedNodeId KeyCredentialServiceType_ResourceUri = new ExpandedNodeId(Opc.Ua.Gds.Variables.KeyCredentialServiceType_ResourceUri, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
@@ -5700,21 +6201,6 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public static readonly ExpandedNodeId AuthorizationServicesFolderType_ServiceName_Placeholder_RequestAccessToken_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServicesFolderType_ServiceName_Placeholder_RequestAccessToken_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId AuthorizationServices_ServiceName_Placeholder_ServiceUri = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServices_ServiceName_Placeholder_ServiceUri, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId AuthorizationServices_ServiceName_Placeholder_ServiceCertificate = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServices_ServiceName_Placeholder_ServiceCertificate, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId AuthorizationServices_ServiceName_Placeholder_GetServiceDescription_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServices_ServiceName_Placeholder_GetServiceDescription_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId AuthorizationServices_ServiceName_Placeholder_RequestAccessToken_InputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServices_ServiceName_Placeholder_RequestAccessToken_InputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
-
-        /// <remarks />
-        public static readonly ExpandedNodeId AuthorizationServices_ServiceName_Placeholder_RequestAccessToken_OutputArguments = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServices_ServiceName_Placeholder_RequestAccessToken_OutputArguments, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
         public static readonly ExpandedNodeId AuthorizationServiceType_ServiceUri = new ExpandedNodeId(Opc.Ua.Gds.Variables.AuthorizationServiceType_ServiceUri, Opc.Ua.Gds.Namespaces.OpcUaGds);
@@ -5865,6 +6351,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassId = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassId, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
         public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionName, Opc.Ua.Gds.Namespaces.OpcUaGds);
@@ -6027,6 +6519,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassId = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassId, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
         public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionName, Opc.Ua.Gds.Namespaces.OpcUaGds);
@@ -6257,6 +6755,12 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
+        public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassId = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassId, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
         public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
@@ -6417,6 +6921,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassId = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassId, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
         public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionName, Opc.Ua.Gds.Namespaces.OpcUaGds);
@@ -6647,6 +7157,12 @@ namespace Opc.Ua.Gds
         public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
+        public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassId = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassId, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
         public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
@@ -6807,6 +7323,12 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassId = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassId, Opc.Ua.Gds.Namespaces.OpcUaGds);
+
+        /// <remarks />
+        public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassName, Opc.Ua.Gds.Namespaces.OpcUaGds);
 
         /// <remarks />
         public static readonly ExpandedNodeId Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionName = new ExpandedNodeId(Opc.Ua.Gds.Variables.Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionName, Opc.Ua.Gds.Namespaces.OpcUaGds);
@@ -7113,6 +7635,9 @@ namespace Opc.Ua.Gds
         public const string KeyCredentialServiceType = "KeyCredentialServiceType";
 
         /// <remarks />
+        public const string ModelVersion = "ModelVersion";
+
+        /// <remarks />
         public const string OpcUaGds_BinarySchema = "Opc.Ua.Gds";
 
         /// <remarks />
@@ -7174,6 +7699,21 @@ namespace Opc.Ua.Gds
 
         /// <remarks />
         public const string UserTokenPolicies = "UserTokenPolicies";
+
+        /// <remarks />
+        public const string WellKnownRole_AuthorizationServiceAdmin = "AuthorizationServiceAdmin";
+
+        /// <remarks />
+        public const string WellKnownRole_CertificateAuthorityAdmin = "CertificateAuthorityAdmin";
+
+        /// <remarks />
+        public const string WellKnownRole_DiscoveryAdmin = "DiscoveryAdmin";
+
+        /// <remarks />
+        public const string WellKnownRole_KeyCredentialAdmin = "KeyCredentialAdmin";
+
+        /// <remarks />
+        public const string WellKnownRole_RegistrationAuthorityAdmin = "RegistrationAuthorityAdmin";
     }
     #endregion
 

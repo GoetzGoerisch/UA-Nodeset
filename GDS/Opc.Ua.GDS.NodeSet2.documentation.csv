@@ -39,8 +39,4 @@ Id,Name,Link,ConformanceUnits
 1039,KeyCredentialRequestedAuditEventType,"https://reference.opcfoundation.org/GDS/docs/8.5.9","GDS Key Credential Service Pull Model;"
 1057,KeyCredentialDeliveredAuditEventType,"https://reference.opcfoundation.org/GDS/docs/8.5.10","GDS Key Credential Service Pull Model;"
 1075,KeyCredentialRevokedAuditEventType,"https://reference.opcfoundation.org/GDS/docs/8.5.11","GDS Key Credential Service Pull Model;"
-12552,TrustListMasks,"https://reference.opcfoundation.org/GDS/docs/7.8.2/#7.8.2.7","GDS Certificate Manager Pull Model;Push Model for Global Certificate and TrustList Management;"
-12554,TrustListDataType,"https://reference.opcfoundation.org/GDS/docs/7.8.2/#7.8.2.6","GDS Certificate Manager Pull Model;Push Model for Global Certificate and TrustList Management;"
 15003,RevokeCertificate,"https://reference.opcfoundation.org/GDS/docs/7.9.6",""
-23564,TrustListValidationOptions,"https://reference.opcfoundation.org/GDS/docs/7.8.2/#7.8.2.8","GDS Certificate Manager Pull Model;Push Model for Global Certificate and TrustList Management;"
-32285,TransactionErrorType,"https://reference.opcfoundation.org/GDS/docs/7.10.12","Push Model for Global Certificate and TrustList Management;"

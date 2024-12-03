@@ -4202,6 +4202,79 @@ OPCUA_EXPORT OpcUa_StatusCode OpcUa_ReadEventDetails2_Decode(OpcUa_ReadEventDeta
 OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_ReadEventDetails2_EncodeableType;
 #endif
 
+#ifndef OPCUA_EXCLUDE_SortOrderType
+/*============================================================================
+ * The SortOrderType enumeration.
+ *===========================================================================*/
+typedef enum _OpcUa_SortOrderType
+{
+    OpcUa_SortOrderType_Ascending  = 0,
+    OpcUa_SortOrderType_Descending = 1
+#if OPCUA_FORCE_INT32_ENUMS
+    ,_OpcUa_SortOrderType_MaxEnumerationValue = OpcUa_Int32_Max
+#endif
+}
+OpcUa_SortOrderType;
+
+#define OpcUa_SortOrderType_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_SortOrderType_Ascending)
+
+#define OpcUa_SortOrderType_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_SortOrderType_Ascending)
+
+OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_SortOrderType_EnumeratedType;
+#endif
+
+#ifndef OPCUA_EXCLUDE_SortRuleElement
+/*============================================================================
+ * The SortRuleElement structure.
+ *===========================================================================*/
+typedef struct _OpcUa_SortRuleElement
+{
+    OpcUa_SortOrderType          SortOrder;
+    OpcUa_SimpleAttributeOperand EventField;
+}
+OpcUa_SortRuleElement;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_SortRuleElement_Initialize(OpcUa_SortRuleElement* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_SortRuleElement_Clear(OpcUa_SortRuleElement* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_SortRuleElement_GetSize(OpcUa_SortRuleElement* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_SortRuleElement_Encode(OpcUa_SortRuleElement* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_SortRuleElement_Decode(OpcUa_SortRuleElement* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_SortRuleElement_EncodeableType;
+#endif
+
+#ifndef OPCUA_EXCLUDE_ReadEventDetailsSorted
+/*============================================================================
+ * The ReadEventDetailsSorted structure.
+ *===========================================================================*/
+typedef struct _OpcUa_ReadEventDetailsSorted
+{
+    OpcUa_UInt32           NumValuesPerNode;
+    OpcUa_DateTime         StartTime;
+    OpcUa_DateTime         EndTime;
+    OpcUa_EventFilter      Filter;
+    OpcUa_Int32            NoOfSortClause;
+    OpcUa_SortRuleElement* SortClause;
+}
+OpcUa_ReadEventDetailsSorted;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_ReadEventDetailsSorted_Initialize(OpcUa_ReadEventDetailsSorted* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_ReadEventDetailsSorted_Clear(OpcUa_ReadEventDetailsSorted* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_ReadEventDetailsSorted_GetSize(OpcUa_ReadEventDetailsSorted* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_ReadEventDetailsSorted_Encode(OpcUa_ReadEventDetailsSorted* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_ReadEventDetailsSorted_Decode(OpcUa_ReadEventDetailsSorted* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_ReadEventDetailsSorted_EncodeableType;
+#endif
+
 #ifndef OPCUA_EXCLUDE_ReadRawModifiedDetails
 /*============================================================================
  * The ReadRawModifiedDetails structure.
@@ -6604,7 +6677,7 @@ typedef struct _OpcUa_SubscriptionDiagnosticsDataType
     OpcUa_UInt32  DisabledMonitoredItemCount;
     OpcUa_UInt32  MonitoringQueueOverflowCount;
     OpcUa_UInt32  NextSequenceNumber;
-    OpcUa_UInt32  EventQueueOverFlowCount;
+    OpcUa_UInt32  EventQueueOverflowCount;
 }
 OpcUa_SubscriptionDiagnosticsDataType;
 
@@ -6985,6 +7058,314 @@ OpcUa_ExceptionDeviationFormat;
 #define OpcUa_ExceptionDeviationFormat_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_ExceptionDeviationFormat_AbsoluteValue)
 
 OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_ExceptionDeviationFormat_EnumeratedType;
+#endif
+
+#ifndef OPCUA_EXCLUDE_TestAbstractStructure
+/*============================================================================
+ * The TestAbstractStructure structure.
+ *===========================================================================*/
+typedef struct _OpcUa_TestAbstractStructure
+{
+    OpcUa_Int16  A;
+    OpcUa_Double B;
+    OpcUa_String C;
+}
+OpcUa_TestAbstractStructure;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_TestAbstractStructure_Initialize(OpcUa_TestAbstractStructure* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_TestAbstractStructure_Clear(OpcUa_TestAbstractStructure* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestAbstractStructure_GetSize(OpcUa_TestAbstractStructure* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestAbstractStructure_Encode(OpcUa_TestAbstractStructure* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestAbstractStructure_Decode(OpcUa_TestAbstractStructure* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_TestAbstractStructure_EncodeableType;
+#endif
+
+#ifndef OPCUA_EXCLUDE_TestConcreteStructure
+/*============================================================================
+ * The TestConcreteStructure structure.
+ *===========================================================================*/
+typedef struct _OpcUa_TestConcreteStructure
+{
+    OpcUa_Int16  A;
+    OpcUa_Double B;
+    OpcUa_String C;
+    OpcUa_Int16  D;
+    OpcUa_Double E;
+    OpcUa_String F;
+}
+OpcUa_TestConcreteStructure;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_TestConcreteStructure_Initialize(OpcUa_TestConcreteStructure* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_TestConcreteStructure_Clear(OpcUa_TestConcreteStructure* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestConcreteStructure_GetSize(OpcUa_TestConcreteStructure* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestConcreteStructure_Encode(OpcUa_TestConcreteStructure* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestConcreteStructure_Decode(OpcUa_TestConcreteStructure* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_TestConcreteStructure_EncodeableType;
+#endif
+
+#ifndef OPCUA_EXCLUDE_TestUnion
+/*============================================================================
+ * The TestUnion structure.
+ *===========================================================================*/
+typedef struct _OpcUa_TestUnion
+{
+    OpcUa_Int16  A;
+    OpcUa_Double B;
+    OpcUa_String C;
+}
+OpcUa_TestUnion;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_TestUnion_Initialize(OpcUa_TestUnion* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_TestUnion_Clear(OpcUa_TestUnion* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestUnion_GetSize(OpcUa_TestUnion* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestUnion_Encode(OpcUa_TestUnion* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestUnion_Decode(OpcUa_TestUnion* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_TestUnion_EncodeableType;
+#endif
+
+#ifndef OPCUA_EXCLUDE_TestOptionalFields
+/*============================================================================
+ * The TestOptionalFields structure.
+ *===========================================================================*/
+typedef struct _OpcUa_TestOptionalFields
+{
+    OpcUa_Int16  A;
+    OpcUa_Double B;
+    OpcUa_String C;
+}
+OpcUa_TestOptionalFields;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_TestOptionalFields_Initialize(OpcUa_TestOptionalFields* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_TestOptionalFields_Clear(OpcUa_TestOptionalFields* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestOptionalFields_GetSize(OpcUa_TestOptionalFields* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestOptionalFields_Encode(OpcUa_TestOptionalFields* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestOptionalFields_Decode(OpcUa_TestOptionalFields* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_TestOptionalFields_EncodeableType;
+#endif
+
+#ifndef OPCUA_EXCLUDE_TestEnumeration
+/*============================================================================
+ * The TestEnumeration enumeration.
+ *===========================================================================*/
+typedef enum _OpcUa_TestEnumeration
+{
+    OpcUa_TestEnumeration_Invalid = 0,
+    OpcUa_TestEnumeration_Red     = 2,
+    OpcUa_TestEnumeration_Green   = 4,
+    OpcUa_TestEnumeration_Blue    = 6
+#if OPCUA_FORCE_INT32_ENUMS
+    ,_OpcUa_TestEnumeration_MaxEnumerationValue = OpcUa_Int32_Max
+#endif
+}
+OpcUa_TestEnumeration;
+
+#define OpcUa_TestEnumeration_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_TestEnumeration_Invalid)
+
+#define OpcUa_TestEnumeration_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_TestEnumeration_Invalid)
+
+OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_TestEnumeration_EnumeratedType;
+#endif
+
+#ifndef OPCUA_EXCLUDE_TestOptionSet
+/*============================================================================
+ * The TestOptionSet enumeration.
+ *===========================================================================*/
+typedef enum _OpcUa_TestOptionSet
+{
+    OpcUa_TestOptionSet_None = 0,
+    OpcUa_TestOptionSet_A    = 1,
+    OpcUa_TestOptionSet_B    = 2,
+    OpcUa_TestOptionSet_C    = 4
+#if OPCUA_FORCE_INT32_ENUMS
+    ,_OpcUa_TestOptionSet_MaxEnumerationValue = OpcUa_Int32_Max
+#endif
+}
+OpcUa_TestOptionSet;
+
+#define OpcUa_TestOptionSet_Clear(xValue) OpcUa_EnumeratedType_Clear(xValue, OpcUa_TestOptionSet_None)
+
+#define OpcUa_TestOptionSet_Initialize(xValue) OpcUa_EnumeratedType_Initialize(xValue, OpcUa_TestOptionSet_None)
+
+OPCUA_IMEXPORT extern struct _OpcUa_EnumeratedType OpcUa_TestOptionSet_EnumeratedType;
+#endif
+
+#ifndef OPCUA_EXCLUDE_TestScalarStructure
+/*============================================================================
+ * The TestScalarStructure structure.
+ *===========================================================================*/
+typedef struct _OpcUa_TestScalarStructure
+{
+    OpcUa_Boolean               A;
+    OpcUa_SByte                 B;
+    OpcUa_Byte                  C;
+    OpcUa_Int16                 D;
+    OpcUa_UInt16                E;
+    OpcUa_Int32                 F;
+    OpcUa_UInt32                G;
+    OpcUa_Int64                 H;
+    OpcUa_UInt64                I;
+    OpcUa_Float                 J;
+    OpcUa_Double                K;
+    OpcUa_Guid                  L;
+    OpcUa_DateTime              M;
+    OpcUa_String                N;
+    OpcUa_ByteString            O;
+    OpcUa_NodeId                P;
+    OpcUa_ExpandedNodeId        Q;
+    OpcUa_QualifiedName         R;
+    OpcUa_LocalizedText         S;
+    OpcUa_StatusCode            T;
+    OpcUa_XmlElement            U;
+    OpcUa_Variant               V;
+    OpcUa_TestAbstractStructure W;
+    OpcUa_TestConcreteStructure X;
+    OpcUa_TestEnumeration       Y;
+    OpcUa_TestOptionSet         Z;
+    OpcUa_TestUnion             A1;
+    OpcUa_TestOptionalFields    B1;
+    OpcUa_DataValue             C1;
+}
+OpcUa_TestScalarStructure;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_TestScalarStructure_Initialize(OpcUa_TestScalarStructure* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_TestScalarStructure_Clear(OpcUa_TestScalarStructure* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestScalarStructure_GetSize(OpcUa_TestScalarStructure* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestScalarStructure_Encode(OpcUa_TestScalarStructure* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestScalarStructure_Decode(OpcUa_TestScalarStructure* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_TestScalarStructure_EncodeableType;
+#endif
+
+#ifndef OPCUA_EXCLUDE_TestArrayStructure
+/*============================================================================
+ * The TestArrayStructure structure.
+ *===========================================================================*/
+typedef struct _OpcUa_TestArrayStructure
+{
+    OpcUa_Int32                  NoOfA;
+    OpcUa_Boolean*               A;
+    OpcUa_Int32                  NoOfB;
+    OpcUa_SByte*                 B;
+    OpcUa_Int32                  NoOfC;
+    OpcUa_Byte*                  C;
+    OpcUa_Int32                  NoOfD;
+    OpcUa_Int16*                 D;
+    OpcUa_Int32                  NoOfE;
+    OpcUa_UInt16*                E;
+    OpcUa_Int32                  NoOfF;
+    OpcUa_Int32*                 F;
+    OpcUa_Int32                  NoOfG;
+    OpcUa_UInt32*                G;
+    OpcUa_Int32                  NoOfH;
+    OpcUa_Int64*                 H;
+    OpcUa_Int32                  NoOfI;
+    OpcUa_UInt64*                I;
+    OpcUa_Int32                  NoOfJ;
+    OpcUa_Float*                 J;
+    OpcUa_Int32                  NoOfK;
+    OpcUa_Double*                K;
+    OpcUa_Int32                  NoOfL;
+    OpcUa_Guid*                  L;
+    OpcUa_Int32                  NoOfM;
+    OpcUa_DateTime*              M;
+    OpcUa_Int32                  NoOfN;
+    OpcUa_String*                N;
+    OpcUa_Int32                  NoOfO;
+    OpcUa_ByteString*            O;
+    OpcUa_Int32                  NoOfP;
+    OpcUa_NodeId*                P;
+    OpcUa_Int32                  NoOfQ;
+    OpcUa_ExpandedNodeId*        Q;
+    OpcUa_Int32                  NoOfR;
+    OpcUa_QualifiedName*         R;
+    OpcUa_Int32                  NoOfS;
+    OpcUa_LocalizedText*         S;
+    OpcUa_Int32                  NoOfT;
+    OpcUa_StatusCode*            T;
+    OpcUa_Int32                  NoOfU;
+    OpcUa_XmlElement*            U;
+    OpcUa_Int32                  NoOfV;
+    OpcUa_Variant*               V;
+    OpcUa_Int32                  NoOfW;
+    OpcUa_TestAbstractStructure* W;
+    OpcUa_Int32                  NoOfX;
+    OpcUa_TestConcreteStructure* X;
+    OpcUa_Int32                  NoOfY;
+    OpcUa_TestEnumeration*       Y;
+    OpcUa_Int32                  NoOfZ;
+    OpcUa_TestOptionSet*         Z;
+    OpcUa_Int32                  NoOfA1;
+    OpcUa_TestUnion*             A1;
+    OpcUa_Int32                  NoOfB1;
+    OpcUa_TestOptionalFields*    B1;
+    OpcUa_Int32                  NoOfC1;
+    OpcUa_DataValue*             C1;
+}
+OpcUa_TestArrayStructure;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_TestArrayStructure_Initialize(OpcUa_TestArrayStructure* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_TestArrayStructure_Clear(OpcUa_TestArrayStructure* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestArrayStructure_GetSize(OpcUa_TestArrayStructure* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestArrayStructure_Encode(OpcUa_TestArrayStructure* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestArrayStructure_Decode(OpcUa_TestArrayStructure* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_TestArrayStructure_EncodeableType;
+#endif
+
+#ifndef OPCUA_EXCLUDE_TestStructure
+/*============================================================================
+ * The TestStructure structure.
+ *===========================================================================*/
+typedef struct _OpcUa_TestStructure
+{
+    OpcUa_TestScalarStructure  A;
+    OpcUa_TestArrayStructure   B;
+    OpcUa_Int32                NoOfC;
+    OpcUa_TestScalarStructure* C;
+    OpcUa_Int32                NoOfD;
+    OpcUa_TestArrayStructure*  D;
+}
+OpcUa_TestStructure;
+
+OPCUA_EXPORT OpcUa_Void OpcUa_TestStructure_Initialize(OpcUa_TestStructure* pValue);
+
+OPCUA_EXPORT OpcUa_Void OpcUa_TestStructure_Clear(OpcUa_TestStructure* pValue);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestStructure_GetSize(OpcUa_TestStructure* pValue, struct _OpcUa_Encoder* pEncoder, OpcUa_Int32* pSize);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestStructure_Encode(OpcUa_TestStructure* pValue, struct _OpcUa_Encoder* pEncoder);
+
+OPCUA_EXPORT OpcUa_StatusCode OpcUa_TestStructure_Decode(OpcUa_TestStructure* pValue, struct _OpcUa_Decoder* pDecoder);
+
+OPCUA_IMEXPORT extern struct _OpcUa_EncodeableType OpcUa_TestStructure_EncodeableType;
 #endif
 
 /*============================================================================
