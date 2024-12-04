@@ -22,7 +22,7 @@
       "post": {
         "operationId": "Read",
         "requestBody": {
-          "description": "ReadRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.2/#5.11.2.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -33,7 +33,7 @@
         },
         "responses": {
           "200": {
-            "description": "ReadResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.2/#5.11.2.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -49,7 +49,7 @@
       "post": {
         "operationId": "Write",
         "requestBody": {
-          "description": "WriteRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.4/#5.11.4.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -60,7 +60,7 @@
         },
         "responses": {
           "200": {
-            "description": "WriteResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.4/#5.11.4.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -76,7 +76,7 @@
       "post": {
         "operationId": "Call",
         "requestBody": {
-          "description": "CallRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.12.2/#5.12.2.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -87,7 +87,7 @@
         },
         "responses": {
           "200": {
-            "description": "CallResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.12.2/#5.12.2.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -103,7 +103,7 @@
       "post": {
         "operationId": "HistoryRead",
         "requestBody": {
-          "description": "HistoryReadRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.3/#5.11.3.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -114,7 +114,7 @@
         },
         "responses": {
           "200": {
-            "description": "HistoryReadResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.3/#5.11.3.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -130,7 +130,7 @@
       "post": {
         "operationId": "HistoryUpdate",
         "requestBody": {
-          "description": "HistoryUpdateRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.5/#5.11.5.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -141,7 +141,7 @@
         },
         "responses": {
           "200": {
-            "description": "HistoryUpdateResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.5/#5.11.5.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -157,7 +157,7 @@
       "post": {
         "operationId": "Browse",
         "requestBody": {
-          "description": "BrowseRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.2/#5.9.2.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -168,7 +168,7 @@
         },
         "responses": {
           "200": {
-            "description": "BrowseResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.2/#5.9.2.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -184,7 +184,7 @@
       "post": {
         "operationId": "BrowseNext",
         "requestBody": {
-          "description": "BrowseNextRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.3/#5.9.3.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -195,7 +195,7 @@
         },
         "responses": {
           "200": {
-            "description": "BrowseNextResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.3/#5.9.3.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -211,7 +211,7 @@
       "post": {
         "operationId": "TranslateBrowsePathsToNodeIds",
         "requestBody": {
-          "description": "TranslateBrowsePathsToNodeIdsRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -222,7 +222,7 @@
         },
         "responses": {
           "200": {
-            "description": "TranslateBrowsePathsToNodeIdsResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -238,7 +238,7 @@
       "post": {
         "operationId": "FindServers",
         "requestBody": {
-          "description": "FindServersRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.5.2/#5.5.2.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -249,7 +249,7 @@
         },
         "responses": {
           "200": {
-            "description": "FindServersResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.5.2/#5.5.2.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -265,7 +265,7 @@
       "post": {
         "operationId": "GetEndpoints",
         "requestBody": {
-          "description": "GetEndpointsRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.5.4/#5.5.4.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -276,7 +276,7 @@
         },
         "responses": {
           "200": {
-            "description": "GetEndpointsResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.5.4/#5.5.4.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -292,7 +292,7 @@
       "post": {
         "operationId": "CreateSession",
         "requestBody": {
-          "description": "CreateSessionRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.2/#5.7.2.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -303,7 +303,7 @@
         },
         "responses": {
           "200": {
-            "description": "CreateSessionResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.2/#5.7.2.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -319,7 +319,7 @@
       "post": {
         "operationId": "ActivateSession",
         "requestBody": {
-          "description": "ActivateSessionRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.3/#5.7.3.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -330,7 +330,7 @@
         },
         "responses": {
           "200": {
-            "description": "ActivateSessionResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.3/#5.7.3.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -346,7 +346,7 @@
       "post": {
         "operationId": "CloseSession",
         "requestBody": {
-          "description": "CloseSessionRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.4/#5.7.4.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -357,7 +357,7 @@
         },
         "responses": {
           "200": {
-            "description": "CloseSessionResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.4/#5.7.4.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -373,7 +373,7 @@
       "post": {
         "operationId": "Cancel",
         "requestBody": {
-          "description": "CancelRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.5/#5.7.5.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -384,7 +384,7 @@
         },
         "responses": {
           "200": {
-            "description": "CancelResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.5/#5.7.5.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -400,7 +400,7 @@
       "post": {
         "operationId": "RegisterNodes",
         "requestBody": {
-          "description": "RegisterNodesRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.5/#5.9.5.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -411,7 +411,7 @@
         },
         "responses": {
           "200": {
-            "description": "RegisterNodesResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.5/#5.9.5.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -427,7 +427,7 @@
       "post": {
         "operationId": "UnregisterNodes",
         "requestBody": {
-          "description": "UnregisterNodesRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.6/#5.9.6.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -438,7 +438,7 @@
         },
         "responses": {
           "200": {
-            "description": "UnregisterNodesResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.6/#5.9.6.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -454,7 +454,7 @@
       "post": {
         "operationId": "CreateMonitoredItems",
         "requestBody": {
-          "description": "CreateMonitoredItemsRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.2/#5.13.2.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -465,7 +465,7 @@
         },
         "responses": {
           "200": {
-            "description": "CreateMonitoredItemsResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.2/#5.13.2.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -481,7 +481,7 @@
       "post": {
         "operationId": "ModifyMonitoredItems",
         "requestBody": {
-          "description": "ModifyMonitoredItemsRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.3/#5.13.3.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -492,7 +492,7 @@
         },
         "responses": {
           "200": {
-            "description": "ModifyMonitoredItemsResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.3/#5.13.3.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -508,7 +508,7 @@
       "post": {
         "operationId": "SetMonitoringMode",
         "requestBody": {
-          "description": "SetMonitoringModeRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.4/#5.13.4.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -519,7 +519,7 @@
         },
         "responses": {
           "200": {
-            "description": "SetMonitoringModeResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.4/#5.13.4.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -535,7 +535,7 @@
       "post": {
         "operationId": "SetTriggering",
         "requestBody": {
-          "description": "SetTriggeringRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.5/#5.13.5.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -546,7 +546,7 @@
         },
         "responses": {
           "200": {
-            "description": "SetTriggeringResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.5/#5.13.5.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -562,7 +562,7 @@
       "post": {
         "operationId": "DeleteMonitoredItems",
         "requestBody": {
-          "description": "DeleteMonitoredItemsRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.6/#5.13.6.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -573,7 +573,7 @@
         },
         "responses": {
           "200": {
-            "description": "DeleteMonitoredItemsResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.6/#5.13.6.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -589,7 +589,7 @@
       "post": {
         "operationId": "CreateSubscription",
         "requestBody": {
-          "description": "CreateSubscriptionRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.2/#5.14.2.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -600,7 +600,7 @@
         },
         "responses": {
           "200": {
-            "description": "CreateSubscriptionResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.2/#5.14.2.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -616,7 +616,7 @@
       "post": {
         "operationId": "ModifySubscription",
         "requestBody": {
-          "description": "ModifySubscriptionRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.3/#5.14.3.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -627,7 +627,7 @@
         },
         "responses": {
           "200": {
-            "description": "ModifySubscriptionResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.3/#5.14.3.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -643,7 +643,7 @@
       "post": {
         "operationId": "SetPublishingMode",
         "requestBody": {
-          "description": "SetPublishingModeRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.4/#5.14.4.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -654,7 +654,7 @@
         },
         "responses": {
           "200": {
-            "description": "SetPublishingModeResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.4/#5.14.4.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -670,7 +670,7 @@
       "post": {
         "operationId": "Publish",
         "requestBody": {
-          "description": "PublishRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.5/#5.14.5.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -681,7 +681,7 @@
         },
         "responses": {
           "200": {
-            "description": "PublishResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.5/#5.14.5.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -697,7 +697,7 @@
       "post": {
         "operationId": "Republish",
         "requestBody": {
-          "description": "RepublishRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.6/#5.14.6.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -708,7 +708,7 @@
         },
         "responses": {
           "200": {
-            "description": "RepublishResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.6/#5.14.6.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -724,7 +724,7 @@
       "post": {
         "operationId": "TransferSubscriptions",
         "requestBody": {
-          "description": "TransferSubscriptionsRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.7/#5.14.7.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -735,7 +735,7 @@
         },
         "responses": {
           "200": {
-            "description": "TransferSubscriptionsResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.7/#5.14.7.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -751,7 +751,7 @@
       "post": {
         "operationId": "DeleteSubscriptions",
         "requestBody": {
-          "description": "DeleteSubscriptionsRequestMessage",
+          "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.8/#5.14.8.2).",
           "content": {
             "application/json": {
               "schema": {
@@ -762,7 +762,7 @@
         },
         "responses": {
           "200": {
-            "description": "DeleteSubscriptionsResponseMessage",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.8/#5.14.8.2).",
             "content": {
               "application/json": {
                 "schema": {
@@ -790,7 +790,8 @@
             "type": "string"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part4/v105/docs/7.39). [Set of defined codes](https://github.com/OPCFoundation/UA-Nodeset/tree/latest/Schema/StatusCode.csv)."
       },
       "LocalizedText": {
         "type": "object",
@@ -803,7 +804,8 @@
             "type": "string"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.5)."
       },
       "ExtensionObject": {
         "type": "object",
@@ -822,7 +824,8 @@
             "type": "string",
             "format": "byte"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.2.16)."
       },
       "Variant": {
         "type": "object",
@@ -843,7 +846,8 @@
             }
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.2.17)."
       },
       "DataValue": {
         "type": "object",
@@ -888,7 +892,8 @@
             "format": "int32"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.2.18)."
       },
       "DiagnosticInfo": {
         "type": "object",
@@ -919,7 +924,8 @@
             "$ref": "#/components/schemas/DiagnosticInfo"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part4/v105/docs/7.12)."
       },
       "Decimal": {
         "type": "object",
@@ -936,7 +942,8 @@
             "default": "0"
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.3)."
       },
       "Matrix": {
         "type": "object",
@@ -954,10 +961,12 @@
             }
           }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.5)."
       },
       "Structure": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "BaseDataType": {
         "$ref": "#/components/schemas/Variant"
@@ -972,7 +981,8 @@
           "Value": {
             "$ref": "#/components/schemas/Variant"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.21)."
       },
       "DataTypeSchemaHeader": {
         "type": "object",
@@ -1001,7 +1011,8 @@
               "$ref": "#/components/schemas/SimpleTypeDescription"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.2.2)."
       },
       "DataTypeDescription": {
         "type": "object",
@@ -1014,7 +1025,8 @@
             "type": "string",
             "format": "UaQualifiedName"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.32)."
       },
       "StructureDescription": {
         "type": "object",
@@ -1027,7 +1039,8 @@
           "StructureDefinition": {
             "$ref": "#/components/schemas/StructureDefinition"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.33)."
       },
       "EnumDescription": {
         "type": "object",
@@ -1047,7 +1060,8 @@
             "format": "int32",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.34)."
       },
       "SimpleTypeDescription": {
         "type": "object",
@@ -1068,7 +1082,8 @@
             "format": "int32",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.35)."
       },
       "PubSubState": {
         "enum": [
@@ -1079,6 +1094,7 @@
           4
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.1).",
         "format": "int32",
         "x-enum-varnames": [
           "Disabled",
@@ -1115,7 +1131,8 @@
           "ConfigurationVersion": {
             "$ref": "#/components/schemas/ConfigurationVersionDataType"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.2.3)."
       },
       "FieldMetaData": {
         "type": "object",
@@ -1176,13 +1193,15 @@
               "$ref": "#/components/schemas/KeyValuePair"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.2.4)."
       },
       "DataSetFieldFlagsBits": {
         "enum": [
           1
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.2.5).",
         "format": "int32",
         "x-enum-varnames": [
           "PromotedField"
@@ -1212,7 +1231,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.2.6)."
       },
       "PublishedDataSetDataType": {
         "type": "object",
@@ -1238,7 +1258,8 @@
           "DataSetSource": {
             "type": "object"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.5)."
       },
       "ActionTargetDataType": {
         "type": "object",
@@ -1256,7 +1277,8 @@
           "Description": {
             "$ref": "#/components/schemas/LocalizedText"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.10.3)."
       },
       "ActionState": {
         "enum": [
@@ -1265,6 +1287,7 @@
           2
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.11/#6.2.11.2.1).",
         "format": "int32",
         "x-enum-varnames": [
           "Idle",
@@ -1283,7 +1306,8 @@
             "type": "string",
             "format": "UaNodeId"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.3/#6.2.3.10.5)."
       },
       "DataSetFieldContentMaskBits": {
         "enum": [
@@ -1295,6 +1319,7 @@
           32
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.4/#6.2.4.2).",
         "format": "int32",
         "x-enum-varnames": [
           "StatusCode",
@@ -1358,13 +1383,16 @@
           "MessageSettings": {
             "type": "object"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.4/#6.2.4.5.1)."
       },
       "DataSetWriterTransportDataType": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "DataSetWriterMessageDataType": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "PubSubGroupDataType": {
         "type": "object",
@@ -1378,6 +1406,7 @@
           },
           "SecurityMode": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.10).",
             "format": "MessageSecurityMode"
           },
           "SecurityGroupId": {
@@ -1402,7 +1431,8 @@
               "$ref": "#/components/schemas/KeyValuePair"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.5/#6.2.5.7)."
       },
       "WriterGroupDataType": {
         "type": "object",
@@ -1457,13 +1487,16 @@
               "$ref": "#/components/schemas/DataSetWriterDataType"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.6/#6.2.6.7.1)."
       },
       "WriterGroupTransportDataType": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "WriterGroupMessageDataType": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "PubSubConnectionDataType": {
         "type": "object",
@@ -1505,10 +1538,12 @@
               "$ref": "#/components/schemas/ReaderGroupDataType"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.7/#6.2.7.5.1)."
       },
       "ConnectionTransportDataType": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "NetworkAddressDataType": {
         "type": "object",
@@ -1516,7 +1551,8 @@
           "NetworkInterface": {
             "type": "string"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.7/#6.2.7.5.3)."
       },
       "ReaderGroupDataType": {
         "type": "object",
@@ -1538,13 +1574,16 @@
               "$ref": "#/components/schemas/DataSetReaderDataType"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.8/#6.2.8.2.1)."
       },
       "ReaderGroupTransportDataType": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "ReaderGroupMessageDataType": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "DataSetReaderDataType": {
         "type": "object",
@@ -1600,6 +1639,7 @@
           },
           "SecurityMode": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.10).",
             "format": "MessageSecurityMode"
           },
           "SecurityGroupId": {
@@ -1626,16 +1666,20 @@
           "SubscribedDataSet": {
             "type": "object"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.9/#6.2.9.13.1)."
       },
       "DataSetReaderTransportDataType": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "DataSetReaderMessageDataType": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "SubscribedDataSetDataType": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "PubSubConfigurationDataType": {
         "type": "object",
@@ -1656,7 +1700,8 @@
             "type": "boolean",
             "default": false
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.12/#6.2.12.1)."
       },
       "StandaloneSubscribedDataSetDataType": {
         "type": "object",
@@ -1681,7 +1726,8 @@
           "SubscribedDataSet": {
             "type": "object"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.10/#6.2.10.5)."
       },
       "SecurityGroupDataType": {
         "type": "object",
@@ -1732,7 +1778,8 @@
               "$ref": "#/components/schemas/KeyValuePair"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.12/#6.2.12.2)."
       },
       "PubSubKeyPushTargetDataType": {
         "type": "object",
@@ -1779,7 +1826,8 @@
               "type": "string"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.12/#6.2.12.3)."
       },
       "PubSubConfiguration2DataType": {
         "type": "object",
@@ -1832,7 +1880,8 @@
               "$ref": "#/components/schemas/KeyValuePair"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.12/#6.2.12.4)."
       },
       "JsonNetworkMessageContentMaskBits": {
         "enum": [
@@ -1845,6 +1894,7 @@
           64
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.1.1).",
         "format": "int32",
         "x-enum-varnames": [
           "NetworkMessageHeader",
@@ -1878,7 +1928,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.1.2)."
       },
       "JsonDataSetMessageContentMaskBits": {
         "enum": [
@@ -1896,6 +1947,7 @@
           2048
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.3.1).",
         "format": "int32",
         "x-enum-varnames": [
           "DataSetWriterId",
@@ -1934,7 +1986,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.3.2)."
       },
       "JsonDataSetReaderMessageDataType": {
         "type": "object",
@@ -1958,7 +2011,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.3.2/#6.3.2.4.3)."
       },
       "BrokerConnectionTransportDataType": {
         "type": "object",
@@ -1974,7 +2028,8 @@
           "AuthenticationProfileUri": {
             "type": "string"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.2.3)."
       },
       "BrokerTransportQualityOfService": {
         "enum": [
@@ -1985,6 +2040,7 @@
           4
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.1).",
         "format": "int32",
         "x-enum-varnames": [
           "NotSpecified",
@@ -2013,9 +2069,11 @@
           },
           "RequestedDeliveryGuarantee": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.1).",
             "format": "BrokerTransportQualityOfService"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.3.5)."
       },
       "BrokerDataSetWriterTransportDataType": {
         "type": "object",
@@ -2036,6 +2094,7 @@
           },
           "RequestedDeliveryGuarantee": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.1).",
             "format": "BrokerTransportQualityOfService"
           },
           "MetaDataQueueName": {
@@ -2046,7 +2105,8 @@
             "format": "double",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.5.7)."
       },
       "BrokerDataSetReaderTransportDataType": {
         "type": "object",
@@ -2067,12 +2127,14 @@
           },
           "RequestedDeliveryGuarantee": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.1).",
             "format": "BrokerTransportQualityOfService"
           },
           "MetaDataQueueName": {
             "type": "string"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.4.2/#6.4.2.6.6)."
       },
       "JsonNetworkMessage": {
         "type": "object",
@@ -2093,7 +2155,8 @@
             "type": "string"
           },
           "Messages": { }
-        }
+        },
+        "description": "[Link to specification]()."
       },
       "JsonDataSetMessage": {
         "type": "object",
@@ -2145,7 +2208,8 @@
           "Payload": {
             "type": "object"
           }
-        }
+        },
+        "description": "[Link to specification]()."
       },
       "JsonDataSetMetaDataMessage": {
         "type": "object",
@@ -2180,7 +2244,8 @@
           "MetaData": {
             "$ref": "#/components/schemas/DataSetMetaDataType"
           }
-        }
+        },
+        "description": "[Link to specification]()."
       },
       "JsonApplicationDescriptionMessage": {
         "type": "object",
@@ -2208,7 +2273,8 @@
               "type": "string"
             }
           }
-        }
+        },
+        "description": "[Link to specification]()."
       },
       "JsonServerEndpointsMessage": {
         "type": "object",
@@ -2236,7 +2302,8 @@
               "$ref": "#/components/schemas/EndpointDescription"
             }
           }
-        }
+        },
+        "description": "[Link to specification]()."
       },
       "JsonStatusMessage": {
         "type": "object",
@@ -2261,6 +2328,7 @@
           },
           "Status": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.1).",
             "format": "PubSubState"
           },
           "NextReportTime": {
@@ -2268,7 +2336,8 @@
             "format": "date-time",
             "default": "0001-01-01T00:00:00.0000000+00:00"
           }
-        }
+        },
+        "description": "[Link to specification]()."
       },
       "JsonPubSubConnectionMessage": {
         "type": "object",
@@ -2290,7 +2359,8 @@
           "Connection": {
             "$ref": "#/components/schemas/PubSubConnectionDataType"
           }
-        }
+        },
+        "description": "[Link to specification]()."
       },
       "JsonActionMetaDataMessage": {
         "type": "object",
@@ -2337,7 +2407,8 @@
               "$ref": "#/components/schemas/ActionMethodDataType"
             }
           }
-        }
+        },
+        "description": "[Link to specification]()."
       },
       "JsonActionResponderMessage": {
         "type": "object",
@@ -2359,7 +2430,8 @@
           "Connection": {
             "$ref": "#/components/schemas/PubSubConnectionDataType"
           }
-        }
+        },
+        "description": "[Link to specification]()."
       },
       "JsonActionNetworkMessage": {
         "type": "object",
@@ -2399,7 +2471,8 @@
               "type": "object"
             }
           }
-        }
+        },
+        "description": "[Link to specification]()."
       },
       "JsonActionRequestMessage": {
         "type": "object",
@@ -2451,12 +2524,14 @@
           },
           "ActionState": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.11/#6.2.11.2.1).",
             "format": "ActionState"
           },
           "Payload": {
             "type": "object"
           }
-        }
+        },
+        "description": "[Link to specification]()."
       },
       "JsonActionResponseMessage": {
         "type": "object",
@@ -2511,12 +2586,14 @@
           },
           "ActionState": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/6.2.11/#6.2.11.2.1).",
             "format": "ActionState"
           },
           "Payload": {
             "type": "object"
           }
-        }
+        },
+        "description": "[Link to specification]()."
       },
       "NodeClass": {
         "enum": [
@@ -2531,6 +2608,7 @@
           128
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.5/#12.2.5.2).",
         "format": "int32",
         "x-enum-varnames": [
           "Unspecified",
@@ -2565,6 +2643,7 @@
           65536
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part3/8.55).",
         "format": "int32",
         "x-enum-varnames": [
           "Browse",
@@ -2607,10 +2686,12 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.9)."
       },
       "DataTypeDefinition": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "StructureType": {
         "enum": [
@@ -2621,6 +2702,7 @@
           4
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.5/#12.2.5.3).",
         "format": "int32",
         "x-enum-varnames": [
           "Structure",
@@ -2669,7 +2751,8 @@
             "type": "boolean",
             "default": false
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.10)."
       },
       "StructureDefinition": {
         "type": "object",
@@ -2689,6 +2772,7 @@
           },
           "StructureType": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.5/#12.2.5.3).",
             "format": "StructureType"
           },
           "Fields": {
@@ -2697,7 +2781,8 @@
               "$ref": "#/components/schemas/StructureField"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.5)."
       },
       "EnumDefinition": {
         "type": "object",
@@ -2713,7 +2798,8 @@
               "$ref": "#/components/schemas/EnumField"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.4)."
       },
       "Argument": {
         "type": "object",
@@ -2743,7 +2829,8 @@
           "Description": {
             "$ref": "#/components/schemas/LocalizedText"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.1)."
       },
       "EnumValueType": {
         "type": "object",
@@ -2759,7 +2846,8 @@
           "Description": {
             "$ref": "#/components/schemas/LocalizedText"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.6)."
       },
       "EnumField": {
         "type": "object",
@@ -2772,15 +2860,18 @@
           "Name": {
             "type": "string"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.12/#12.2.12.7)."
       },
       "Duration": {
         "type": "number",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.12).",
         "format": "double",
         "default": 0
       },
       "UtcTime": {
         "type": "string",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.11).",
         "format": "date-time",
         "default": "0001-01-01T00:00:00.0000000+00:00"
       },
@@ -2788,6 +2879,7 @@
         "maximum": 4294967295,
         "minimum": 0,
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.35).",
         "format": "int64",
         "default": 0
       },
@@ -2799,6 +2891,7 @@
           3
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.4).",
         "format": "int32",
         "x-enum-varnames": [
           "Server",
@@ -2821,6 +2914,7 @@
           },
           "ApplicationType": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.4).",
             "format": "ApplicationType"
           },
           "GatewayServerUri": {
@@ -2835,7 +2929,8 @@
               "type": "string"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part14/7.2.4/#7.2.4.6.5)."
       },
       "RequestHeader": {
         "type": "object",
@@ -2876,7 +2971,8 @@
           "AdditionalHeader": {
             "$ref": "#/components/schemas/ExtensionObject"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.33)."
       },
       "ResponseHeader": {
         "type": "object",
@@ -2908,12 +3004,14 @@
           "AdditionalHeader": {
             "$ref": "#/components/schemas/ExtensionObject"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.34)."
       },
       "VersionTime": {
         "maximum": 4294967295,
         "minimum": 0,
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.35).",
         "format": "int64",
         "default": 0
       },
@@ -2938,7 +3036,8 @@
               "type": "string"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.5.2/#5.5.2.2)."
       },
       "FindServersResponse": {
         "type": "object",
@@ -2952,10 +3051,12 @@
               "$ref": "#/components/schemas/ApplicationDescription"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.5.2/#5.5.2.2)."
       },
       "ApplicationInstanceCertificate": {
         "type": "string",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.10).",
         "format": "byte"
       },
       "MessageSecurityMode": {
@@ -2966,6 +3067,7 @@
           3
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.10).",
         "format": "int32",
         "x-enum-varnames": [
           "Invalid",
@@ -2982,6 +3084,7 @@
           3
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.43).",
         "format": "int32",
         "x-enum-varnames": [
           "Anonymous",
@@ -2998,6 +3101,7 @@
           },
           "TokenType": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.43).",
             "format": "UserTokenType"
           },
           "IssuedTokenType": {
@@ -3009,7 +3113,8 @@
           "SecurityPolicyUri": {
             "type": "string"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.42)."
       },
       "EndpointDescription": {
         "type": "object",
@@ -3026,6 +3131,7 @@
           },
           "SecurityMode": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.10).",
             "format": "MessageSecurityMode"
           },
           "SecurityPolicyUri": {
@@ -3047,7 +3153,8 @@
             "format": "int32",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.14)."
       },
       "GetEndpointsRequest": {
         "type": "object",
@@ -3070,7 +3177,8 @@
               "type": "string"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.5.4/#5.5.4.2)."
       },
       "GetEndpointsResponse": {
         "type": "object",
@@ -3084,7 +3192,8 @@
               "$ref": "#/components/schemas/EndpointDescription"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.5.4/#5.5.4.2)."
       },
       "SignedSoftwareCertificate": {
         "type": "object",
@@ -3097,10 +3206,12 @@
             "type": "string",
             "format": "byte"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.13)."
       },
       "SessionAuthenticationToken": {
         "type": "string",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.2).",
         "format": "UaNodeId"
       },
       "SignatureData": {
@@ -3113,7 +3224,8 @@
             "type": "string",
             "format": "byte"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.37)."
       },
       "CreateSessionRequest": {
         "type": "object",
@@ -3153,7 +3265,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.2/#5.7.2.2)."
       },
       "CreateSessionResponse": {
         "type": "object",
@@ -3204,7 +3317,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.2/#5.7.2.2)."
       },
       "UserIdentityToken": {
         "type": "object",
@@ -3212,10 +3326,12 @@
           "PolicyId": {
             "type": "string"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.15)."
       },
       "AnonymousIdentityToken": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "UserNameIdentityToken": {
         "type": "object",
@@ -3235,7 +3351,8 @@
           "EncryptionAlgorithm": {
             "type": "string"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.15/#12.3.15.3)."
       },
       "X509IdentityToken": {
         "type": "object",
@@ -3249,7 +3366,8 @@
             "type": "string",
             "format": "byte"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.15/#12.3.15.4)."
       },
       "IssuedIdentityToken": {
         "type": "object",
@@ -3266,7 +3384,8 @@
           "EncryptionAlgorithm": {
             "type": "string"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.15/#12.3.15.2)."
       },
       "ActivateSessionRequest": {
         "type": "object",
@@ -3295,7 +3414,8 @@
           "UserTokenSignature": {
             "$ref": "#/components/schemas/SignatureData"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.3/#5.7.3.2)."
       },
       "ActivateSessionResponse": {
         "type": "object",
@@ -3319,7 +3439,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.3/#5.7.3.2)."
       },
       "CloseSessionRequest": {
         "type": "object",
@@ -3331,7 +3452,8 @@
             "type": "boolean",
             "default": false
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.4/#5.7.4.2)."
       },
       "CloseSessionResponse": {
         "type": "object",
@@ -3339,7 +3461,8 @@
           "ResponseHeader": {
             "$ref": "#/components/schemas/ResponseHeader"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.4/#5.7.4.2)."
       },
       "CancelRequest": {
         "type": "object",
@@ -3354,7 +3477,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.5/#5.7.5.2)."
       },
       "CancelResponse": {
         "type": "object",
@@ -3369,7 +3493,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.7.5/#5.7.5.2)."
       },
       "BrowseDirection": {
         "enum": [
@@ -3379,6 +3504,7 @@
           3
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.5).",
         "format": "int32",
         "x-enum-varnames": [
           "Forward",
@@ -3406,7 +3532,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.45)."
       },
       "BrowseDescription": {
         "type": "object",
@@ -3417,6 +3544,7 @@
           },
           "BrowseDirection": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.5).",
             "format": "BrowseDirection"
           },
           "ReferenceTypeId": {
@@ -3441,7 +3569,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.2/#5.9.2.2)."
       },
       "ReferenceDescription": {
         "type": "object",
@@ -3467,16 +3596,19 @@
           },
           "NodeClass": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.2.5/#12.2.5.2).",
             "format": "NodeClass"
           },
           "TypeDefinition": {
             "type": "string",
             "format": "UaExpandedNodeId"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.30)."
       },
       "ContinuationPoint": {
         "type": "string",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.10).",
         "format": "byte"
       },
       "BrowseResult": {
@@ -3495,7 +3627,8 @@
               "$ref": "#/components/schemas/ReferenceDescription"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.6)."
       },
       "BrowseRequest": {
         "type": "object",
@@ -3519,7 +3652,8 @@
               "$ref": "#/components/schemas/BrowseDescription"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.2/#5.9.2.2)."
       },
       "BrowseResponse": {
         "type": "object",
@@ -3539,7 +3673,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.2/#5.9.2.2)."
       },
       "BrowseNextRequest": {
         "type": "object",
@@ -3558,7 +3693,8 @@
               "format": "byte"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.3/#5.9.3.2)."
       },
       "BrowseNextResponse": {
         "type": "object",
@@ -3578,7 +3714,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.3/#5.9.3.2)."
       },
       "RelativePathElement": {
         "type": "object",
@@ -3599,7 +3736,8 @@
             "type": "string",
             "format": "UaQualifiedName"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.31)."
       },
       "RelativePath": {
         "type": "object",
@@ -3610,7 +3748,8 @@
               "$ref": "#/components/schemas/RelativePathElement"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.31)."
       },
       "BrowsePath": {
         "type": "object",
@@ -3622,7 +3761,8 @@
           "RelativePath": {
             "$ref": "#/components/schemas/RelativePath"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2)."
       },
       "BrowsePathTarget": {
         "type": "object",
@@ -3638,7 +3778,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2)."
       },
       "BrowsePathResult": {
         "type": "object",
@@ -3652,7 +3793,8 @@
               "$ref": "#/components/schemas/BrowsePathTarget"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2)."
       },
       "TranslateBrowsePathsToNodeIdsRequest": {
         "type": "object",
@@ -3666,7 +3808,8 @@
               "$ref": "#/components/schemas/BrowsePath"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2)."
       },
       "TranslateBrowsePathsToNodeIdsResponse": {
         "type": "object",
@@ -3686,7 +3829,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.4/#5.9.4.2)."
       },
       "RegisterNodesRequest": {
         "type": "object",
@@ -3701,7 +3845,8 @@
               "format": "UaNodeId"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.5/#5.9.5.2)."
       },
       "RegisterNodesResponse": {
         "type": "object",
@@ -3716,7 +3861,8 @@
               "format": "UaNodeId"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.5/#5.9.5.2)."
       },
       "UnregisterNodesRequest": {
         "type": "object",
@@ -3731,7 +3877,8 @@
               "format": "UaNodeId"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.6/#5.9.6.2)."
       },
       "UnregisterNodesResponse": {
         "type": "object",
@@ -3739,17 +3886,20 @@
           "ResponseHeader": {
             "$ref": "#/components/schemas/ResponseHeader"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.9.6/#5.9.6.2)."
       },
       "Counter": {
         "maximum": 4294967295,
         "minimum": 0,
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.35).",
         "format": "int64",
         "default": 0
       },
       "NumericRange": {
-        "type": "string"
+        "type": "string",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part3/v105/docs/8.31)."
       },
       "FilterOperator": {
         "enum": [
@@ -3773,6 +3923,7 @@
           17
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.3).",
         "format": "int32",
         "x-enum-varnames": [
           "Equals",
@@ -3800,6 +3951,7 @@
         "properties": {
           "FilterOperator": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.3).",
             "format": "FilterOperator"
           },
           "FilterOperands": {
@@ -3808,7 +3960,8 @@
               "$ref": "#/components/schemas/ExtensionObject"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.1)."
       },
       "ContentFilter": {
         "type": "object",
@@ -3819,10 +3972,12 @@
               "$ref": "#/components/schemas/ContentFilterElement"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part5/12.3.4)."
       },
       "FilterOperand": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "ElementOperand": {
         "type": "object",
@@ -3839,7 +3994,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.4/#7.7.4.2)."
       },
       "LiteralOperand": {
         "type": "object",
@@ -3852,7 +4008,8 @@
           "Value": {
             "$ref": "#/components/schemas/Variant"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.4/#7.7.4.3)."
       },
       "AttributeOperand": {
         "type": "object",
@@ -3882,7 +4039,8 @@
           "IndexRange": {
             "type": "string"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.4/#7.7.4.4)."
       },
       "SimpleAttributeOperand": {
         "type": "object",
@@ -3913,7 +4071,8 @@
           "IndexRange": {
             "type": "string"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.4/#7.7.4.5)."
       },
       "ContentFilterElementResult": {
         "type": "object",
@@ -3933,7 +4092,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.2)."
       },
       "ContentFilterResult": {
         "type": "object",
@@ -3950,7 +4110,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.7.2)."
       },
       "TimestampsToReturn": {
         "enum": [
@@ -3961,6 +4122,7 @@
           4
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.40).",
         "format": "int32",
         "x-enum-varnames": [
           "Source",
@@ -3991,7 +4153,8 @@
             "type": "string",
             "format": "UaQualifiedName"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.29)."
       },
       "ReadRequest": {
         "type": "object",
@@ -4006,6 +4169,7 @@
           },
           "TimestampsToReturn": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.40).",
             "format": "TimestampsToReturn"
           },
           "NodesToRead": {
@@ -4014,7 +4178,8 @@
               "$ref": "#/components/schemas/ReadValueId"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.2/#5.11.2.2)."
       },
       "ReadResponse": {
         "type": "object",
@@ -4034,7 +4199,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.2/#5.11.2.2)."
       },
       "HistoryReadValueId": {
         "type": "object",
@@ -4054,7 +4220,8 @@
             "type": "string",
             "format": "byte"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.3/#5.11.3.2)."
       },
       "HistoryReadResult": {
         "type": "object",
@@ -4069,10 +4236,12 @@
           "HistoryData": {
             "$ref": "#/components/schemas/ExtensionObject"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.3/#5.11.3.2)."
       },
       "HistoryReadDetails": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "ReadEventDetails": {
         "type": "object",
@@ -4102,7 +4271,8 @@
           "Filter": {
             "$ref": "#/components/schemas/EventFilter"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.2/#6.5.2.1)."
       },
       "ReadEventDetails2": {
         "type": "object",
@@ -4116,7 +4286,8 @@
             "type": "boolean",
             "default": false
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.2/#6.5.2.3)."
       },
       "ReadRawModifiedDetails": {
         "type": "object",
@@ -4151,7 +4322,8 @@
             "type": "boolean",
             "default": false
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.3/#6.5.3.1)."
       },
       "ReadProcessedDetails": {
         "type": "object",
@@ -4186,7 +4358,8 @@
           "AggregateConfiguration": {
             "$ref": "#/components/schemas/AggregateConfiguration"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.4/#6.5.4.1)."
       },
       "ReadAtTimeDetails": {
         "type": "object",
@@ -4208,7 +4381,8 @@
             "type": "boolean",
             "default": false
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.5/#6.5.5.1)."
       },
       "ReadAnnotationDataDetails": {
         "type": "object",
@@ -4226,7 +4400,8 @@
               "default": "0001-01-01T00:00:00.0000000+00:00"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.6/#6.5.6.1)."
       },
       "HistoryData": {
         "type": "object",
@@ -4237,7 +4412,8 @@
               "$ref": "#/components/schemas/DataValue"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.2)."
       },
       "ModificationInfo": {
         "type": "object",
@@ -4249,12 +4425,14 @@
           },
           "UpdateType": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.7).",
             "format": "HistoryUpdateType"
           },
           "UserName": {
             "type": "string"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.5)."
       },
       "HistoryModifiedData": {
         "type": "object",
@@ -4270,7 +4448,8 @@
               "$ref": "#/components/schemas/ModificationInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.3)."
       },
       "HistoryEvent": {
         "type": "object",
@@ -4281,7 +4460,8 @@
               "$ref": "#/components/schemas/HistoryEventFieldList"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.4)."
       },
       "HistoryReadRequest": {
         "type": "object",
@@ -4294,6 +4474,7 @@
           },
           "TimestampsToReturn": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.40).",
             "format": "TimestampsToReturn"
           },
           "ReleaseContinuationPoints": {
@@ -4306,7 +4487,8 @@
               "$ref": "#/components/schemas/HistoryReadValueId"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.3/#5.11.3.2)."
       },
       "HistoryReadResponse": {
         "type": "object",
@@ -4326,7 +4508,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.3/#5.11.3.2)."
       },
       "WriteValue": {
         "type": "object",
@@ -4348,7 +4531,8 @@
           "Value": {
             "$ref": "#/components/schemas/DataValue"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.4/#5.11.4.2)."
       },
       "WriteRequest": {
         "type": "object",
@@ -4362,7 +4546,8 @@
               "$ref": "#/components/schemas/WriteValue"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.4/#5.11.4.2)."
       },
       "WriteResponse": {
         "type": "object",
@@ -4382,10 +4567,12 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.4/#5.11.4.2)."
       },
       "HistoryUpdateDetails": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "HistoryUpdateType": {
         "enum": [
@@ -4395,6 +4582,7 @@
           4
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.7).",
         "format": "int32",
         "x-enum-varnames": [
           "Insert",
@@ -4411,6 +4599,7 @@
           4
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.8).",
         "format": "int32",
         "x-enum-varnames": [
           "Insert",
@@ -4433,6 +4622,7 @@
           },
           "PerformInsertReplace": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.8).",
             "format": "PerformUpdateType"
           },
           "UpdateValues": {
@@ -4441,7 +4631,8 @@
               "$ref": "#/components/schemas/DataValue"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.9.2/#6.9.2.1)."
       },
       "UpdateStructureDataDetails": {
         "type": "object",
@@ -4457,6 +4648,7 @@
           },
           "PerformInsertReplace": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.8).",
             "format": "PerformUpdateType"
           },
           "UpdateValues": {
@@ -4465,7 +4657,8 @@
               "$ref": "#/components/schemas/DataValue"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.9.3/#6.9.3.1)."
       },
       "UpdateEventDetails": {
         "type": "object",
@@ -4481,6 +4674,7 @@
           },
           "PerformInsertReplace": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.8).",
             "format": "PerformUpdateType"
           },
           "Filter": {
@@ -4492,7 +4686,8 @@
               "$ref": "#/components/schemas/HistoryEventFieldList"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.9.4/#6.9.4.1)."
       },
       "HistoryUpdateResult": {
         "type": "object",
@@ -4512,7 +4707,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.5/#5.11.5.2)."
       },
       "HistoryUpdateRequest": {
         "type": "object",
@@ -4526,7 +4722,8 @@
               "$ref": "#/components/schemas/ExtensionObject"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.5/#5.11.5.2)."
       },
       "HistoryUpdateResponse": {
         "type": "object",
@@ -4546,7 +4743,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.11.5/#5.11.5.2)."
       },
       "CallMethodRequest": {
         "type": "object",
@@ -4565,7 +4763,8 @@
               "$ref": "#/components/schemas/Variant"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.12.2/#5.12.2.2)."
       },
       "CallMethodResult": {
         "type": "object",
@@ -4591,7 +4790,8 @@
               "$ref": "#/components/schemas/Variant"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.12.2/#5.12.2.2)."
       },
       "CallRequest": {
         "type": "object",
@@ -4605,7 +4805,8 @@
               "$ref": "#/components/schemas/CallMethodRequest"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.12.2/#5.12.2.2)."
       },
       "CallResponse": {
         "type": "object",
@@ -4625,7 +4826,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.12.2/#5.12.2.2)."
       },
       "MonitoringMode": {
         "enum": [
@@ -4634,6 +4836,7 @@
           2
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.23).",
         "format": "int32",
         "x-enum-varnames": [
           "Disabled",
@@ -4648,6 +4851,7 @@
           2
         ],
         "type": "integer",
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.10).",
         "format": "int32",
         "x-enum-varnames": [
           "Status",
@@ -4656,7 +4860,8 @@
         ]
       },
       "MonitoringFilter": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "DataChangeFilter": {
         "type": "object",
@@ -4668,6 +4873,7 @@
         "properties": {
           "Trigger": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.10).",
             "format": "DataChangeTrigger"
           },
           "DeadbandType": {
@@ -4682,7 +4888,8 @@
             "format": "double",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.22.2)."
       },
       "EventFilter": {
         "type": "object",
@@ -4701,7 +4908,8 @@
           "WhereClause": {
             "$ref": "#/components/schemas/ContentFilter"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.22.3)."
       },
       "AggregateConfiguration": {
         "type": "object",
@@ -4732,7 +4940,8 @@
             "type": "boolean",
             "default": false
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.5.4/#6.5.4.1)."
       },
       "AggregateFilter": {
         "type": "object",
@@ -4759,10 +4968,12 @@
           "AggregateConfiguration": {
             "$ref": "#/components/schemas/AggregateConfiguration"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.22.4)."
       },
       "MonitoringFilterResult": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "EventFilterResult": {
         "type": "object",
@@ -4787,7 +4998,8 @@
           "WhereClauseResult": {
             "$ref": "#/components/schemas/ContentFilterResult"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.22.3)."
       },
       "AggregateFilterResult": {
         "type": "object",
@@ -4810,7 +5022,8 @@
           "RevisedAggregateConfiguration": {
             "$ref": "#/components/schemas/AggregateConfiguration"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.22.4)."
       },
       "MonitoringParameters": {
         "type": "object",
@@ -4841,7 +5054,8 @@
             "type": "boolean",
             "default": false
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.21)."
       },
       "MonitoredItemCreateRequest": {
         "type": "object",
@@ -4851,12 +5065,14 @@
           },
           "MonitoringMode": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.23).",
             "format": "MonitoringMode"
           },
           "RequestedParameters": {
             "$ref": "#/components/schemas/MonitoringParameters"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.2/#5.13.2.2)."
       },
       "MonitoredItemCreateResult": {
         "type": "object",
@@ -4886,7 +5102,8 @@
           "FilterResult": {
             "$ref": "#/components/schemas/ExtensionObject"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.2/#5.13.2.2)."
       },
       "CreateMonitoredItemsRequest": {
         "type": "object",
@@ -4903,6 +5120,7 @@
           },
           "TimestampsToReturn": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.40).",
             "format": "TimestampsToReturn"
           },
           "ItemsToCreate": {
@@ -4911,7 +5129,8 @@
               "$ref": "#/components/schemas/MonitoredItemCreateRequest"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.2/#5.13.2.2)."
       },
       "CreateMonitoredItemsResponse": {
         "type": "object",
@@ -4931,7 +5150,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.2/#5.13.2.2)."
       },
       "MonitoredItemModifyRequest": {
         "type": "object",
@@ -4946,7 +5166,8 @@
           "RequestedParameters": {
             "$ref": "#/components/schemas/MonitoringParameters"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.3/#5.13.3.2)."
       },
       "MonitoredItemModifyResult": {
         "type": "object",
@@ -4969,7 +5190,8 @@
           "FilterResult": {
             "$ref": "#/components/schemas/ExtensionObject"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.3/#5.13.3.2)."
       },
       "ModifyMonitoredItemsRequest": {
         "type": "object",
@@ -4986,6 +5208,7 @@
           },
           "TimestampsToReturn": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.40).",
             "format": "TimestampsToReturn"
           },
           "ItemsToModify": {
@@ -4994,7 +5217,8 @@
               "$ref": "#/components/schemas/MonitoredItemModifyRequest"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.3/#5.13.3.2)."
       },
       "ModifyMonitoredItemsResponse": {
         "type": "object",
@@ -5014,7 +5238,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.3/#5.13.3.2)."
       },
       "SetMonitoringModeRequest": {
         "type": "object",
@@ -5031,6 +5256,7 @@
           },
           "MonitoringMode": {
             "type": "integer",
+            "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.23).",
             "format": "MonitoringMode"
           },
           "MonitoredItemIds": {
@@ -5043,7 +5269,8 @@
               "default": 0
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.4/#5.13.4.2)."
       },
       "SetMonitoringModeResponse": {
         "type": "object",
@@ -5063,7 +5290,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.4/#5.13.4.2)."
       },
       "SetTriggeringRequest": {
         "type": "object",
@@ -5105,7 +5333,8 @@
               "default": 0
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.5/#5.13.5.2)."
       },
       "SetTriggeringResponse": {
         "type": "object",
@@ -5137,7 +5366,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.5/#5.13.5.2)."
       },
       "DeleteMonitoredItemsRequest": {
         "type": "object",
@@ -5162,7 +5392,8 @@
               "default": 0
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.6/#5.13.6.2)."
       },
       "DeleteMonitoredItemsResponse": {
         "type": "object",
@@ -5182,7 +5413,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.13.6/#5.13.6.2)."
       },
       "CreateSubscriptionRequest": {
         "type": "object",
@@ -5227,7 +5459,8 @@
             "format": "int32",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.2/#5.14.2.2)."
       },
       "CreateSubscriptionResponse": {
         "type": "object",
@@ -5261,7 +5494,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.2/#5.14.2.2)."
       },
       "ModifySubscriptionRequest": {
         "type": "object",
@@ -5309,7 +5543,8 @@
             "format": "int32",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.3/#5.14.3.2)."
       },
       "ModifySubscriptionResponse": {
         "type": "object",
@@ -5336,7 +5571,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.3/#5.14.3.2)."
       },
       "SetPublishingModeRequest": {
         "type": "object",
@@ -5358,7 +5594,8 @@
               "default": 0
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.4/#5.14.4.2)."
       },
       "SetPublishingModeResponse": {
         "type": "object",
@@ -5378,7 +5615,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.4/#5.14.4.2)."
       },
       "NotificationMessage": {
         "type": "object",
@@ -5401,10 +5639,12 @@
               "$ref": "#/components/schemas/ExtensionObject"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.26)."
       },
       "NotificationData": {
-        "type": "object"
+        "type": "object",
+        "description": "[Link to specification](https://reference.opcfoundation.org/Core/Part6/v105/docs/5.4.6)."
       },
       "DataChangeNotification": {
         "type": "object",
@@ -5426,7 +5666,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.25.2)."
       },
       "MonitoredItemNotification": {
         "type": "object",
@@ -5441,7 +5682,8 @@
           "Value": {
             "$ref": "#/components/schemas/DataValue"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.25.2)."
       },
       "EventNotificationList": {
         "type": "object",
@@ -5457,7 +5699,8 @@
               "$ref": "#/components/schemas/EventFieldList"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.25.3)."
       },
       "EventFieldList": {
         "type": "object",
@@ -5475,7 +5718,8 @@
               "$ref": "#/components/schemas/Variant"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.25.3)."
       },
       "HistoryEventFieldList": {
         "type": "object",
@@ -5486,7 +5730,8 @@
               "$ref": "#/components/schemas/Variant"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part11/6.6.4)."
       },
       "StatusChangeNotification": {
         "type": "object",
@@ -5502,7 +5747,8 @@
           "DiagnosticInfo": {
             "$ref": "#/components/schemas/DiagnosticInfo"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/7.25.4)."
       },
       "SubscriptionAcknowledgement": {
         "type": "object",
@@ -5521,7 +5767,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.5/#5.14.5.2)."
       },
       "PublishRequest": {
         "type": "object",
@@ -5535,7 +5782,8 @@
               "$ref": "#/components/schemas/SubscriptionAcknowledgement"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.5/#5.14.5.2)."
       },
       "PublishResponse": {
         "type": "object",
@@ -5579,7 +5827,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.5/#5.14.5.2)."
       },
       "RepublishRequest": {
         "type": "object",
@@ -5601,7 +5850,8 @@
             "format": "int64",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.6/#5.14.6.2)."
       },
       "RepublishResponse": {
         "type": "object",
@@ -5612,7 +5862,8 @@
           "NotificationMessage": {
             "$ref": "#/components/schemas/NotificationMessage"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.6/#5.14.6.2)."
       },
       "TransferResult": {
         "type": "object",
@@ -5630,7 +5881,8 @@
               "default": 0
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.7/#5.14.7.2)."
       },
       "TransferSubscriptionsRequest": {
         "type": "object",
@@ -5652,7 +5904,8 @@
             "type": "boolean",
             "default": false
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.7/#5.14.7.2)."
       },
       "TransferSubscriptionsResponse": {
         "type": "object",
@@ -5672,7 +5925,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.7/#5.14.7.2)."
       },
       "DeleteSubscriptionsRequest": {
         "type": "object",
@@ -5690,7 +5944,8 @@
               "default": 0
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.8/#5.14.8.2)."
       },
       "DeleteSubscriptionsResponse": {
         "type": "object",
@@ -5710,7 +5965,8 @@
               "$ref": "#/components/schemas/DiagnosticInfo"
             }
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part4/5.14.8/#5.14.8.2)."
       },
       "Range": {
         "type": "object",
@@ -5725,7 +5981,8 @@
             "format": "double",
             "default": 0
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part8/5.6.2)."
       },
       "EUInformation": {
         "type": "object",
@@ -5744,7 +6001,8 @@
           "Description": {
             "$ref": "#/components/schemas/LocalizedText"
           }
-        }
+        },
+        "description": "[Link to specification](https://reference.opcfoundation.org/v105/Core/docs/Part8/5.6.3/#5.6.3.3)."
       },
       "JsonMessageType": {
         "enum": [
