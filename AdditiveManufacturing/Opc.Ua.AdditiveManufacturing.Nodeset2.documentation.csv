@@ -1,0 +1,12 @@
+Id,Name,Link,ConformanceUnits
+1000,FeedstockType,"https://reference.opcfoundation.org/AdditiveManufacturing/v100/docs/8.6","AdditiveManufacturing Identify & Monitor Feedstock;"
+1001,FeedstockListType,"https://reference.opcfoundation.org/AdditiveManufacturing/v100/docs/8.5","AdditiveManufacturing Identify & Monitor Feedstock;"
+1002,ProcessValueAMType,"https://reference.opcfoundation.org/AdditiveManufacturing/v100/docs/8.4","AdditiveManufacturing Monitoring - Process;AdditiveManufacturing Monitoring - Health;"
+1003,EquipmentAMType,"https://reference.opcfoundation.org/AdditiveManufacturing/v100/docs/8.3","AdditiveManufacturing Identify & Monitor Feedstock;"
+1004,MachineIdentificationAMType,"https://reference.opcfoundation.org/AdditiveManufacturing/v100/docs/8.2","AdditiveManufacturing Technology Identification;"
+1005,AdditiveManufacturingType,"https://reference.opcfoundation.org/AdditiveManufacturing/v100/docs/8.1","AdditiveManufacturing AdditiveManufacturingType Mandatory Nodes;AdditiveManufacturing Monitoring - Process;AdditiveManufacturing Monitoring - Health;"
+3000,FeedstockFunction,"https://reference.opcfoundation.org/AdditiveManufacturing/v100/docs/10.2","AdditiveManufacturing Identify & Monitor Feedstock;"
+3001,RunInfoDataType,"https://reference.opcfoundation.org/AdditiveManufacturing/v100/docs/10.1","AdditiveManufacturing Job Management - Run Information;"
+3002,SensorSeverity,"https://reference.opcfoundation.org/AdditiveManufacturing/v100/docs/10.3","AdditiveManufacturing Monitoring - Process;AdditiveManufacturing Monitoring - Health;"
+3003,SensorCategory,"https://reference.opcfoundation.org/AdditiveManufacturing/v100/docs/10.4",""
+5016,http://opcfoundation.org/UA/AdditiveManufacturing/,"https://reference.opcfoundation.org/AdditiveManufacturing/v100/docs/13.1",""

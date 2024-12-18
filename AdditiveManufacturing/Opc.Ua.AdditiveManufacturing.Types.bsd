@@ -1,0 +1,31 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/AdditiveManufacturing/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ns1="http://opcfoundation.org/UA/ISA95-JOBCONTROL_V2/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/AdditiveManufacturing/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:Import Namespace="http://opcfoundation.org/UA/ISA95-JOBCONTROL_V2/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="RunInfoDataType">
+        <opc:Field TypeName="opc:Bit" Name="CurrentLayerSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="RemainingTimeSpecified"/>
+        <opc:Field Length="30" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field SwitchField="CurrentLayerSpecified" TypeName="opc:UInt32" Name="CurrentLayer"/>
+        <opc:Field TypeName="opc:CharArray" Name="Identifier"/>
+        <opc:Field TypeName="ns1:ISA95StateDataType" Name="State"/>
+        <opc:Field SwitchField="RemainingTimeSpecified" TypeName="opc:Double" Name="RemainingTime"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="FeedstockFunction">
+        <opc:Documentation>This enumeration indicates the function of a specific feedstock.</opc:Documentation>
+        <opc:EnumeratedValue Name="Undefined" Value="0"/>
+        <opc:EnumeratedValue Name="Main" Value="1"/>
+        <opc:EnumeratedValue Name="Ancillary" Value="2"/>
+        <opc:EnumeratedValue Name="Consumable" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="SensorCategory">
+        <opc:Documentation>This enumeration indicates the severity of a specific sensor.</opc:Documentation>
+        <opc:EnumeratedValue Name="MachineHealth" Value="0"/>
+        <opc:EnumeratedValue Name="MaintenanceTracking" Value="1"/>
+        <opc:EnumeratedValue Name="ProcessMonitoring" Value="2"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="SensorSeverity">
+        <opc:Documentation>This enumeration indicates the severity of a specific sensor.</opc:Documentation>
+        <opc:EnumeratedValue Name="Info" Value="0"/>
+        <opc:EnumeratedValue Name="Critical" Value="1"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
