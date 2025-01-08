@@ -1013,10 +1013,6 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionClassName = "nsu=" + Namespaces.Uri + ";i=15019";
         /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassId = "nsu=" + Namespaces.Uri + ";i=15020";
-        /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassName = "nsu=" + Namespaces.Uri + ";i=15021";
-        /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionName = "nsu=" + Namespaces.Uri + ";i=15022";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_CertificateExpired_BranchId = "nsu=" + Namespaces.Uri + ";i=15023";
@@ -1124,10 +1120,6 @@ namespace Opc.Ua.Gds.WebApi
         public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionClassId = "nsu=" + Namespaces.Uri + ";i=15166";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionClassName = "nsu=" + Namespaces.Uri + ";i=15167";
-        /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassId = "nsu=" + Namespaces.Uri + ";i=15168";
-        /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassName = "nsu=" + Namespaces.Uri + ";i=15169";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionName = "nsu=" + Namespaces.Uri + ";i=15170";
         /// <remarks />
@@ -1281,10 +1273,6 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionClassName = "nsu=" + Namespaces.Uri + ";i=15315";
         /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassId = "nsu=" + Namespaces.Uri + ";i=15316";
-        /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassName = "nsu=" + Namespaces.Uri + ";i=15317";
-        /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionName = "nsu=" + Namespaces.Uri + ";i=15318";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_CertificateExpired_BranchId = "nsu=" + Namespaces.Uri + ";i=15319";
@@ -1392,10 +1380,6 @@ namespace Opc.Ua.Gds.WebApi
         public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionClassId = "nsu=" + Namespaces.Uri + ";i=15462";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionClassName = "nsu=" + Namespaces.Uri + ";i=15463";
-        /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassId = "nsu=" + Namespaces.Uri + ";i=15464";
-        /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassName = "nsu=" + Namespaces.Uri + ";i=15465";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionName = "nsu=" + Namespaces.Uri + ";i=15466";
         /// <remarks />
@@ -1549,10 +1533,6 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionClassName = "nsu=" + Namespaces.Uri + ";i=15611";
         /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassId = "nsu=" + Namespaces.Uri + ";i=15612";
-        /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassName = "nsu=" + Namespaces.Uri + ";i=15613";
-        /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionName = "nsu=" + Namespaces.Uri + ";i=15614";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_BranchId = "nsu=" + Namespaces.Uri + ";i=15615";
@@ -1660,10 +1640,6 @@ namespace Opc.Ua.Gds.WebApi
         public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionClassId = "nsu=" + Namespaces.Uri + ";i=15758";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionClassName = "nsu=" + Namespaces.Uri + ";i=15759";
-        /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassId = "nsu=" + Namespaces.Uri + ";i=15760";
-        /// <remarks />
-        public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassName = "nsu=" + Namespaces.Uri + ";i=15761";
         /// <remarks />
         public const string CertificateDirectoryType_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionName = "nsu=" + Namespaces.Uri + ";i=15762";
         /// <remarks />
@@ -1935,10 +1911,6 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionClassName = "nsu=" + Namespaces.Uri + ";i=15924";
         /// <remarks />
-        public const string Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassId = "nsu=" + Namespaces.Uri + ";i=15925";
-        /// <remarks />
-        public const string Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionSubClassName = "nsu=" + Namespaces.Uri + ";i=15926";
-        /// <remarks />
         public const string Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_ConditionName = "nsu=" + Namespaces.Uri + ";i=15927";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultApplicationGroup_CertificateExpired_BranchId = "nsu=" + Namespaces.Uri + ";i=15928";
@@ -2046,10 +2018,6 @@ namespace Opc.Ua.Gds.WebApi
         public const string Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionClassId = "nsu=" + Namespaces.Uri + ";i=16071";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionClassName = "nsu=" + Namespaces.Uri + ";i=16072";
-        /// <remarks />
-        public const string Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassId = "nsu=" + Namespaces.Uri + ";i=16073";
-        /// <remarks />
-        public const string Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionSubClassName = "nsu=" + Namespaces.Uri + ";i=16074";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultApplicationGroup_TrustListOutOfDate_ConditionName = "nsu=" + Namespaces.Uri + ";i=16075";
         /// <remarks />
@@ -2203,10 +2171,6 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionClassName = "nsu=" + Namespaces.Uri + ";i=16220";
         /// <remarks />
-        public const string Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassId = "nsu=" + Namespaces.Uri + ";i=16221";
-        /// <remarks />
-        public const string Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionSubClassName = "nsu=" + Namespaces.Uri + ";i=16222";
-        /// <remarks />
         public const string Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_ConditionName = "nsu=" + Namespaces.Uri + ";i=16223";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultHttpsGroup_CertificateExpired_BranchId = "nsu=" + Namespaces.Uri + ";i=16224";
@@ -2314,10 +2278,6 @@ namespace Opc.Ua.Gds.WebApi
         public const string Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionClassId = "nsu=" + Namespaces.Uri + ";i=16367";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionClassName = "nsu=" + Namespaces.Uri + ";i=16368";
-        /// <remarks />
-        public const string Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassId = "nsu=" + Namespaces.Uri + ";i=16369";
-        /// <remarks />
-        public const string Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionSubClassName = "nsu=" + Namespaces.Uri + ";i=16370";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultHttpsGroup_TrustListOutOfDate_ConditionName = "nsu=" + Namespaces.Uri + ";i=16371";
         /// <remarks />
@@ -2471,10 +2431,6 @@ namespace Opc.Ua.Gds.WebApi
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionClassName = "nsu=" + Namespaces.Uri + ";i=16516";
         /// <remarks />
-        public const string Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassId = "nsu=" + Namespaces.Uri + ";i=16517";
-        /// <remarks />
-        public const string Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionSubClassName = "nsu=" + Namespaces.Uri + ";i=16518";
-        /// <remarks />
         public const string Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_ConditionName = "nsu=" + Namespaces.Uri + ";i=16519";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultUserTokenGroup_CertificateExpired_BranchId = "nsu=" + Namespaces.Uri + ";i=16520";
@@ -2582,10 +2538,6 @@ namespace Opc.Ua.Gds.WebApi
         public const string Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionClassId = "nsu=" + Namespaces.Uri + ";i=16663";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionClassName = "nsu=" + Namespaces.Uri + ";i=16664";
-        /// <remarks />
-        public const string Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassId = "nsu=" + Namespaces.Uri + ";i=16665";
-        /// <remarks />
-        public const string Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionSubClassName = "nsu=" + Namespaces.Uri + ";i=16666";
         /// <remarks />
         public const string Directory_CertificateGroups_DefaultUserTokenGroup_TrustListOutOfDate_ConditionName = "nsu=" + Namespaces.Uri + ";i=16667";
         /// <remarks />
