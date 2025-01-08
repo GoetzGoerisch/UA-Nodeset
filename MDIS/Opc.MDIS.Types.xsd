@@ -1,4 +1,4 @@
-<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/MDIS/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/MDIS/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/MDIS/Types.xsd" targetNamespace="http://opcfoundation.org/UA/MDIS/Types.xsd" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
     <xs:simpleType name="ArbitrationModeEnum">
         <xs:restriction base="xs:string">
@@ -14,10 +14,10 @@
     <xs:element type="tns:ArbitrationModeEnum" name="ArbitrationModeEnum"/>
     <xs:complexType name="ListOfArbitrationModeEnum">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ArbitrationModeEnum" name="ArbitrationModeEnum" nillable="true"/>
+            <xs:element type="tns:ArbitrationModeEnum" minOccurs="0" maxOccurs="unbounded" nillable="true" name="ArbitrationModeEnum"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfArbitrationModeEnum" name="ListOfArbitrationModeEnum" nillable="true"/>
+    <xs:element type="tns:ListOfArbitrationModeEnum" nillable="true" name="ListOfArbitrationModeEnum"/>
     <xs:simpleType name="ChokeCommandEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Close_1"/>
@@ -27,10 +27,10 @@
     <xs:element type="tns:ChokeCommandEnum" name="ChokeCommandEnum"/>
     <xs:complexType name="ListOfChokeCommandEnum">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ChokeCommandEnum" name="ChokeCommandEnum" nillable="true"/>
+            <xs:element type="tns:ChokeCommandEnum" minOccurs="0" maxOccurs="unbounded" nillable="true" name="ChokeCommandEnum"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfChokeCommandEnum" name="ListOfChokeCommandEnum" nillable="true"/>
+    <xs:element type="tns:ListOfChokeCommandEnum" nillable="true" name="ListOfChokeCommandEnum"/>
     <xs:simpleType name="ChokeMoveEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Moving_1"/>
@@ -40,10 +40,10 @@
     <xs:element type="tns:ChokeMoveEnum" name="ChokeMoveEnum"/>
     <xs:complexType name="ListOfChokeMoveEnum">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ChokeMoveEnum" name="ChokeMoveEnum" nillable="true"/>
+            <xs:element type="tns:ChokeMoveEnum" minOccurs="0" maxOccurs="unbounded" nillable="true" name="ChokeMoveEnum"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfChokeMoveEnum" name="ListOfChokeMoveEnum" nillable="true"/>
+    <xs:element type="tns:ListOfChokeMoveEnum" nillable="true" name="ListOfChokeMoveEnum"/>
     <xs:simpleType name="CIMVMoveEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="MoveClose_1"/>
@@ -54,10 +54,10 @@
     <xs:element type="tns:CIMVMoveEnum" name="CIMVMoveEnum"/>
     <xs:complexType name="ListOfCIMVMoveEnum">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CIMVMoveEnum" name="CIMVMoveEnum" nillable="true"/>
+            <xs:element type="tns:CIMVMoveEnum" minOccurs="0" maxOccurs="unbounded" nillable="true" name="CIMVMoveEnum"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfCIMVMoveEnum" name="ListOfCIMVMoveEnum" nillable="true"/>
+    <xs:element type="tns:ListOfCIMVMoveEnum" nillable="true" name="ListOfCIMVMoveEnum"/>
     <xs:simpleType name="CIMVOperationModeEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Position_1"/>
@@ -68,10 +68,10 @@
     <xs:element type="tns:CIMVOperationModeEnum" name="CIMVOperationModeEnum"/>
     <xs:complexType name="ListOfCIMVOperationModeEnum">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CIMVOperationModeEnum" name="CIMVOperationModeEnum" nillable="true"/>
+            <xs:element type="tns:CIMVOperationModeEnum" minOccurs="0" maxOccurs="unbounded" nillable="true" name="CIMVOperationModeEnum"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfCIMVOperationModeEnum" name="ListOfCIMVOperationModeEnum" nillable="true"/>
+    <xs:element type="tns:ListOfCIMVOperationModeEnum" nillable="true" name="ListOfCIMVOperationModeEnum"/>
     <xs:simpleType name="CommandEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Close_1"/>
@@ -82,10 +82,10 @@
     <xs:element type="tns:CommandEnum" name="CommandEnum"/>
     <xs:complexType name="ListOfCommandEnum">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CommandEnum" name="CommandEnum" nillable="true"/>
+            <xs:element type="tns:CommandEnum" minOccurs="0" maxOccurs="unbounded" nillable="true" name="CommandEnum"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfCommandEnum" name="ListOfCommandEnum" nillable="true"/>
+    <xs:element type="tns:ListOfCommandEnum" nillable="true" name="ListOfCommandEnum"/>
     <xs:simpleType name="MotorOperationEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Off_1"/>
@@ -96,10 +96,10 @@
     <xs:element type="tns:MotorOperationEnum" name="MotorOperationEnum"/>
     <xs:complexType name="ListOfMotorOperationEnum">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MotorOperationEnum" name="MotorOperationEnum" nillable="true"/>
+            <xs:element type="tns:MotorOperationEnum" minOccurs="0" maxOccurs="unbounded" nillable="true" name="MotorOperationEnum"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfMotorOperationEnum" name="ListOfMotorOperationEnum" nillable="true"/>
+    <xs:element type="tns:ListOfMotorOperationEnum" nillable="true" name="ListOfMotorOperationEnum"/>
     <xs:simpleType name="MotorStateEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Active_1"/>
@@ -109,10 +109,10 @@
     <xs:element type="tns:MotorStateEnum" name="MotorStateEnum"/>
     <xs:complexType name="ListOfMotorStateEnum">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MotorStateEnum" name="MotorStateEnum" nillable="true"/>
+            <xs:element type="tns:MotorStateEnum" minOccurs="0" maxOccurs="unbounded" nillable="true" name="MotorStateEnum"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfMotorStateEnum" name="ListOfMotorStateEnum" nillable="true"/>
+    <xs:element type="tns:ListOfMotorStateEnum" nillable="true" name="ListOfMotorStateEnum"/>
     <xs:simpleType name="SEMEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="SEM_A_1"/>
@@ -123,10 +123,10 @@
     <xs:element type="tns:SEMEnum" name="SEMEnum"/>
     <xs:complexType name="ListOfSEMEnum">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SEMEnum" name="SEMEnum" nillable="true"/>
+            <xs:element type="tns:SEMEnum" minOccurs="0" maxOccurs="unbounded" nillable="true" name="SEMEnum"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfSEMEnum" name="ListOfSEMEnum" nillable="true"/>
+    <xs:element type="tns:ListOfSEMEnum" nillable="true" name="ListOfSEMEnum"/>
     <xs:simpleType name="SetCalculatedPositionEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Initial_0"/>
@@ -138,10 +138,10 @@
     <xs:element type="tns:SetCalculatedPositionEnum" name="SetCalculatedPositionEnum"/>
     <xs:complexType name="ListOfSetCalculatedPositionEnum">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SetCalculatedPositionEnum" name="SetCalculatedPositionEnum" nillable="true"/>
+            <xs:element type="tns:SetCalculatedPositionEnum" minOccurs="0" maxOccurs="unbounded" nillable="true" name="SetCalculatedPositionEnum"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfSetCalculatedPositionEnum" name="ListOfSetCalculatedPositionEnum" nillable="true"/>
+    <xs:element type="tns:ListOfSetCalculatedPositionEnum" nillable="true" name="ListOfSetCalculatedPositionEnum"/>
     <xs:simpleType name="SignatureStatusEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="NotAvailable_1"/>
@@ -152,10 +152,10 @@
     <xs:element type="tns:SignatureStatusEnum" name="SignatureStatusEnum"/>
     <xs:complexType name="ListOfSignatureStatusEnum">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SignatureStatusEnum" name="SignatureStatusEnum" nillable="true"/>
+            <xs:element type="tns:SignatureStatusEnum" minOccurs="0" maxOccurs="unbounded" nillable="true" name="SignatureStatusEnum"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfSignatureStatusEnum" name="ListOfSignatureStatusEnum" nillable="true"/>
+    <xs:element type="tns:ListOfSignatureStatusEnum" nillable="true" name="ListOfSignatureStatusEnum"/>
     <xs:simpleType name="ValvePositionEnum">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Closed_1"/>
@@ -167,22 +167,22 @@
     <xs:element type="tns:ValvePositionEnum" name="ValvePositionEnum"/>
     <xs:complexType name="ListOfValvePositionEnum">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ValvePositionEnum" name="ValvePositionEnum" nillable="true"/>
+            <xs:element type="tns:ValvePositionEnum" minOccurs="0" maxOccurs="unbounded" nillable="true" name="ValvePositionEnum"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfValvePositionEnum" name="ListOfValvePositionEnum" nillable="true"/>
+    <xs:element type="tns:ListOfValvePositionEnum" nillable="true" name="ListOfValvePositionEnum"/>
     <xs:complexType name="MDISVersionDataType">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedByte" name="MajorVersion"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedByte" name="MinorVersion"/>
-            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedByte" name="Build"/>
+            <xs:element type="xs:unsignedByte" minOccurs="0" maxOccurs="1" name="MajorVersion"/>
+            <xs:element type="xs:unsignedByte" minOccurs="0" maxOccurs="1" name="MinorVersion"/>
+            <xs:element type="xs:unsignedByte" minOccurs="0" maxOccurs="1" name="Build"/>
         </xs:sequence>
     </xs:complexType>
     <xs:element type="tns:MDISVersionDataType" name="MDISVersionDataType"/>
     <xs:complexType name="ListOfMDISVersionDataType">
         <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:MDISVersionDataType" name="MDISVersionDataType" nillable="true"/>
+            <xs:element type="tns:MDISVersionDataType" minOccurs="0" maxOccurs="unbounded" nillable="true" name="MDISVersionDataType"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:element type="tns:ListOfMDISVersionDataType" name="ListOfMDISVersionDataType" nillable="true"/>
+    <xs:element type="tns:ListOfMDISVersionDataType" nillable="true" name="ListOfMDISVersionDataType"/>
 </xs:schema>

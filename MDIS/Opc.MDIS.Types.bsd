@@ -1,4 +1,4 @@
-<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/MDIS" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/MDIS">
+<opc:TypeDictionary xmlns:ua="http://opcfoundation.org/UA/" xmlns:tns="http://opcfoundation.org/UA/MDIS" xmlns:opc="http://opcfoundation.org/BinarySchema/" TargetNamespace="http://opcfoundation.org/UA/MDIS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" DefaultByteOrder="LittleEndian">
     <opc:Import Namespace="http://opcfoundation.org/UA/"/>
     <opc:StructuredType BaseType="ua:ExtensionObject" Name="MDISVersionDataType">
         <opc:Field TypeName="opc:Byte" Name="MajorVersion"/>
@@ -6,66 +6,66 @@
         <opc:Field TypeName="opc:Byte" Name="Build"/>
     </opc:StructuredType>
     <opc:EnumeratedType LengthInBits="32" Name="ArbitrationModeEnum">
-        <opc:EnumeratedValue Name="Average" Value="1"/>
-        <opc:EnumeratedValue Name="DefaultA" Value="2"/>
-        <opc:EnumeratedValue Name="DefaultB" Value="4"/>
-        <opc:EnumeratedValue Name="ForceA" Value="8"/>
-        <opc:EnumeratedValue Name="ForceB" Value="16"/>
-        <opc:EnumeratedValue Name="High" Value="32"/>
-        <opc:EnumeratedValue Name="Low" Value="64"/>
+        <opc:EnumeratedValue Value="1" Name="Average"/>
+        <opc:EnumeratedValue Value="2" Name="DefaultA"/>
+        <opc:EnumeratedValue Value="4" Name="DefaultB"/>
+        <opc:EnumeratedValue Value="8" Name="ForceA"/>
+        <opc:EnumeratedValue Value="16" Name="ForceB"/>
+        <opc:EnumeratedValue Value="32" Name="High"/>
+        <opc:EnumeratedValue Value="64" Name="Low"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="ChokeCommandEnum">
-        <opc:EnumeratedValue Name="Close" Value="1"/>
-        <opc:EnumeratedValue Name="Open" Value="2"/>
+        <opc:EnumeratedValue Value="1" Name="Close"/>
+        <opc:EnumeratedValue Value="2" Name="Open"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="ChokeMoveEnum">
-        <opc:EnumeratedValue Name="Moving" Value="1"/>
-        <opc:EnumeratedValue Name="Stopped" Value="2"/>
+        <opc:EnumeratedValue Value="1" Name="Moving"/>
+        <opc:EnumeratedValue Value="2" Name="Stopped"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="CIMVMoveEnum">
-        <opc:EnumeratedValue Name="MoveClose" Value="1"/>
-        <opc:EnumeratedValue Name="MoveOpen" Value="2"/>
-        <opc:EnumeratedValue Name="Stop" Value="4"/>
+        <opc:EnumeratedValue Value="1" Name="MoveClose"/>
+        <opc:EnumeratedValue Value="2" Name="MoveOpen"/>
+        <opc:EnumeratedValue Value="4" Name="Stop"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="CIMVOperationModeEnum">
-        <opc:EnumeratedValue Name="Position" Value="1"/>
-        <opc:EnumeratedValue Name="Flow" Value="2"/>
-        <opc:EnumeratedValue Name="Manual" Value="4"/>
+        <opc:EnumeratedValue Value="1" Name="Position"/>
+        <opc:EnumeratedValue Value="2" Name="Flow"/>
+        <opc:EnumeratedValue Value="4" Name="Manual"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="CommandEnum">
-        <opc:EnumeratedValue Name="Close" Value="1"/>
-        <opc:EnumeratedValue Name="Open" Value="2"/>
-        <opc:EnumeratedValue Name="None" Value="4"/>
+        <opc:EnumeratedValue Value="1" Name="Close"/>
+        <opc:EnumeratedValue Value="2" Name="Open"/>
+        <opc:EnumeratedValue Value="4" Name="None"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="MotorOperationEnum">
-        <opc:EnumeratedValue Name="Off" Value="1"/>
-        <opc:EnumeratedValue Name="Auto" Value="2"/>
-        <opc:EnumeratedValue Name="Manual" Value="4"/>
+        <opc:EnumeratedValue Value="1" Name="Off"/>
+        <opc:EnumeratedValue Value="2" Name="Auto"/>
+        <opc:EnumeratedValue Value="4" Name="Manual"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="MotorStateEnum">
-        <opc:EnumeratedValue Name="Active" Value="1"/>
-        <opc:EnumeratedValue Name="NonActive" Value="2"/>
+        <opc:EnumeratedValue Value="1" Name="Active"/>
+        <opc:EnumeratedValue Value="2" Name="NonActive"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="SEMEnum">
-        <opc:EnumeratedValue Name="SEM_A" Value="1"/>
-        <opc:EnumeratedValue Name="SEM_B" Value="2"/>
-        <opc:EnumeratedValue Name="Auto" Value="4"/>
+        <opc:EnumeratedValue Value="1" Name="SEM_A"/>
+        <opc:EnumeratedValue Value="2" Name="SEM_B"/>
+        <opc:EnumeratedValue Value="4" Name="Auto"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="SetCalculatedPositionEnum">
-        <opc:EnumeratedValue Name="Initial" Value="0"/>
-        <opc:EnumeratedValue Name="Inprogress" Value="1"/>
-        <opc:EnumeratedValue Name="Complete" Value="2"/>
-        <opc:EnumeratedValue Name="Fault" Value="4"/>
+        <opc:EnumeratedValue Value="0" Name="Initial"/>
+        <opc:EnumeratedValue Value="1" Name="Inprogress"/>
+        <opc:EnumeratedValue Value="2" Name="Complete"/>
+        <opc:EnumeratedValue Value="4" Name="Fault"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="SignatureStatusEnum">
-        <opc:EnumeratedValue Name="NotAvailable" Value="1"/>
-        <opc:EnumeratedValue Name="Completed" Value="2"/>
-        <opc:EnumeratedValue Name="Failed" Value="4"/>
+        <opc:EnumeratedValue Value="1" Name="NotAvailable"/>
+        <opc:EnumeratedValue Value="2" Name="Completed"/>
+        <opc:EnumeratedValue Value="4" Name="Failed"/>
     </opc:EnumeratedType>
     <opc:EnumeratedType LengthInBits="32" Name="ValvePositionEnum">
-        <opc:EnumeratedValue Name="Closed" Value="1"/>
-        <opc:EnumeratedValue Name="Open" Value="2"/>
-        <opc:EnumeratedValue Name="Moving" Value="4"/>
-        <opc:EnumeratedValue Name="Unknown" Value="8"/>
+        <opc:EnumeratedValue Value="1" Name="Closed"/>
+        <opc:EnumeratedValue Value="2" Name="Open"/>
+        <opc:EnumeratedValue Value="4" Name="Moving"/>
+        <opc:EnumeratedValue Value="8" Name="Unknown"/>
     </opc:EnumeratedType>
 </opc:TypeDictionary>

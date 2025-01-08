@@ -1,0 +1,25 @@
+###########################
+# UaModeler Project File  #
+# Generated at 05.01.2025 #
+###########################
+
+PROJECTNAME = MDIS
+
+TEMPLATESET = ($TEMPLATES)/modeling/v1_0/t0/modeling.tt2set
+
+MODELS += ($MODELS)/Opc.Ua.NodeSet2.ua \
+    Opc.MDIS.NodeSet2.ua
+
+COLORS = ($MODELS)/Opc.Ua.NodeSet2.ua: #0000ff\
+    Opc.MDIS.NodeSet2.ua: #0000ff
+
+OUTPUTPATH = ../../../Desktop/MDIS/Test
+
+GENERATE += Opc.MDIS.NodeSet2.ua
+
+NODEACCESSINFOROLES += Administrator \
+    SecurityAdmin \
+    ConfigurationAdmin \
+    Operator \
+    Observer
+
