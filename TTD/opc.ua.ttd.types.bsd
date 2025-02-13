@@ -1,0 +1,166 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/TTD/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ns1="http://opcfoundation.org/UA/Machinery/Result/" xmlns:ns2="http://opcfoundation.org/UA/ISA95-JOBCONTROL_V2/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/TTD/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:Import Namespace="http://opcfoundation.org/UA/Machinery/Result/"/>
+    <opc:Import Namespace="http://opcfoundation.org/UA/ISA95-JOBCONTROL_V2/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ExchangeablePartDataType">
+        <opc:Field TypeName="opc:Bit" Name="TraceableSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="PartIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="MachineReadableSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="LastCalibrationDateSpecified"/>
+        <opc:Field Length="28" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:CharArray" Name="PartType"/>
+        <opc:Field TypeName="opc:Boolean" Name="Mounted"/>
+        <opc:Field SwitchField="TraceableSpecified" TypeName="opc:Boolean" Name="Traceable"/>
+        <opc:Field SwitchField="PartIdSpecified" TypeName="opc:CharArray" Name="PartId"/>
+        <opc:Field SwitchField="MachineReadableSpecified" TypeName="opc:Boolean" Name="MachineReadable"/>
+        <opc:Field SwitchField="LastCalibrationDateSpecified" TypeName="opc:DateTime" Name="LastCalibrationDate"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="JobOrderDataType">
+        <opc:Field TypeName="opc:Bit" Name="AdditionalInfoSpecified"/>
+        <opc:Field Length="31" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:CharArray" Name="JobId"/>
+        <opc:Field TypeName="tns:RecipeIdDataType" Name="RecipeId"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfNumberOfTests"/>
+        <opc:Field LengthField="NoOfNumberOfTests" TypeName="tns:TestNumDataType" Name="NumberOfTests"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfSampleInfos"/>
+        <opc:Field LengthField="NoOfSampleInfos" TypeName="tns:SampleInfoDataType" Name="SampleInfos"/>
+        <opc:Field TypeName="opc:CharArray" Name="CarrierTypeId"/>
+        <opc:Field TypeName="opc:CharArray" Name="CarrierId"/>
+        <opc:Field SwitchField="AdditionalInfoSpecified" TypeName="opc:Int32" Name="NoOfAdditionalInfo"/>
+        <opc:Field LengthField="NoOfAdditionalInfo" SwitchField="AdditionalInfoSpecified" TypeName="ua:KeyValuePair" Name="AdditionalInfo"/>
+        <opc:Field TypeName="opc:Boolean" Name="Scheduled"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="OptionalModuleDataType">
+        <opc:Field TypeName="opc:Bit" Name="VersionSpecified"/>
+        <opc:Field Length="31" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:CharArray" Name="ModuleName"/>
+        <opc:Field TypeName="opc:CharArray" Name="ModuleType"/>
+        <opc:Field TypeName="opc:Boolean" Name="IsInstalled"/>
+        <opc:Field SwitchField="VersionSpecified" TypeName="opc:CharArray" Name="Version"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="RecipeDataType">
+        <opc:Field TypeName="tns:RecipeIdDataType" Name="RecipeId"/>
+        <opc:Field TypeName="opc:ByteString" Name="RecipeContent"/>
+        <opc:Field TypeName="opc:CharArray" Name="ContentEncoding"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="RecipeIdDataType">
+        <opc:Field TypeName="opc:Bit" Name="NameSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="TypeSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="DescriptionSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="CommentSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ModifiedDateSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="VersionSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ValidatedSpecified"/>
+        <opc:Field Length="25" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field SwitchField="NameSpecified" TypeName="opc:CharArray" Name="Name"/>
+        <opc:Field TypeName="opc:CharArray" Name="Id"/>
+        <opc:Field SwitchField="TypeSpecified" TypeName="opc:CharArray" Name="Type"/>
+        <opc:Field SwitchField="DescriptionSpecified" TypeName="opc:CharArray" Name="Description"/>
+        <opc:Field SwitchField="CommentSpecified" TypeName="opc:CharArray" Name="Comment"/>
+        <opc:Field SwitchField="ModifiedDateSpecified" TypeName="opc:DateTime" Name="ModifiedDate"/>
+        <opc:Field SwitchField="VersionSpecified" TypeName="opc:CharArray" Name="Version"/>
+        <opc:Field SwitchField="ValidatedSpecified" TypeName="opc:Boolean" Name="Validated"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ns1:ResultMetaDataType" Name="TTDResultMetaDataType">
+        <opc:Field TypeName="opc:Bit" Name="HasTransferableDataOnFileSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="IsPartialSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="IsSimulatedSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ResultStateSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="StepIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="PartIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ExternalRecipeIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="InternalRecipeIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ProductIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ExternalConfigurationIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="InternalConfigurationIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="JobIdSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="CreationTimeSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ProcessingTimesSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ResultUriSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ResultEvaluationSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ResultEvaluationCodeSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ResultEvaluationDetailsSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="FileFormatSpecified"/>
+        <opc:Field Length="13" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="ResultId"/>
+        <opc:Field SwitchField="HasTransferableDataOnFileSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:Boolean" Name="HasTransferableDataOnFile"/>
+        <opc:Field SwitchField="IsPartialSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:Boolean" Name="IsPartial"/>
+        <opc:Field SwitchField="IsSimulatedSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:Boolean" Name="IsSimulated"/>
+        <opc:Field SwitchField="ResultStateSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:Int32" Name="ResultState"/>
+        <opc:Field SwitchField="StepIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="StepId"/>
+        <opc:Field SwitchField="PartIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="PartId"/>
+        <opc:Field SwitchField="ExternalRecipeIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="ExternalRecipeId"/>
+        <opc:Field SwitchField="InternalRecipeIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="InternalRecipeId"/>
+        <opc:Field SwitchField="ProductIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="ProductId"/>
+        <opc:Field SwitchField="ExternalConfigurationIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="ExternalConfigurationId"/>
+        <opc:Field SwitchField="InternalConfigurationIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="InternalConfigurationId"/>
+        <opc:Field SwitchField="JobIdSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="JobId"/>
+        <opc:Field SwitchField="CreationTimeSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:DateTime" Name="CreationTime"/>
+        <opc:Field SwitchField="ProcessingTimesSpecified" SourceType="ns1:ResultMetaDataType" TypeName="ns1:ProcessingTimesDataType" Name="ProcessingTimes"/>
+        <opc:Field SwitchField="ResultUriSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:Int32" Name="NoOfResultUri"/>
+        <opc:Field LengthField="NoOfResultUri" SwitchField="ResultUriSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="ResultUri"/>
+        <opc:Field SwitchField="ResultEvaluationSpecified" SourceType="ns1:ResultMetaDataType" TypeName="ns1:ResultEvaluationEnum" Name="ResultEvaluation"/>
+        <opc:Field SwitchField="ResultEvaluationCodeSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:Int64" Name="ResultEvaluationCode"/>
+        <opc:Field SwitchField="ResultEvaluationDetailsSpecified" SourceType="ns1:ResultMetaDataType" TypeName="ua:LocalizedText" Name="ResultEvaluationDetails"/>
+        <opc:Field SwitchField="FileFormatSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:Int32" Name="NoOfFileFormat"/>
+        <opc:Field LengthField="NoOfFileFormat" SwitchField="FileFormatSpecified" SourceType="ns1:ResultMetaDataType" TypeName="opc:CharArray" Name="FileFormat"/>
+        <opc:Field TypeName="opc:CharArray" Name="SampleId"/>
+        <opc:Field TypeName="opc:CharArray" Name="TesterJobId"/>
+        <opc:Field TypeName="opc:CharArray" Name="TesterSampleResultId"/>
+        <opc:Field TypeName="opc:CharArray" Name="ProductInstanceURI"/>
+        <opc:Field TypeName="opc:Boolean" Name="CanBeDeleted"/>
+        <opc:Field TypeName="ns2:ISA95JobOrderDataType" Name="JobOrder"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="SampleInfoDataType">
+        <opc:Field TypeName="opc:Bit" Name="MaterialDensitySpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="MaterialTypeSpecified"/>
+        <opc:Field Length="30" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:CharArray" Name="SampleId"/>
+        <opc:Field TypeName="opc:Double" Name="NominalLinearDensity"/>
+        <opc:Field SwitchField="MaterialDensitySpecified" TypeName="opc:Double" Name="MaterialDensity"/>
+        <opc:Field SwitchField="MaterialTypeSpecified" TypeName="opc:CharArray" Name="MaterialType"/>
+        <opc:Field TypeName="opc:CharArray" Name="PositionOnCarrier"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="StatisticResultContentDataType">
+        <opc:Field TypeName="opc:CharArray" Name="ResultKey"/>
+        <opc:Field TypeName="opc:UInt32" Name="ItemCount"/>
+        <opc:Field TypeName="opc:Double" Name="MeanValue"/>
+        <opc:Field TypeName="opc:Double" Name="StandardDeviation"/>
+        <opc:Field TypeName="opc:Double" Name="CoefficientOfVariation"/>
+        <opc:Field TypeName="opc:Double" Name="MinValue"/>
+        <opc:Field TypeName="opc:Double" Name="MaxValue"/>
+        <opc:Field TypeName="opc:Double" Name="ConfidenceInterval95"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:StatisticResultContentDataType" Name="StatisticResultContentWithUnitsDataType">
+        <opc:Field SourceType="tns:StatisticResultContentDataType" TypeName="opc:CharArray" Name="ResultKey"/>
+        <opc:Field SourceType="tns:StatisticResultContentDataType" TypeName="opc:UInt32" Name="ItemCount"/>
+        <opc:Field SourceType="tns:StatisticResultContentDataType" TypeName="opc:Double" Name="MeanValue"/>
+        <opc:Field SourceType="tns:StatisticResultContentDataType" TypeName="opc:Double" Name="StandardDeviation"/>
+        <opc:Field SourceType="tns:StatisticResultContentDataType" TypeName="opc:Double" Name="CoefficientOfVariation"/>
+        <opc:Field SourceType="tns:StatisticResultContentDataType" TypeName="opc:Double" Name="MinValue"/>
+        <opc:Field SourceType="tns:StatisticResultContentDataType" TypeName="opc:Double" Name="MaxValue"/>
+        <opc:Field SourceType="tns:StatisticResultContentDataType" TypeName="opc:Double" Name="ConfidenceInterval95"/>
+        <opc:Field TypeName="ua:EUInformation" Name="UnitItemCount"/>
+        <opc:Field TypeName="ua:EUInformation" Name="UnitMeanValue"/>
+        <opc:Field TypeName="ua:EUInformation" Name="UnitStandardDeviation"/>
+        <opc:Field TypeName="ua:EUInformation" Name="UnitCoefficientOfVariation"/>
+        <opc:Field TypeName="ua:EUInformation" Name="UnitMinValue"/>
+        <opc:Field TypeName="ua:EUInformation" Name="UnitMaxValue"/>
+        <opc:Field TypeName="ua:EUInformation" Name="UnitConfidenceInterval"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="TestNumDataType">
+        <opc:Field TypeName="opc:CharArray" Name="TestProcedureId"/>
+        <opc:Field TypeName="opc:UInt32" Name="NumberOfTests"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="TestProcedureIdDataType">
+        <opc:Field TypeName="opc:Bit" Name="DescriptionSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="ProcedureReferencesSpecified"/>
+        <opc:Field TypeName="opc:Bit" Name="IsProcedureLicensedSpecified"/>
+        <opc:Field Length="29" TypeName="opc:Bit" Name="Reserved1"/>
+        <opc:Field TypeName="opc:CharArray" Name="TestProcedureId"/>
+        <opc:Field SwitchField="DescriptionSpecified" TypeName="opc:CharArray" Name="Description"/>
+        <opc:Field SwitchField="ProcedureReferencesSpecified" TypeName="opc:Int32" Name="NoOfProcedureReferences"/>
+        <opc:Field LengthField="NoOfProcedureReferences" SwitchField="ProcedureReferencesSpecified" TypeName="opc:CharArray" Name="ProcedureReferences"/>
+        <opc:Field SwitchField="IsProcedureLicensedSpecified" TypeName="opc:Boolean" Name="IsProcedureLicensed"/>
+    </opc:StructuredType>
+</opc:TypeDictionary>

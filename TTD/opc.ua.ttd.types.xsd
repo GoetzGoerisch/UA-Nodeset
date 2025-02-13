@@ -1,0 +1,201 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/TTD/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/TTD/Types.xsd" xmlns:ns3="http://opcfoundation.org/UA/Machinery/Result/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:ns6="http://opcfoundation.org/UA/ISA95-JOBCONTROL_V2/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:import namespace="http://opcfoundation.org/UA/ISA95-JOBCONTROL_V2/Types.xsd"/>
+    <xs:import namespace="http://opcfoundation.org/UA/Machinery/Result/Types.xsd"/>
+    <xs:complexType name="ExchangeablePartDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="PartType"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="Mounted"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="Traceable"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="PartId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="MachineReadable"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="LastCalibrationDate"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ExchangeablePartDataType" name="ExchangeablePartDataType"/>
+    <xs:complexType name="ListOfExchangeablePartDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ExchangeablePartDataType" name="ExchangeablePartDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfExchangeablePartDataType" name="ListOfExchangeablePartDataType" nillable="true"/>
+    <xs:complexType name="JobOrderDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="JobId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:RecipeIdDataType" name="RecipeId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfTestNumDataType" name="NumberOfTests"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfSampleInfoDataType" name="SampleInfos"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="CarrierTypeId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="CarrierId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfKeyValuePair" name="AdditionalInfo"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="Scheduled"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:JobOrderDataType" name="JobOrderDataType"/>
+    <xs:complexType name="ListOfJobOrderDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:JobOrderDataType" name="JobOrderDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfJobOrderDataType" name="ListOfJobOrderDataType" nillable="true"/>
+    <xs:complexType name="OptionalModuleDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ModuleName"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ModuleType"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="IsInstalled"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Version"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:OptionalModuleDataType" name="OptionalModuleDataType"/>
+    <xs:complexType name="ListOfOptionalModuleDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:OptionalModuleDataType" name="OptionalModuleDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfOptionalModuleDataType" name="ListOfOptionalModuleDataType" nillable="true"/>
+    <xs:complexType name="RecipeDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:RecipeIdDataType" name="RecipeId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:base64Binary" name="RecipeContent"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ContentEncoding"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:RecipeDataType" name="RecipeDataType"/>
+    <xs:complexType name="ListOfRecipeDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:RecipeDataType" name="RecipeDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfRecipeDataType" name="ListOfRecipeDataType" nillable="true"/>
+    <xs:complexType name="RecipeIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Name"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Type"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Description"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Comment"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:dateTime" name="ModifiedDate"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Version"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="Validated"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:RecipeIdDataType" name="RecipeIdDataType"/>
+    <xs:complexType name="ListOfRecipeIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:RecipeIdDataType" name="RecipeIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfRecipeIdDataType" name="ListOfRecipeIdDataType" nillable="true"/>
+    <xs:complexType name="TTDResultMetaDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ns3:ResultMetaDataType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="SampleId"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="TesterJobId"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="TesterSampleResultId"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ProductInstanceURI"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="CanBeDeleted"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ns6:ISA95JobOrderDataType" name="JobOrder"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:TTDResultMetaDataType" name="TTDResultMetaDataType"/>
+    <xs:complexType name="ListOfTTDResultMetaDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:TTDResultMetaDataType" name="TTDResultMetaDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfTTDResultMetaDataType" name="ListOfTTDResultMetaDataType" nillable="true"/>
+    <xs:complexType name="SampleInfoDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="SampleId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="NominalLinearDensity"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="MaterialDensity"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="MaterialType"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="PositionOnCarrier"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:SampleInfoDataType" name="SampleInfoDataType"/>
+    <xs:complexType name="ListOfSampleInfoDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SampleInfoDataType" name="SampleInfoDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSampleInfoDataType" name="ListOfSampleInfoDataType" nillable="true"/>
+    <xs:complexType name="StatisticResultContentDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ResultKey"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="ItemCount"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="MeanValue"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="StandardDeviation"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="CoefficientOfVariation"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="MinValue"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="MaxValue"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="ConfidenceInterval95"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:StatisticResultContentDataType" name="StatisticResultContentDataType"/>
+    <xs:complexType name="ListOfStatisticResultContentDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:StatisticResultContentDataType" name="StatisticResultContentDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfStatisticResultContentDataType" name="ListOfStatisticResultContentDataType" nillable="true"/>
+    <xs:complexType name="StatisticResultContentWithUnitsDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:StatisticResultContentDataType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:EUInformation" name="UnitItemCount"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:EUInformation" name="UnitMeanValue"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:EUInformation" name="UnitStandardDeviation"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:EUInformation" name="UnitCoefficientOfVariation"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:EUInformation" name="UnitMinValue"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:EUInformation" name="UnitMaxValue"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:EUInformation" name="UnitConfidenceInterval"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:StatisticResultContentWithUnitsDataType" name="StatisticResultContentWithUnitsDataType"/>
+    <xs:complexType name="ListOfStatisticResultContentWithUnitsDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:StatisticResultContentWithUnitsDataType" name="StatisticResultContentWithUnitsDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfStatisticResultContentWithUnitsDataType" name="ListOfStatisticResultContentWithUnitsDataType" nillable="true"/>
+    <xs:complexType name="TestNumDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="TestProcedureId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="NumberOfTests"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:TestNumDataType" name="TestNumDataType"/>
+    <xs:complexType name="ListOfTestNumDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:TestNumDataType" name="TestNumDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfTestNumDataType" name="ListOfTestNumDataType" nillable="true"/>
+    <xs:complexType name="TestProcedureIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" type="xs:unsignedInt" name="EncodingMask"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="TestProcedureId"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Description"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="ProcedureReferences"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:boolean" name="IsProcedureLicensed"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:TestProcedureIdDataType" name="TestProcedureIdDataType"/>
+    <xs:complexType name="ListOfTestProcedureIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:TestProcedureIdDataType" name="TestProcedureIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfTestProcedureIdDataType" name="ListOfTestProcedureIdDataType" nillable="true"/>
+</xs:schema>
