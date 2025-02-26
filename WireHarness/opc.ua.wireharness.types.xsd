@@ -1,0 +1,198 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/WireHarness/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/WireHarness/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:ns6="http://opcfoundation.org/UA/WireHarness/VEC/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:import namespace="http://opcfoundation.org/UA/WireHarness/VEC/Types.xsd"/>
+    <xs:complexType name="ForceCurveDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfForceCurvePointDataType" name="Points"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:EUInformation" name="EngineeringUnitsX"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:EUInformation" name="EngineeringUnitsValue"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ForceCurveDataType" name="ForceCurveDataType"/>
+    <xs:complexType name="ListOfForceCurveDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ForceCurveDataType" name="ForceCurveDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfForceCurveDataType" name="ListOfForceCurveDataType" nillable="true"/>
+    <xs:complexType name="ForceCurvePointDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfUInt32" name="X"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfUInt32" name="Value"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ForceCurvePointDataType" name="ForceCurvePointDataType"/>
+    <xs:complexType name="ListOfForceCurvePointDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ForceCurvePointDataType" name="ForceCurvePointDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfForceCurvePointDataType" name="ListOfForceCurvePointDataType" nillable="true"/>
+    <xs:complexType name="ProcessInputDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="ToolType"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="ProcessDescription"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Id"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ProcessInputDataType" name="ProcessInputDataType"/>
+    <xs:complexType name="ListOfProcessInputDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProcessInputDataType" name="ProcessInputDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfProcessInputDataType" name="ListOfProcessInputDataType" nillable="true"/>
+    <xs:complexType name="CrimpInputDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ns6:WireMountingIdDataType" name="ReferencedElement"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfBoolean" name="VerifyCrimpHeight"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfBoolean" name="VerifyCrimpWidth"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfBoolean" name="VerifyInsulationCrimpHeight"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfBoolean" name="VerifyInsulationCrimpWidth"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfBoolean" name="VerifyPullOutForce"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfBoolean" name="CrimpForceMonitoring"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CrimpInputDataType" name="CrimpInputDataType"/>
+    <xs:complexType name="ListOfCrimpInputDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CrimpInputDataType" name="CrimpInputDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCrimpInputDataType" name="ListOfCrimpInputDataType" nillable="true"/>
+    <xs:complexType name="CutInputDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ns6:WireElementReferenceIdDataType" name="ReferencedElement"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfBoolean" name="VerifyWireLength"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CutInputDataType" name="CutInputDataType"/>
+    <xs:complexType name="ListOfCutInputDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CutInputDataType" name="CutInputDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCutInputDataType" name="ListOfCutInputDataType" nillable="true"/>
+    <xs:complexType name="SealInputDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ns6:WireMountingIdDataType" name="ReferencedElement"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfBoolean" name="MonitorSealPosition"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:SealInputDataType" name="SealInputDataType"/>
+    <xs:complexType name="ListOfSealInputDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SealInputDataType" name="SealInputDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSealInputDataType" name="ListOfSealInputDataType" nillable="true"/>
+    <xs:complexType name="StripInputDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ns6:WireEndIdDataType" name="ReferencedElement"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfBoolean" name="StrippingLengthMonitoring"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:StripInputDataType" name="StripInputDataType"/>
+    <xs:complexType name="ListOfStripInputDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:StripInputDataType" name="StripInputDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfStripInputDataType" name="ListOfStripInputDataType" nillable="true"/>
+    <xs:complexType name="ProcessOutputDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ToolInstance"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ProcessOutputDataType" name="ProcessOutputDataType"/>
+    <xs:complexType name="ListOfProcessOutputDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ProcessOutputDataType" name="ProcessOutputDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfProcessOutputDataType" name="ListOfProcessOutputDataType" nillable="true"/>
+    <xs:complexType name="CrimpOutputDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:ProcessOutputDataType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ns6:ListOfNumericalValue" name="ActualCrimpHeight"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ns6:ListOfNumericalValue" name="ActualCrimpWidth"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ns6:ListOfNumericalValue" name="ActualInsulationCrimpHeight"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfForceCurveDataType" name="ActualCrimpForceCurve"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ns6:ListOfNumericalValue" name="ActualCrimpPullOutForce"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CrimpOutputDataType" name="CrimpOutputDataType"/>
+    <xs:complexType name="ListOfCrimpOutputDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CrimpOutputDataType" name="CrimpOutputDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCrimpOutputDataType" name="ListOfCrimpOutputDataType" nillable="true"/>
+    <xs:complexType name="CutOutputDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:ProcessOutputDataType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ns6:ListOfNumericalValue" name="ActualLength"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CutOutputDataType" name="CutOutputDataType"/>
+    <xs:complexType name="ListOfCutOutputDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CutOutputDataType" name="CutOutputDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCutOutputDataType" name="ListOfCutOutputDataType" nillable="true"/>
+    <xs:complexType name="SealOutputDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:ProcessOutputDataType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ns6:ListOfNumericalValue" name="ActualPosition"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:SealOutputDataType" name="SealOutputDataType"/>
+    <xs:complexType name="ListOfSealOutputDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SealOutputDataType" name="SealOutputDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSealOutputDataType" name="ListOfSealOutputDataType" nillable="true"/>
+    <xs:complexType name="StripOutputDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:ProcessOutputDataType">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ns6:ListOfNumericalValue" name="ActualStrippingLength"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:StripOutputDataType" name="StripOutputDataType"/>
+    <xs:complexType name="ListOfStripOutputDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:StripOutputDataType" name="StripOutputDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfStripOutputDataType" name="ListOfStripOutputDataType" nillable="true"/>
+</xs:schema>

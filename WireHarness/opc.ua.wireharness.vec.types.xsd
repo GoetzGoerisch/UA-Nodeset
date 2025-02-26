@@ -1,0 +1,1547 @@
+<xs:schema elementFormDefault="qualified" targetNamespace="http://opcfoundation.org/UA/WireHarness/VEC/Types.xsd" xmlns:tns="http://opcfoundation.org/UA/WireHarness/VEC/Types.xsd" xmlns:ua="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:import namespace="http://opcfoundation.org/UA/2008/02/Types.xsd"/>
+    <xs:simpleType name="ConductorType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Rigid_0"/>
+            <xs:enumeration value="Stranded_1"/>
+            <xs:enumeration value="Foil_2"/>
+            <xs:enumeration value="Braided_3"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:ConductorType" name="ConductorType"/>
+    <xs:complexType name="ListOfConductorType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ConductorType" name="ConductorType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfConductorType" name="ListOfConductorType" nillable="true"/>
+    <xs:simpleType name="CrimpBarrelType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Open_0"/>
+            <xs:enumeration value="Closed_1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:CrimpBarrelType" name="CrimpBarrelType"/>
+    <xs:complexType name="ListOfCrimpBarrelType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CrimpBarrelType" name="CrimpBarrelType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCrimpBarrelType" name="ListOfCrimpBarrelType" nillable="true"/>
+    <xs:simpleType name="PrimaryPartType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Antenna_0"/>
+            <xs:enumeration value="Battery_1"/>
+            <xs:enumeration value="BoltMountedFixing_2"/>
+            <xs:enumeration value="BoltTerminal_3"/>
+            <xs:enumeration value="BridgeTerminal_4"/>
+            <xs:enumeration value="CableDuct_5"/>
+            <xs:enumeration value="CableTie_6"/>
+            <xs:enumeration value="Capacitor_7"/>
+            <xs:enumeration value="CavityAccessory_8"/>
+            <xs:enumeration value="CavityPlug_9"/>
+            <xs:enumeration value="CavitySeal_10"/>
+            <xs:enumeration value="ConnectorHousing_11"/>
+            <xs:enumeration value="ConnectorHousingCap_12"/>
+            <xs:enumeration value="ConnectorHousingCover_13"/>
+            <xs:enumeration value="CorrugatedPipe_14"/>
+            <xs:enumeration value="Diode_15"/>
+            <xs:enumeration value="EdgeMountedFixing_16"/>
+            <xs:enumeration value="EEComponent_17"/>
+            <xs:enumeration value="Ferrite_18"/>
+            <xs:enumeration value="Fitting_19"/>
+            <xs:enumeration value="Fixing_20"/>
+            <xs:enumeration value="Fuse_21"/>
+            <xs:enumeration value="Grommet_22"/>
+            <xs:enumeration value="HoleMountedFixing_23"/>
+            <xs:enumeration value="MultiCavityPlug_24"/>
+            <xs:enumeration value="MultiCavitySeal_25"/>
+            <xs:enumeration value="MultiFuse_26"/>
+            <xs:enumeration value="Other_27"/>
+            <xs:enumeration value="OpenWireEndTerminal_28"/>
+            <xs:enumeration value="OpenWireEnd_29"/>
+            <xs:enumeration value="PartStructure_30"/>
+            <xs:enumeration value="PluggableTerminal_31"/>
+            <xs:enumeration value="PotentialDistributor_32"/>
+            <xs:enumeration value="Relay_33"/>
+            <xs:enumeration value="RingTerminal_34"/>
+            <xs:enumeration value="ShrinkableTube_35"/>
+            <xs:enumeration value="SpliceTerminal_36"/>
+            <xs:enumeration value="Stripe_37"/>
+            <xs:enumeration value="Tape_38"/>
+            <xs:enumeration value="Terminal_39"/>
+            <xs:enumeration value="Tube_40"/>
+            <xs:enumeration value="Wire_41"/>
+            <xs:enumeration value="WireEndAccessory_42"/>
+            <xs:enumeration value="WireProtection_43"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:element type="tns:PrimaryPartType" name="PrimaryPartType"/>
+    <xs:complexType name="ListOfPrimaryPartType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PrimaryPartType" name="PrimaryPartType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPrimaryPartType" name="ListOfPrimaryPartType" nillable="true"/>
+    <xs:complexType name="ARGB32ColorType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:unsignedInt" name="Value"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="Name"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ARGB32ColorType" name="ARGB32ColorType"/>
+    <xs:complexType name="ListOfARGB32ColorType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ARGB32ColorType" name="ARGB32ColorType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfARGB32ColorType" name="ListOfARGB32ColorType" nillable="true"/>
+    <xs:complexType name="ExtendableElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ExtendableElement" name="ExtendableElement"/>
+    <xs:complexType name="ListOfExtendableElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ExtendableElement" name="ExtendableElement" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfExtendableElement" name="ListOfExtendableElement" nillable="true"/>
+    <xs:complexType name="BoundingBox">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="X"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="Y"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="Z"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:BoundingBox" name="BoundingBox"/>
+    <xs:complexType name="ListOfBoundingBox">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:BoundingBox" name="BoundingBox" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfBoundingBox" name="ListOfBoundingBox" nillable="true"/>
+    <xs:complexType name="ConfigurableElement">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:ConfigurableElement" name="ConfigurableElement"/>
+    <xs:complexType name="ListOfConfigurableElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ConfigurableElement" name="ConfigurableElement" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfConfigurableElement" name="ListOfConfigurableElement" nillable="true"/>
+    <xs:complexType name="ContactPoint">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="Identification"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="MountedTerminal"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="WireMounting"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:ContactPoint" name="ContactPoint"/>
+    <xs:complexType name="ListOfContactPoint">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ContactPoint" name="ContactPoint" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfContactPoint" name="ListOfContactPoint" nillable="true"/>
+    <xs:complexType name="OccurrenceOrUsage">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Identification"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="Role"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:OccurrenceOrUsage" name="OccurrenceOrUsage"/>
+    <xs:complexType name="ListOfOccurrenceOrUsage">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:OccurrenceOrUsage" name="OccurrenceOrUsage" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfOccurrenceOrUsage" name="ListOfOccurrenceOrUsage" nillable="true"/>
+    <xs:complexType name="PartOccurrence">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="Part"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:PartOccurrence" name="PartOccurrence"/>
+    <xs:complexType name="ListOfPartOccurrence">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PartOccurrence" name="PartOccurrence" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPartOccurrence" name="ListOfPartOccurrence" nillable="true"/>
+    <xs:complexType name="RoutableElement">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:RoutableElement" name="RoutableElement"/>
+    <xs:complexType name="ListOfRoutableElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:RoutableElement" name="RoutableElement" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfRoutableElement" name="ListOfRoutableElement" nillable="true"/>
+    <xs:complexType name="WireElementReference">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="Identification"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="ReferencedWireElement"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="WireEnd"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="WireLength"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireElementReference" name="WireElementReference"/>
+    <xs:complexType name="ListOfWireElementReference">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireElementReference" name="WireElementReference" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireElementReference" name="ListOfWireElementReference" nillable="true"/>
+    <xs:complexType name="CrimpDetail">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="Size"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CrimpDetail" name="CrimpDetail"/>
+    <xs:complexType name="ListOfCrimpDetail">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CrimpDetail" name="CrimpDetail" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCrimpDetail" name="ListOfCrimpDetail" nillable="true"/>
+    <xs:complexType name="CoreCrimpDetail">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="AppliesTo"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="InsulationCrimpDetails"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="PullOffForce"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CoreCrimpDetail" name="CoreCrimpDetail"/>
+    <xs:complexType name="ListOfCoreCrimpDetail">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CoreCrimpDetail" name="CoreCrimpDetail" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCoreCrimpDetail" name="ListOfCoreCrimpDetail" nillable="true"/>
+    <xs:complexType name="InsulationCrimpDetail">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="PullOffForce"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="AppliesTo"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:InsulationCrimpDetail" name="InsulationCrimpDetail"/>
+    <xs:complexType name="ListOfInsulationCrimpDetail">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:InsulationCrimpDetail" name="InsulationCrimpDetail" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfInsulationCrimpDetail" name="ListOfInsulationCrimpDetail" nillable="true"/>
+    <xs:complexType name="ItemVersion">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="CompanyName"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:ItemVersion" name="ItemVersion"/>
+    <xs:complexType name="ListOfItemVersion">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ItemVersion" name="ItemVersion" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfItemVersion" name="ListOfItemVersion" nillable="true"/>
+    <xs:complexType name="DocumentVersion">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="DocumentNumber"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="DocumentVersion"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="DigitalRepresentationIndex"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="Specification"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:DocumentVersion" name="DocumentVersion"/>
+    <xs:complexType name="ListOfDocumentVersion">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:DocumentVersion" name="DocumentVersion" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfDocumentVersion" name="ListOfDocumentVersion" nillable="true"/>
+    <xs:complexType name="PartVersion">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="PartNumber"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:PartVersion" name="PartVersion"/>
+    <xs:complexType name="ListOfPartVersion">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PartVersion" name="PartVersion" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPartVersion" name="ListOfPartVersion" nillable="true"/>
+    <xs:complexType name="ResourceVersion">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ResourceNumber"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ResourceVersion"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:ResourceVersion" name="ResourceVersion"/>
+    <xs:complexType name="ListOfResourceVersion">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ResourceVersion" name="ResourceVersion" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfResourceVersion" name="ListOfResourceVersion" nillable="true"/>
+    <xs:complexType name="Role">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="Identification"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:Role" name="Role"/>
+    <xs:complexType name="ListOfRole">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:Role" name="Role" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfRole" name="ListOfRole" nillable="true"/>
+    <xs:complexType name="CavityPartRole">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CavityPartRole" name="CavityPartRole"/>
+    <xs:complexType name="ListOfCavityPartRole">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CavityPartRole" name="CavityPartRole" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCavityPartRole" name="ListOfCavityPartRole" nillable="true"/>
+    <xs:complexType name="CavitySealRole">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="CavitySealSpecification"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CavitySealRole" name="CavitySealRole"/>
+    <xs:complexType name="ListOfCavitySealRole">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CavitySealRole" name="CavitySealRole" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCavitySealRole" name="ListOfCavitySealRole" nillable="true"/>
+    <xs:complexType name="TerminalRole">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="TerminalSpecification"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="WireReceptionReference"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:TerminalRole" name="TerminalRole"/>
+    <xs:complexType name="ListOfTerminalRole">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:TerminalRole" name="TerminalRole" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfTerminalRole" name="ListOfTerminalRole" nillable="true"/>
+    <xs:complexType name="PluggableTerminalRole">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:TerminalRole">
+                <xs:sequence/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:PluggableTerminalRole" name="PluggableTerminalRole"/>
+    <xs:complexType name="ListOfPluggableTerminalRole">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PluggableTerminalRole" name="PluggableTerminalRole" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPluggableTerminalRole" name="ListOfPluggableTerminalRole" nillable="true"/>
+    <xs:complexType name="WireRole">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="WireSpecification"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="WireElementReference"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireRole" name="WireRole"/>
+    <xs:complexType name="ListOfWireRole">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireRole" name="WireRole" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireRole" name="ListOfWireRole" nillable="true"/>
+    <xs:complexType name="Specification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="Identification"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:Specification" name="Specification"/>
+    <xs:complexType name="ListOfSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:Specification" name="Specification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSpecification" name="ListOfSpecification" nillable="true"/>
+    <xs:complexType name="CompositionSpecification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="Component"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CompositionSpecification" name="CompositionSpecification"/>
+    <xs:complexType name="ListOfCompositionSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CompositionSpecification" name="CompositionSpecification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCompositionSpecification" name="ListOfCompositionSpecification" nillable="true"/>
+    <xs:complexType name="ConductorSpecification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="CrossSectionArea"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="tns:ListOfConductorType" name="Type"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:ConductorSpecification" name="ConductorSpecification"/>
+    <xs:complexType name="ListOfConductorSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ConductorSpecification" name="ConductorSpecification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfConductorSpecification" name="ListOfConductorSpecification" nillable="true"/>
+    <xs:complexType name="CoreSpecification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="OutsideDiameter"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CoreSpecification" name="CoreSpecification"/>
+    <xs:complexType name="ListOfCoreSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CoreSpecification" name="CoreSpecification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCoreSpecification" name="ListOfCoreSpecification" nillable="true"/>
+    <xs:complexType name="ContactingSpecification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="ContactPoint"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:ContactingSpecification" name="ContactingSpecification"/>
+    <xs:complexType name="ListOfContactingSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ContactingSpecification" name="ContactingSpecification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfContactingSpecification" name="ListOfContactingSpecification" nillable="true"/>
+    <xs:complexType name="InsulationSpecification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="BaseColor"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="FirstIdentificationColor"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="SecondIdentificationColor"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="Thickness"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:InsulationSpecification" name="InsulationSpecification"/>
+    <xs:complexType name="ListOfInsulationSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:InsulationSpecification" name="InsulationSpecification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfInsulationSpecification" name="ListOfInsulationSpecification" nillable="true"/>
+    <xs:complexType name="PartOrUsageRelatedSpecification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="SpecialPartType"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="DescribedPart"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:PartOrUsageRelatedSpecification" name="PartOrUsageRelatedSpecification"/>
+    <xs:complexType name="ListOfPartOrUsageRelatedSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PartOrUsageRelatedSpecification" name="PartOrUsageRelatedSpecification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPartOrUsageRelatedSpecification" name="ListOfPartOrUsageRelatedSpecification" nillable="true"/>
+    <xs:complexType name="CavityPartSpecification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:PartOrUsageRelatedSpecification">
+                <xs:sequence/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CavityPartSpecification" name="CavityPartSpecification"/>
+    <xs:complexType name="ListOfCavityPartSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CavityPartSpecification" name="CavityPartSpecification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCavityPartSpecification" name="ListOfCavityPartSpecification" nillable="true"/>
+    <xs:complexType name="CavitySealSpecification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CavitySealSpecification" name="CavitySealSpecification"/>
+    <xs:complexType name="ListOfCavitySealSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CavitySealSpecification" name="CavitySealSpecification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCavitySealSpecification" name="ListOfCavitySealSpecification" nillable="true"/>
+    <xs:complexType name="GeneralTechnicalPartSpecification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:PartOrUsageRelatedSpecification">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="ColorInformation"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="BoundingBox"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:GeneralTechnicalPartSpecification" name="GeneralTechnicalPartSpecification"/>
+    <xs:complexType name="ListOfGeneralTechnicalPartSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:GeneralTechnicalPartSpecification" name="GeneralTechnicalPartSpecification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGeneralTechnicalPartSpecification" name="ListOfGeneralTechnicalPartSpecification" nillable="true"/>
+    <xs:complexType name="TerminalSpecification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:PartOrUsageRelatedSpecification">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="ConnectionALength"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="OverallLength"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="WireReception"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:TerminalSpecification" name="TerminalSpecification"/>
+    <xs:complexType name="ListOfTerminalSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:TerminalSpecification" name="TerminalSpecification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfTerminalSpecification" name="ListOfTerminalSpecification" nillable="true"/>
+    <xs:complexType name="PluggableTerminalSpecification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:TerminalSpecification">
+                <xs:sequence/>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:PluggableTerminalSpecification" name="PluggableTerminalSpecification"/>
+    <xs:complexType name="ListOfPluggableTerminalSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PluggableTerminalSpecification" name="PluggableTerminalSpecification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPluggableTerminalSpecification" name="ListOfPluggableTerminalSpecification" nillable="true"/>
+    <xs:complexType name="WireSpecification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="tns:PartOrUsageRelatedSpecification">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="WireElement"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireSpecification" name="WireSpecification"/>
+    <xs:complexType name="ListOfWireSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireSpecification" name="WireSpecification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireSpecification" name="ListOfWireSpecification" nillable="true"/>
+    <xs:complexType name="WireElementSpecification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="OutsideDiameter"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="ConductorSpecification"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="InsulationSpecification"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireElementSpecification" name="WireElementSpecification"/>
+    <xs:complexType name="ListOfWireElementSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireElementSpecification" name="WireElementSpecification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireElementSpecification" name="ListOfWireElementSpecification" nillable="true"/>
+    <xs:complexType name="WireReceptionSpecification">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="InsulationDisplacementLength"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="ConductorCrimpLength"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="CrimpConnectionLength"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="InsulationCrimpLength"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="WireTipProtrusion"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="CoreCrimpDetails"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="tns:CrimpBarrelType" name="CrimpBarrelType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireReceptionSpecification" name="WireReceptionSpecification"/>
+    <xs:complexType name="ListOfWireReceptionSpecification">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireReceptionSpecification" name="WireReceptionSpecification" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireReceptionSpecification" name="ListOfWireReceptionSpecification" nillable="true"/>
+    <xs:complexType name="Tolerance">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="LowerBoundary"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="UpperBoundary"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:Tolerance" name="Tolerance"/>
+    <xs:complexType name="ListOfTolerance">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:Tolerance" name="Tolerance" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfTolerance" name="ListOfTolerance" nillable="true"/>
+    <xs:complexType name="WireElement">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="Identification"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="WireElementSpecification"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="SubWireElement"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireElement" name="WireElement"/>
+    <xs:complexType name="ListOfWireElement">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireElement" name="WireElement" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireElement" name="ListOfWireElement" nillable="true"/>
+    <xs:complexType name="WireEnd">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="Identification"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="PositionOnWire"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="StrippingLength"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="InsulationPullbackLength"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireEnd" name="WireEnd"/>
+    <xs:complexType name="ListOfWireEnd">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireEnd" name="WireEnd" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireEnd" name="ListOfWireEnd" nillable="true"/>
+    <xs:complexType name="WireMounting">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="MountedCavitySeal"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="ReferencedWireEnd"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="WireMountingDetail"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireMounting" name="WireMounting"/>
+    <xs:complexType name="ListOfWireMounting">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireMounting" name="WireMounting" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireMounting" name="ListOfWireMounting" nillable="true"/>
+    <xs:complexType name="WireMountingDetail">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="CoreCrimpSize"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="InsulationCrimpSize"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="WireTipProtrusion"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="ContactedWireReception"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="ReferencedWireEnd"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="AbsoluteSealPosition"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="CorePullOffForce"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireMountingDetail" name="WireMountingDetail"/>
+    <xs:complexType name="ListOfWireMountingDetail">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireMountingDetail" name="WireMountingDetail" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireMountingDetail" name="ListOfWireMountingDetail" nillable="true"/>
+    <xs:complexType name="WireReception">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="Identification"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="Rotation"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="WireReceptionSpecification"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireReception" name="WireReception"/>
+    <xs:complexType name="ListOfWireReception">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireReception" name="WireReception" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireReception" name="ListOfWireReception" nillable="true"/>
+    <xs:complexType name="WireReceptionReference">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfString" name="Identification"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="WireReception"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireReceptionReference" name="WireReceptionReference"/>
+    <xs:complexType name="ListOfWireReceptionReference">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireReceptionReference" name="WireReceptionReference" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireReceptionReference" name="ListOfWireReceptionReference" nillable="true"/>
+    <xs:complexType name="CavityPartRoleIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CavityPartRoleIdDataType" name="CavityPartRoleIdDataType"/>
+    <xs:complexType name="ListOfCavityPartRoleIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CavityPartRoleIdDataType" name="CavityPartRoleIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCavityPartRoleIdDataType" name="ListOfCavityPartRoleIdDataType" nillable="true"/>
+    <xs:complexType name="CavityPartSpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CavityPartSpecificationIdDataType" name="CavityPartSpecificationIdDataType"/>
+    <xs:complexType name="ListOfCavityPartSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CavityPartSpecificationIdDataType" name="CavityPartSpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCavityPartSpecificationIdDataType" name="ListOfCavityPartSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="CavitySealRoleIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CavitySealRoleIdDataType" name="CavitySealRoleIdDataType"/>
+    <xs:complexType name="ListOfCavitySealRoleIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CavitySealRoleIdDataType" name="CavitySealRoleIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCavitySealRoleIdDataType" name="ListOfCavitySealRoleIdDataType" nillable="true"/>
+    <xs:complexType name="CavitySealSpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CavitySealSpecificationIdDataType" name="CavitySealSpecificationIdDataType"/>
+    <xs:complexType name="ListOfCavitySealSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CavitySealSpecificationIdDataType" name="CavitySealSpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCavitySealSpecificationIdDataType" name="ListOfCavitySealSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="CompositionSpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CompositionSpecificationIdDataType" name="CompositionSpecificationIdDataType"/>
+    <xs:complexType name="ListOfCompositionSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CompositionSpecificationIdDataType" name="CompositionSpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCompositionSpecificationIdDataType" name="ListOfCompositionSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="ConductorSpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:ConductorSpecificationIdDataType" name="ConductorSpecificationIdDataType"/>
+    <xs:complexType name="ListOfConductorSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ConductorSpecificationIdDataType" name="ConductorSpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfConductorSpecificationIdDataType" name="ListOfConductorSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="ConfigurableElementIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:ConfigurableElementIdDataType" name="ConfigurableElementIdDataType"/>
+    <xs:complexType name="ListOfConfigurableElementIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ConfigurableElementIdDataType" name="ConfigurableElementIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfConfigurableElementIdDataType" name="ListOfConfigurableElementIdDataType" nillable="true"/>
+    <xs:complexType name="ContactingSpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:ContactingSpecificationIdDataType" name="ContactingSpecificationIdDataType"/>
+    <xs:complexType name="ListOfContactingSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ContactingSpecificationIdDataType" name="ContactingSpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfContactingSpecificationIdDataType" name="ListOfContactingSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="ContactPointIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:ContactPointIdDataType" name="ContactPointIdDataType"/>
+    <xs:complexType name="ListOfContactPointIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ContactPointIdDataType" name="ContactPointIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfContactPointIdDataType" name="ListOfContactPointIdDataType" nillable="true"/>
+    <xs:complexType name="CoreCrimpDetailIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CoreCrimpDetailIdDataType" name="CoreCrimpDetailIdDataType"/>
+    <xs:complexType name="ListOfCoreCrimpDetailIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CoreCrimpDetailIdDataType" name="CoreCrimpDetailIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCoreCrimpDetailIdDataType" name="ListOfCoreCrimpDetailIdDataType" nillable="true"/>
+    <xs:complexType name="CoreSpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CoreSpecificationIdDataType" name="CoreSpecificationIdDataType"/>
+    <xs:complexType name="ListOfCoreSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CoreSpecificationIdDataType" name="CoreSpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCoreSpecificationIdDataType" name="ListOfCoreSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="CrimpDetailIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:CrimpDetailIdDataType" name="CrimpDetailIdDataType"/>
+    <xs:complexType name="ListOfCrimpDetailIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:CrimpDetailIdDataType" name="CrimpDetailIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfCrimpDetailIdDataType" name="ListOfCrimpDetailIdDataType" nillable="true"/>
+    <xs:complexType name="DocumentVersionIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:DocumentVersionIdDataType" name="DocumentVersionIdDataType"/>
+    <xs:complexType name="ListOfDocumentVersionIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:DocumentVersionIdDataType" name="DocumentVersionIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfDocumentVersionIdDataType" name="ListOfDocumentVersionIdDataType" nillable="true"/>
+    <xs:complexType name="ExtendableElementIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:ExtendableElementIdDataType" name="ExtendableElementIdDataType"/>
+    <xs:complexType name="ListOfExtendableElementIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ExtendableElementIdDataType" name="ExtendableElementIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfExtendableElementIdDataType" name="ListOfExtendableElementIdDataType" nillable="true"/>
+    <xs:complexType name="GeneralTechnicalPartSpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:GeneralTechnicalPartSpecificationIdDataType" name="GeneralTechnicalPartSpecificationIdDataType"/>
+    <xs:complexType name="ListOfGeneralTechnicalPartSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:GeneralTechnicalPartSpecificationIdDataType" name="GeneralTechnicalPartSpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfGeneralTechnicalPartSpecificationIdDataType" name="ListOfGeneralTechnicalPartSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="InsulationCrimpDetailIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:InsulationCrimpDetailIdDataType" name="InsulationCrimpDetailIdDataType"/>
+    <xs:complexType name="ListOfInsulationCrimpDetailIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:InsulationCrimpDetailIdDataType" name="InsulationCrimpDetailIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfInsulationCrimpDetailIdDataType" name="ListOfInsulationCrimpDetailIdDataType" nillable="true"/>
+    <xs:complexType name="InsulationSpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:InsulationSpecificationIdDataType" name="InsulationSpecificationIdDataType"/>
+    <xs:complexType name="ListOfInsulationSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:InsulationSpecificationIdDataType" name="InsulationSpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfInsulationSpecificationIdDataType" name="ListOfInsulationSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="ItemVersionIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:ItemVersionIdDataType" name="ItemVersionIdDataType"/>
+    <xs:complexType name="ListOfItemVersionIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ItemVersionIdDataType" name="ItemVersionIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfItemVersionIdDataType" name="ListOfItemVersionIdDataType" nillable="true"/>
+    <xs:complexType name="OccurrenceOrUsageIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:OccurrenceOrUsageIdDataType" name="OccurrenceOrUsageIdDataType"/>
+    <xs:complexType name="ListOfOccurrenceOrUsageIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:OccurrenceOrUsageIdDataType" name="OccurrenceOrUsageIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfOccurrenceOrUsageIdDataType" name="ListOfOccurrenceOrUsageIdDataType" nillable="true"/>
+    <xs:complexType name="PartOccurrenceIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:PartOccurrenceIdDataType" name="PartOccurrenceIdDataType"/>
+    <xs:complexType name="ListOfPartOccurrenceIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PartOccurrenceIdDataType" name="PartOccurrenceIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPartOccurrenceIdDataType" name="ListOfPartOccurrenceIdDataType" nillable="true"/>
+    <xs:complexType name="PartOrUsageRelatedSpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:PartOrUsageRelatedSpecificationIdDataType" name="PartOrUsageRelatedSpecificationIdDataType"/>
+    <xs:complexType name="ListOfPartOrUsageRelatedSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PartOrUsageRelatedSpecificationIdDataType" name="PartOrUsageRelatedSpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPartOrUsageRelatedSpecificationIdDataType" name="ListOfPartOrUsageRelatedSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="PartVersionIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:PartVersionIdDataType" name="PartVersionIdDataType"/>
+    <xs:complexType name="ListOfPartVersionIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PartVersionIdDataType" name="PartVersionIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPartVersionIdDataType" name="ListOfPartVersionIdDataType" nillable="true"/>
+    <xs:complexType name="PluggableTerminalRoleIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:PluggableTerminalRoleIdDataType" name="PluggableTerminalRoleIdDataType"/>
+    <xs:complexType name="ListOfPluggableTerminalRoleIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PluggableTerminalRoleIdDataType" name="PluggableTerminalRoleIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPluggableTerminalRoleIdDataType" name="ListOfPluggableTerminalRoleIdDataType" nillable="true"/>
+    <xs:complexType name="PluggableTerminalSpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:PluggableTerminalSpecificationIdDataType" name="PluggableTerminalSpecificationIdDataType"/>
+    <xs:complexType name="ListOfPluggableTerminalSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:PluggableTerminalSpecificationIdDataType" name="PluggableTerminalSpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfPluggableTerminalSpecificationIdDataType" name="ListOfPluggableTerminalSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="ResourceVersionIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:ResourceVersionIdDataType" name="ResourceVersionIdDataType"/>
+    <xs:complexType name="ListOfResourceVersionIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ResourceVersionIdDataType" name="ResourceVersionIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfResourceVersionIdDataType" name="ListOfResourceVersionIdDataType" nillable="true"/>
+    <xs:complexType name="RoleIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:RoleIdDataType" name="RoleIdDataType"/>
+    <xs:complexType name="ListOfRoleIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:RoleIdDataType" name="RoleIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfRoleIdDataType" name="ListOfRoleIdDataType" nillable="true"/>
+    <xs:complexType name="RoutableElementIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:RoutableElementIdDataType" name="RoutableElementIdDataType"/>
+    <xs:complexType name="ListOfRoutableElementIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:RoutableElementIdDataType" name="RoutableElementIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfRoutableElementIdDataType" name="ListOfRoutableElementIdDataType" nillable="true"/>
+    <xs:complexType name="SpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:SpecificationIdDataType" name="SpecificationIdDataType"/>
+    <xs:complexType name="ListOfSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:SpecificationIdDataType" name="SpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSpecificationIdDataType" name="ListOfSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="TerminalRoleIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:TerminalRoleIdDataType" name="TerminalRoleIdDataType"/>
+    <xs:complexType name="ListOfTerminalRoleIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:TerminalRoleIdDataType" name="TerminalRoleIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfTerminalRoleIdDataType" name="ListOfTerminalRoleIdDataType" nillable="true"/>
+    <xs:complexType name="TerminalSpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:TerminalSpecificationIdDataType" name="TerminalSpecificationIdDataType"/>
+    <xs:complexType name="ListOfTerminalSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:TerminalSpecificationIdDataType" name="TerminalSpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfTerminalSpecificationIdDataType" name="ListOfTerminalSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="WireElementIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireElementIdDataType" name="WireElementIdDataType"/>
+    <xs:complexType name="ListOfWireElementIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireElementIdDataType" name="WireElementIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireElementIdDataType" name="ListOfWireElementIdDataType" nillable="true"/>
+    <xs:complexType name="WireElementReferenceIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireElementReferenceIdDataType" name="WireElementReferenceIdDataType"/>
+    <xs:complexType name="ListOfWireElementReferenceIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireElementReferenceIdDataType" name="WireElementReferenceIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireElementReferenceIdDataType" name="ListOfWireElementReferenceIdDataType" nillable="true"/>
+    <xs:complexType name="WireElementSpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireElementSpecificationIdDataType" name="WireElementSpecificationIdDataType"/>
+    <xs:complexType name="ListOfWireElementSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireElementSpecificationIdDataType" name="WireElementSpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireElementSpecificationIdDataType" name="ListOfWireElementSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="WireEndIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireEndIdDataType" name="WireEndIdDataType"/>
+    <xs:complexType name="ListOfWireEndIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireEndIdDataType" name="WireEndIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireEndIdDataType" name="ListOfWireEndIdDataType" nillable="true"/>
+    <xs:complexType name="WireMountingDetailIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireMountingDetailIdDataType" name="WireMountingDetailIdDataType"/>
+    <xs:complexType name="ListOfWireMountingDetailIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireMountingDetailIdDataType" name="WireMountingDetailIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireMountingDetailIdDataType" name="ListOfWireMountingDetailIdDataType" nillable="true"/>
+    <xs:complexType name="WireMountingIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireMountingIdDataType" name="WireMountingIdDataType"/>
+    <xs:complexType name="ListOfWireMountingIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireMountingIdDataType" name="WireMountingIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireMountingIdDataType" name="ListOfWireMountingIdDataType" nillable="true"/>
+    <xs:complexType name="WireReceptionIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireReceptionIdDataType" name="WireReceptionIdDataType"/>
+    <xs:complexType name="ListOfWireReceptionIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireReceptionIdDataType" name="WireReceptionIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireReceptionIdDataType" name="ListOfWireReceptionIdDataType" nillable="true"/>
+    <xs:complexType name="WireReceptionReferenceIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireReceptionReferenceIdDataType" name="WireReceptionReferenceIdDataType"/>
+    <xs:complexType name="ListOfWireReceptionReferenceIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireReceptionReferenceIdDataType" name="WireReceptionReferenceIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireReceptionReferenceIdDataType" name="ListOfWireReceptionReferenceIdDataType" nillable="true"/>
+    <xs:complexType name="WireReceptionSpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireReceptionSpecificationIdDataType" name="WireReceptionSpecificationIdDataType"/>
+    <xs:complexType name="ListOfWireReceptionSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireReceptionSpecificationIdDataType" name="WireReceptionSpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireReceptionSpecificationIdDataType" name="ListOfWireReceptionSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="WireRoleIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireRoleIdDataType" name="WireRoleIdDataType"/>
+    <xs:complexType name="ListOfWireRoleIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireRoleIdDataType" name="WireRoleIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireRoleIdDataType" name="ListOfWireRoleIdDataType" nillable="true"/>
+    <xs:complexType name="WireSpecificationIdDataType">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="id"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:WireSpecificationIdDataType" name="WireSpecificationIdDataType"/>
+    <xs:complexType name="ListOfWireSpecificationIdDataType">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:WireSpecificationIdDataType" name="WireSpecificationIdDataType" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfWireSpecificationIdDataType" name="ListOfWireSpecificationIdDataType" nillable="true"/>
+    <xs:complexType name="Material">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="Key"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="xs:string" name="ReferenceSystem"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:Material" name="Material"/>
+    <xs:complexType name="ListOfMaterial">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:Material" name="Material" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfMaterial" name="ListOfMaterial" nillable="true"/>
+    <xs:complexType name="Size">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="Width"/>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="Height"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:Size" name="Size"/>
+    <xs:complexType name="ListOfSize">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:Size" name="Size" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfSize" name="ListOfSize" nillable="true"/>
+    <xs:complexType name="ValueWithUnit">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="1" type="ua:ExtensionObject" name="UnitComponent"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ValueWithUnit" name="ValueWithUnit"/>
+    <xs:complexType name="ListOfValueWithUnit">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ValueWithUnit" name="ValueWithUnit" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfValueWithUnit" name="ListOfValueWithUnit" nillable="true"/>
+    <xs:complexType name="NumericalValue">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="ValueComponent"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="ua:ListOfExtensionObject" name="Tolerance"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:NumericalValue" name="NumericalValue"/>
+    <xs:complexType name="ListOfNumericalValue">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:NumericalValue" name="NumericalValue" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfNumericalValue" name="ListOfNumericalValue" nillable="true"/>
+    <xs:complexType name="ValueRange">
+        <xs:complexContent mixed="false">
+            <xs:extension base="ua:ExtensionObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Minimum"/>
+                    <xs:element minOccurs="0" maxOccurs="1" type="xs:double" name="Maximum"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+    <xs:element type="tns:ValueRange" name="ValueRange"/>
+    <xs:complexType name="ListOfValueRange">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" type="tns:ValueRange" name="ValueRange" nillable="true"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element type="tns:ListOfValueRange" name="ListOfValueRange" nillable="true"/>
+</xs:schema>

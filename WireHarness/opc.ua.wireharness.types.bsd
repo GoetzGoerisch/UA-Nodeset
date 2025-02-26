@@ -1,0 +1,104 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/WireHarness/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ns1="http://opcfoundation.org/UA/WireHarness/VEC/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/WireHarness/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:Import Namespace="http://opcfoundation.org/UA/WireHarness/VEC/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ForceCurveDataType">
+        <opc:Field TypeName="opc:Int32" Name="NoOfPoints"/>
+        <opc:Field LengthField="NoOfPoints" TypeName="tns:ForceCurvePointDataType" Name="Points"/>
+        <opc:Field TypeName="ua:EUInformation" Name="EngineeringUnitsX"/>
+        <opc:Field TypeName="ua:EUInformation" Name="EngineeringUnitsValue"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ForceCurvePointDataType">
+        <opc:Field TypeName="opc:Int32" Name="NoOfX"/>
+        <opc:Field LengthField="NoOfX" TypeName="opc:UInt32" Name="X"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfValue"/>
+        <opc:Field LengthField="NoOfValue" TypeName="opc:UInt32" Name="Value"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ProcessInputDataType">
+        <opc:Field TypeName="opc:Int32" Name="NoOfToolType"/>
+        <opc:Field LengthField="NoOfToolType" TypeName="opc:CharArray" Name="ToolType"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfProcessDescription"/>
+        <opc:Field LengthField="NoOfProcessDescription" TypeName="opc:CharArray" Name="ProcessDescription"/>
+        <opc:Field TypeName="opc:CharArray" Name="Id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ProcessInputDataType" Name="CrimpInputDataType">
+        <opc:Field SourceType="tns:ProcessInputDataType" TypeName="opc:Int32" Name="NoOfToolType"/>
+        <opc:Field LengthField="NoOfToolType" SourceType="tns:ProcessInputDataType" TypeName="opc:CharArray" Name="ToolType"/>
+        <opc:Field SourceType="tns:ProcessInputDataType" TypeName="opc:Int32" Name="NoOfProcessDescription"/>
+        <opc:Field LengthField="NoOfProcessDescription" SourceType="tns:ProcessInputDataType" TypeName="opc:CharArray" Name="ProcessDescription"/>
+        <opc:Field SourceType="tns:ProcessInputDataType" TypeName="opc:CharArray" Name="Id"/>
+        <opc:Field TypeName="ns1:WireMountingIdDataType" Name="ReferencedElement"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfVerifyCrimpHeight"/>
+        <opc:Field LengthField="NoOfVerifyCrimpHeight" TypeName="opc:Boolean" Name="VerifyCrimpHeight"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfVerifyCrimpWidth"/>
+        <opc:Field LengthField="NoOfVerifyCrimpWidth" TypeName="opc:Boolean" Name="VerifyCrimpWidth"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfVerifyInsulationCrimpHeight"/>
+        <opc:Field LengthField="NoOfVerifyInsulationCrimpHeight" TypeName="opc:Boolean" Name="VerifyInsulationCrimpHeight"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfVerifyInsulationCrimpWidth"/>
+        <opc:Field LengthField="NoOfVerifyInsulationCrimpWidth" TypeName="opc:Boolean" Name="VerifyInsulationCrimpWidth"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfVerifyPullOutForce"/>
+        <opc:Field LengthField="NoOfVerifyPullOutForce" TypeName="opc:Boolean" Name="VerifyPullOutForce"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfCrimpForceMonitoring"/>
+        <opc:Field LengthField="NoOfCrimpForceMonitoring" TypeName="opc:Boolean" Name="CrimpForceMonitoring"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ProcessInputDataType" Name="CutInputDataType">
+        <opc:Field SourceType="tns:ProcessInputDataType" TypeName="opc:Int32" Name="NoOfToolType"/>
+        <opc:Field LengthField="NoOfToolType" SourceType="tns:ProcessInputDataType" TypeName="opc:CharArray" Name="ToolType"/>
+        <opc:Field SourceType="tns:ProcessInputDataType" TypeName="opc:Int32" Name="NoOfProcessDescription"/>
+        <opc:Field LengthField="NoOfProcessDescription" SourceType="tns:ProcessInputDataType" TypeName="opc:CharArray" Name="ProcessDescription"/>
+        <opc:Field SourceType="tns:ProcessInputDataType" TypeName="opc:CharArray" Name="Id"/>
+        <opc:Field TypeName="ns1:WireElementReferenceIdDataType" Name="ReferencedElement"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfVerifyWireLength"/>
+        <opc:Field LengthField="NoOfVerifyWireLength" TypeName="opc:Boolean" Name="VerifyWireLength"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ProcessInputDataType" Name="SealInputDataType">
+        <opc:Field SourceType="tns:ProcessInputDataType" TypeName="opc:Int32" Name="NoOfToolType"/>
+        <opc:Field LengthField="NoOfToolType" SourceType="tns:ProcessInputDataType" TypeName="opc:CharArray" Name="ToolType"/>
+        <opc:Field SourceType="tns:ProcessInputDataType" TypeName="opc:Int32" Name="NoOfProcessDescription"/>
+        <opc:Field LengthField="NoOfProcessDescription" SourceType="tns:ProcessInputDataType" TypeName="opc:CharArray" Name="ProcessDescription"/>
+        <opc:Field SourceType="tns:ProcessInputDataType" TypeName="opc:CharArray" Name="Id"/>
+        <opc:Field TypeName="ns1:WireMountingIdDataType" Name="ReferencedElement"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfMonitorSealPosition"/>
+        <opc:Field LengthField="NoOfMonitorSealPosition" TypeName="opc:Boolean" Name="MonitorSealPosition"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ProcessInputDataType" Name="StripInputDataType">
+        <opc:Field SourceType="tns:ProcessInputDataType" TypeName="opc:Int32" Name="NoOfToolType"/>
+        <opc:Field LengthField="NoOfToolType" SourceType="tns:ProcessInputDataType" TypeName="opc:CharArray" Name="ToolType"/>
+        <opc:Field SourceType="tns:ProcessInputDataType" TypeName="opc:Int32" Name="NoOfProcessDescription"/>
+        <opc:Field LengthField="NoOfProcessDescription" SourceType="tns:ProcessInputDataType" TypeName="opc:CharArray" Name="ProcessDescription"/>
+        <opc:Field SourceType="tns:ProcessInputDataType" TypeName="opc:CharArray" Name="Id"/>
+        <opc:Field TypeName="ns1:WireEndIdDataType" Name="ReferencedElement"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfStrippingLengthMonitoring"/>
+        <opc:Field LengthField="NoOfStrippingLengthMonitoring" TypeName="opc:Boolean" Name="StrippingLengthMonitoring"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ProcessOutputDataType">
+        <opc:Field TypeName="opc:CharArray" Name="ToolInstance"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ProcessOutputDataType" Name="CrimpOutputDataType">
+        <opc:Field SourceType="tns:ProcessOutputDataType" TypeName="opc:CharArray" Name="ToolInstance"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfActualCrimpHeight"/>
+        <opc:Field LengthField="NoOfActualCrimpHeight" TypeName="ns1:NumericalValue" Name="ActualCrimpHeight"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfActualCrimpWidth"/>
+        <opc:Field LengthField="NoOfActualCrimpWidth" TypeName="ns1:NumericalValue" Name="ActualCrimpWidth"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfActualInsulationCrimpHeight"/>
+        <opc:Field LengthField="NoOfActualInsulationCrimpHeight" TypeName="ns1:NumericalValue" Name="ActualInsulationCrimpHeight"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfActualCrimpForceCurve"/>
+        <opc:Field LengthField="NoOfActualCrimpForceCurve" TypeName="tns:ForceCurveDataType" Name="ActualCrimpForceCurve"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfActualCrimpPullOutForce"/>
+        <opc:Field LengthField="NoOfActualCrimpPullOutForce" TypeName="ns1:NumericalValue" Name="ActualCrimpPullOutForce"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ProcessOutputDataType" Name="CutOutputDataType">
+        <opc:Field SourceType="tns:ProcessOutputDataType" TypeName="opc:CharArray" Name="ToolInstance"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfActualLength"/>
+        <opc:Field LengthField="NoOfActualLength" TypeName="ns1:NumericalValue" Name="ActualLength"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ProcessOutputDataType" Name="SealOutputDataType">
+        <opc:Field SourceType="tns:ProcessOutputDataType" TypeName="opc:CharArray" Name="ToolInstance"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfActualPosition"/>
+        <opc:Field LengthField="NoOfActualPosition" TypeName="ns1:NumericalValue" Name="ActualPosition"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ProcessOutputDataType" Name="StripOutputDataType">
+        <opc:Field SourceType="tns:ProcessOutputDataType" TypeName="opc:CharArray" Name="ToolInstance"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfActualStrippingLength"/>
+        <opc:Field LengthField="NoOfActualStrippingLength" TypeName="ns1:NumericalValue" Name="ActualStrippingLength"/>
+    </opc:StructuredType>
+</opc:TypeDictionary>

@@ -1,0 +1,569 @@
+<opc:TypeDictionary xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://opcfoundation.org/UA/WireHarness/VEC/" DefaultByteOrder="LittleEndian" xmlns:opc="http://opcfoundation.org/BinarySchema/" xmlns:ua="http://opcfoundation.org/UA/" TargetNamespace="http://opcfoundation.org/UA/WireHarness/VEC/">
+    <opc:Import Namespace="http://opcfoundation.org/UA/"/>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ARGB32ColorType">
+        <opc:Field TypeName="opc:UInt32" Name="Value"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfName"/>
+        <opc:Field LengthField="NoOfName" TypeName="opc:CharArray" Name="Name"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ExtendableElement">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ExtendableElement" Name="BoundingBox">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="X"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="Y"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="Z"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ExtendableElement" Name="ConfigurableElement">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ConfigurableElement" Name="ContactPoint">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfMountedTerminal"/>
+        <opc:Field LengthField="NoOfMountedTerminal" TypeName="ua:ExtensionObject" Name="MountedTerminal"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfWireMounting"/>
+        <opc:Field LengthField="NoOfWireMounting" TypeName="ua:ExtensionObject" Name="WireMounting"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ConfigurableElement" Name="OccurrenceOrUsage">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfRole"/>
+        <opc:Field LengthField="NoOfRole" TypeName="ua:ExtensionObject" Name="Role"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:OccurrenceOrUsage" Name="PartOccurrence">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:OccurrenceOrUsage" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field SourceType="tns:OccurrenceOrUsage" TypeName="opc:Int32" Name="NoOfRole"/>
+        <opc:Field LengthField="NoOfRole" SourceType="tns:OccurrenceOrUsage" TypeName="ua:ExtensionObject" Name="Role"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfPart"/>
+        <opc:Field LengthField="NoOfPart" TypeName="ua:ExtensionObject" Name="Part"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ConfigurableElement" Name="RoutableElement">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:RoutableElement" Name="WireElementReference">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="ReferencedWireElement"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfWireEnd"/>
+        <opc:Field LengthField="NoOfWireEnd" TypeName="ua:ExtensionObject" Name="WireEnd"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfWireLength"/>
+        <opc:Field LengthField="NoOfWireLength" TypeName="ua:ExtensionObject" Name="WireLength"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ExtendableElement" Name="CrimpDetail">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfSize"/>
+        <opc:Field LengthField="NoOfSize" TypeName="ua:ExtensionObject" Name="Size"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:CrimpDetail" Name="CoreCrimpDetail">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:CrimpDetail" TypeName="opc:Int32" Name="NoOfSize"/>
+        <opc:Field LengthField="NoOfSize" SourceType="tns:CrimpDetail" TypeName="ua:ExtensionObject" Name="Size"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="AppliesTo"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfInsulationCrimpDetails"/>
+        <opc:Field LengthField="NoOfInsulationCrimpDetails" TypeName="ua:ExtensionObject" Name="InsulationCrimpDetails"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfPullOffForce"/>
+        <opc:Field LengthField="NoOfPullOffForce" TypeName="ua:ExtensionObject" Name="PullOffForce"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:CrimpDetail" Name="InsulationCrimpDetail">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:CrimpDetail" TypeName="opc:Int32" Name="NoOfSize"/>
+        <opc:Field LengthField="NoOfSize" SourceType="tns:CrimpDetail" TypeName="ua:ExtensionObject" Name="Size"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfPullOffForce"/>
+        <opc:Field LengthField="NoOfPullOffForce" TypeName="ua:ExtensionObject" Name="PullOffForce"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="AppliesTo"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ExtendableElement" Name="ItemVersion">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfCompanyName"/>
+        <opc:Field LengthField="NoOfCompanyName" TypeName="opc:CharArray" Name="CompanyName"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ItemVersion" Name="DocumentVersion">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:ItemVersion" TypeName="opc:Int32" Name="NoOfCompanyName"/>
+        <opc:Field LengthField="NoOfCompanyName" SourceType="tns:ItemVersion" TypeName="opc:CharArray" Name="CompanyName"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfDocumentNumber"/>
+        <opc:Field LengthField="NoOfDocumentNumber" TypeName="opc:CharArray" Name="DocumentNumber"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfDocumentVersion"/>
+        <opc:Field LengthField="NoOfDocumentVersion" TypeName="opc:CharArray" Name="DocumentVersion"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfDigitalRepresentationIndex"/>
+        <opc:Field LengthField="NoOfDigitalRepresentationIndex" TypeName="opc:CharArray" Name="DigitalRepresentationIndex"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfSpecification"/>
+        <opc:Field LengthField="NoOfSpecification" TypeName="ua:ExtensionObject" Name="Specification"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ItemVersion" Name="PartVersion">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:ItemVersion" TypeName="opc:Int32" Name="NoOfCompanyName"/>
+        <opc:Field LengthField="NoOfCompanyName" SourceType="tns:ItemVersion" TypeName="opc:CharArray" Name="CompanyName"/>
+        <opc:Field TypeName="opc:CharArray" Name="PartNumber"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ItemVersion" Name="ResourceVersion">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:ItemVersion" TypeName="opc:Int32" Name="NoOfCompanyName"/>
+        <opc:Field LengthField="NoOfCompanyName" SourceType="tns:ItemVersion" TypeName="opc:CharArray" Name="CompanyName"/>
+        <opc:Field TypeName="opc:CharArray" Name="ResourceNumber"/>
+        <opc:Field TypeName="opc:CharArray" Name="ResourceVersion"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ExtendableElement" Name="Role">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" TypeName="opc:CharArray" Name="Identification"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:Role" Name="CavityPartRole">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Role" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Role" TypeName="opc:CharArray" Name="Identification"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:CavityPartRole" Name="CavitySealRole">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Role" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Role" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="CavitySealSpecification"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:Role" Name="TerminalRole">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Role" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Role" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="TerminalSpecification"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfWireReceptionReference"/>
+        <opc:Field LengthField="NoOfWireReceptionReference" TypeName="ua:ExtensionObject" Name="WireReceptionReference"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:TerminalRole" Name="PluggableTerminalRole">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Role" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Role" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field SourceType="tns:TerminalRole" TypeName="ua:ExtensionObject" Name="TerminalSpecification"/>
+        <opc:Field SourceType="tns:TerminalRole" TypeName="opc:Int32" Name="NoOfWireReceptionReference"/>
+        <opc:Field LengthField="NoOfWireReceptionReference" SourceType="tns:TerminalRole" TypeName="ua:ExtensionObject" Name="WireReceptionReference"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:Role" Name="WireRole">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Role" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Role" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="WireSpecification"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfWireElementReference"/>
+        <opc:Field LengthField="NoOfWireElementReference" TypeName="ua:ExtensionObject" Name="WireElementReference"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ExtendableElement" Name="Specification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" TypeName="opc:CharArray" Name="Identification"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:Specification" Name="CompositionSpecification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Specification" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Specification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfComponent"/>
+        <opc:Field LengthField="NoOfComponent" TypeName="ua:ExtensionObject" Name="Component"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:Specification" Name="ConductorSpecification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Specification" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Specification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfCrossSectionArea"/>
+        <opc:Field LengthField="NoOfCrossSectionArea" TypeName="ua:ExtensionObject" Name="CrossSectionArea"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfType"/>
+        <opc:Field LengthField="NoOfType" TypeName="tns:ConductorType" Name="Type"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ConductorSpecification" Name="CoreSpecification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Specification" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Specification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field SourceType="tns:ConductorSpecification" TypeName="opc:Int32" Name="NoOfCrossSectionArea"/>
+        <opc:Field LengthField="NoOfCrossSectionArea" SourceType="tns:ConductorSpecification" TypeName="ua:ExtensionObject" Name="CrossSectionArea"/>
+        <opc:Field SourceType="tns:ConductorSpecification" TypeName="opc:Int32" Name="NoOfType"/>
+        <opc:Field LengthField="NoOfType" SourceType="tns:ConductorSpecification" TypeName="tns:ConductorType" Name="Type"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfOutsideDiameter"/>
+        <opc:Field LengthField="NoOfOutsideDiameter" TypeName="ua:ExtensionObject" Name="OutsideDiameter"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:Specification" Name="ContactingSpecification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Specification" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Specification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfContactPoint"/>
+        <opc:Field LengthField="NoOfContactPoint" TypeName="ua:ExtensionObject" Name="ContactPoint"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:Specification" Name="InsulationSpecification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Specification" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Specification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="BaseColor"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfFirstIdentificationColor"/>
+        <opc:Field LengthField="NoOfFirstIdentificationColor" TypeName="ua:ExtensionObject" Name="FirstIdentificationColor"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfSecondIdentificationColor"/>
+        <opc:Field LengthField="NoOfSecondIdentificationColor" TypeName="ua:ExtensionObject" Name="SecondIdentificationColor"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfThickness"/>
+        <opc:Field LengthField="NoOfThickness" TypeName="ua:ExtensionObject" Name="Thickness"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:Specification" Name="PartOrUsageRelatedSpecification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Specification" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Specification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfSpecialPartType"/>
+        <opc:Field LengthField="NoOfSpecialPartType" TypeName="opc:CharArray" Name="SpecialPartType"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfDescribedPart"/>
+        <opc:Field LengthField="NoOfDescribedPart" TypeName="ua:ExtensionObject" Name="DescribedPart"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:PartOrUsageRelatedSpecification" Name="CavityPartSpecification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Specification" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Specification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:Int32" Name="NoOfSpecialPartType"/>
+        <opc:Field LengthField="NoOfSpecialPartType" SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:CharArray" Name="SpecialPartType"/>
+        <opc:Field SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:Int32" Name="NoOfDescribedPart"/>
+        <opc:Field LengthField="NoOfDescribedPart" SourceType="tns:PartOrUsageRelatedSpecification" TypeName="ua:ExtensionObject" Name="DescribedPart"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:CavityPartSpecification" Name="CavitySealSpecification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Specification" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Specification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:Int32" Name="NoOfSpecialPartType"/>
+        <opc:Field LengthField="NoOfSpecialPartType" SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:CharArray" Name="SpecialPartType"/>
+        <opc:Field SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:Int32" Name="NoOfDescribedPart"/>
+        <opc:Field LengthField="NoOfDescribedPart" SourceType="tns:PartOrUsageRelatedSpecification" TypeName="ua:ExtensionObject" Name="DescribedPart"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:PartOrUsageRelatedSpecification" Name="GeneralTechnicalPartSpecification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Specification" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Specification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:Int32" Name="NoOfSpecialPartType"/>
+        <opc:Field LengthField="NoOfSpecialPartType" SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:CharArray" Name="SpecialPartType"/>
+        <opc:Field SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:Int32" Name="NoOfDescribedPart"/>
+        <opc:Field LengthField="NoOfDescribedPart" SourceType="tns:PartOrUsageRelatedSpecification" TypeName="ua:ExtensionObject" Name="DescribedPart"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfColorInformation"/>
+        <opc:Field LengthField="NoOfColorInformation" TypeName="ua:ExtensionObject" Name="ColorInformation"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfBoundingBox"/>
+        <opc:Field LengthField="NoOfBoundingBox" TypeName="ua:ExtensionObject" Name="BoundingBox"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:PartOrUsageRelatedSpecification" Name="TerminalSpecification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Specification" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Specification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:Int32" Name="NoOfSpecialPartType"/>
+        <opc:Field LengthField="NoOfSpecialPartType" SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:CharArray" Name="SpecialPartType"/>
+        <opc:Field SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:Int32" Name="NoOfDescribedPart"/>
+        <opc:Field LengthField="NoOfDescribedPart" SourceType="tns:PartOrUsageRelatedSpecification" TypeName="ua:ExtensionObject" Name="DescribedPart"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfConnectionALength"/>
+        <opc:Field LengthField="NoOfConnectionALength" TypeName="ua:ExtensionObject" Name="ConnectionALength"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="OverallLength"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfWireReception"/>
+        <opc:Field LengthField="NoOfWireReception" TypeName="ua:ExtensionObject" Name="WireReception"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:TerminalSpecification" Name="PluggableTerminalSpecification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Specification" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Specification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:Int32" Name="NoOfSpecialPartType"/>
+        <opc:Field LengthField="NoOfSpecialPartType" SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:CharArray" Name="SpecialPartType"/>
+        <opc:Field SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:Int32" Name="NoOfDescribedPart"/>
+        <opc:Field LengthField="NoOfDescribedPart" SourceType="tns:PartOrUsageRelatedSpecification" TypeName="ua:ExtensionObject" Name="DescribedPart"/>
+        <opc:Field SourceType="tns:TerminalSpecification" TypeName="opc:Int32" Name="NoOfConnectionALength"/>
+        <opc:Field LengthField="NoOfConnectionALength" SourceType="tns:TerminalSpecification" TypeName="ua:ExtensionObject" Name="ConnectionALength"/>
+        <opc:Field SourceType="tns:TerminalSpecification" TypeName="ua:ExtensionObject" Name="OverallLength"/>
+        <opc:Field SourceType="tns:TerminalSpecification" TypeName="opc:Int32" Name="NoOfWireReception"/>
+        <opc:Field LengthField="NoOfWireReception" SourceType="tns:TerminalSpecification" TypeName="ua:ExtensionObject" Name="WireReception"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:PartOrUsageRelatedSpecification" Name="WireSpecification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Specification" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Specification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:Int32" Name="NoOfSpecialPartType"/>
+        <opc:Field LengthField="NoOfSpecialPartType" SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:CharArray" Name="SpecialPartType"/>
+        <opc:Field SourceType="tns:PartOrUsageRelatedSpecification" TypeName="opc:Int32" Name="NoOfDescribedPart"/>
+        <opc:Field LengthField="NoOfDescribedPart" SourceType="tns:PartOrUsageRelatedSpecification" TypeName="ua:ExtensionObject" Name="DescribedPart"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="WireElement"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:Specification" Name="WireElementSpecification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Specification" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Specification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfOutsideDiameter"/>
+        <opc:Field LengthField="NoOfOutsideDiameter" TypeName="ua:ExtensionObject" Name="OutsideDiameter"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfConductorSpecification"/>
+        <opc:Field LengthField="NoOfConductorSpecification" TypeName="ua:ExtensionObject" Name="ConductorSpecification"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfInsulationSpecification"/>
+        <opc:Field LengthField="NoOfInsulationSpecification" TypeName="ua:ExtensionObject" Name="InsulationSpecification"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:Specification" Name="WireReceptionSpecification">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field SourceType="tns:Specification" TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" SourceType="tns:Specification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="InsulationDisplacementLength"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfConductorCrimpLength"/>
+        <opc:Field LengthField="NoOfConductorCrimpLength" TypeName="ua:ExtensionObject" Name="ConductorCrimpLength"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="CrimpConnectionLength"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfInsulationCrimpLength"/>
+        <opc:Field LengthField="NoOfInsulationCrimpLength" TypeName="ua:ExtensionObject" Name="InsulationCrimpLength"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfWireTipProtrusion"/>
+        <opc:Field LengthField="NoOfWireTipProtrusion" TypeName="ua:ExtensionObject" Name="WireTipProtrusion"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfCoreCrimpDetails"/>
+        <opc:Field LengthField="NoOfCoreCrimpDetails" TypeName="ua:ExtensionObject" Name="CoreCrimpDetails"/>
+        <opc:Field TypeName="tns:CrimpBarrelType" Name="CrimpBarrelType"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ExtendableElement" Name="Tolerance">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="opc:Double" Name="LowerBoundary"/>
+        <opc:Field TypeName="opc:Double" Name="UpperBoundary"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ExtendableElement" Name="WireElement">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="WireElementSpecification"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfSubWireElement"/>
+        <opc:Field LengthField="NoOfSubWireElement" TypeName="ua:ExtensionObject" Name="SubWireElement"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ExtendableElement" Name="WireEnd">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="opc:Double" Name="PositionOnWire"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfStrippingLength"/>
+        <opc:Field LengthField="NoOfStrippingLength" TypeName="ua:ExtensionObject" Name="StrippingLength"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfInsulationPullbackLength"/>
+        <opc:Field LengthField="NoOfInsulationPullbackLength" TypeName="ua:ExtensionObject" Name="InsulationPullbackLength"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ExtendableElement" Name="WireMounting">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfMountedCavitySeal"/>
+        <opc:Field LengthField="NoOfMountedCavitySeal" TypeName="ua:ExtensionObject" Name="MountedCavitySeal"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfReferencedWireEnd"/>
+        <opc:Field LengthField="NoOfReferencedWireEnd" TypeName="ua:ExtensionObject" Name="ReferencedWireEnd"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfWireMountingDetail"/>
+        <opc:Field LengthField="NoOfWireMountingDetail" TypeName="ua:ExtensionObject" Name="WireMountingDetail"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ExtendableElement" Name="WireMountingDetail">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfCoreCrimpSize"/>
+        <opc:Field LengthField="NoOfCoreCrimpSize" TypeName="ua:ExtensionObject" Name="CoreCrimpSize"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfInsulationCrimpSize"/>
+        <opc:Field LengthField="NoOfInsulationCrimpSize" TypeName="ua:ExtensionObject" Name="InsulationCrimpSize"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfWireTipProtrusion"/>
+        <opc:Field LengthField="NoOfWireTipProtrusion" TypeName="ua:ExtensionObject" Name="WireTipProtrusion"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="ContactedWireReception"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfReferencedWireEnd"/>
+        <opc:Field LengthField="NoOfReferencedWireEnd" TypeName="ua:ExtensionObject" Name="ReferencedWireEnd"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="AbsoluteSealPosition"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfCorePullOffForce"/>
+        <opc:Field LengthField="NoOfCorePullOffForce" TypeName="ua:ExtensionObject" Name="CorePullOffForce"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ExtendableElement" Name="WireReception">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfRotation"/>
+        <opc:Field LengthField="NoOfRotation" TypeName="ua:ExtensionObject" Name="Rotation"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="WireReceptionSpecification"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ExtendableElement" Name="WireReceptionReference">
+        <opc:Field SourceType="tns:ExtendableElement" TypeName="opc:CharArray" Name="id"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfIdentification"/>
+        <opc:Field LengthField="NoOfIdentification" TypeName="opc:CharArray" Name="Identification"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="WireReception"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="IdBaseDataType"/>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="CavityPartRoleIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="CavityPartSpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="CavitySealRoleIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="CavitySealSpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="CompositionSpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="ConductorSpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="ConfigurableElementIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="ContactingSpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="ContactPointIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="CoreCrimpDetailIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="CoreSpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="CrimpDetailIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="DocumentVersionIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="ExtendableElementIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="GeneralTechnicalPartSpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="InsulationCrimpDetailIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="InsulationSpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="ItemVersionIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="OccurrenceOrUsageIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="PartOccurrenceIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="PartOrUsageRelatedSpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="PartVersionIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="PluggableTerminalRoleIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="PluggableTerminalSpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="ResourceVersionIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="RoleIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="RoutableElementIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="SpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="TerminalRoleIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="TerminalSpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="WireElementIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="WireElementReferenceIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="WireElementSpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="WireEndIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="WireMountingDetailIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="WireMountingIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="WireReceptionIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="WireReceptionReferenceIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="WireReceptionSpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="WireRoleIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:IdBaseDataType" Name="WireSpecificationIdDataType">
+        <opc:Field TypeName="opc:CharArray" Name="id"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="Material">
+        <opc:Field TypeName="opc:CharArray" Name="Key"/>
+        <opc:Field TypeName="opc:CharArray" Name="ReferenceSystem"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="Size">
+        <opc:Field TypeName="ua:ExtensionObject" Name="Width"/>
+        <opc:Field TypeName="ua:ExtensionObject" Name="Height"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="ua:ExtensionObject" Name="ValueWithUnit">
+        <opc:Field TypeName="ua:ExtensionObject" Name="UnitComponent"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ValueWithUnit" Name="NumericalValue">
+        <opc:Field SourceType="tns:ValueWithUnit" TypeName="ua:ExtensionObject" Name="UnitComponent"/>
+        <opc:Field TypeName="opc:Double" Name="ValueComponent"/>
+        <opc:Field TypeName="opc:Int32" Name="NoOfTolerance"/>
+        <opc:Field LengthField="NoOfTolerance" TypeName="ua:ExtensionObject" Name="Tolerance"/>
+    </opc:StructuredType>
+    <opc:StructuredType BaseType="tns:ValueWithUnit" Name="ValueRange">
+        <opc:Field SourceType="tns:ValueWithUnit" TypeName="ua:ExtensionObject" Name="UnitComponent"/>
+        <opc:Field TypeName="opc:Double" Name="Minimum"/>
+        <opc:Field TypeName="opc:Double" Name="Maximum"/>
+    </opc:StructuredType>
+    <opc:EnumeratedType LengthInBits="32" Name="ConductorType">
+        <opc:EnumeratedValue Name="Rigid" Value="0"/>
+        <opc:EnumeratedValue Name="Stranded" Value="1"/>
+        <opc:EnumeratedValue Name="Foil" Value="2"/>
+        <opc:EnumeratedValue Name="Braided" Value="3"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="CrimpBarrelType">
+        <opc:EnumeratedValue Name="Open" Value="0"/>
+        <opc:EnumeratedValue Name="Closed" Value="1"/>
+    </opc:EnumeratedType>
+    <opc:EnumeratedType LengthInBits="32" Name="PrimaryPartType">
+        <opc:EnumeratedValue Name="Antenna" Value="0"/>
+        <opc:EnumeratedValue Name="Battery" Value="1"/>
+        <opc:EnumeratedValue Name="BoltMountedFixing" Value="2"/>
+        <opc:EnumeratedValue Name="BoltTerminal" Value="3"/>
+        <opc:EnumeratedValue Name="BridgeTerminal" Value="4"/>
+        <opc:EnumeratedValue Name="CableDuct" Value="5"/>
+        <opc:EnumeratedValue Name="CableTie" Value="6"/>
+        <opc:EnumeratedValue Name="Capacitor" Value="7"/>
+        <opc:EnumeratedValue Name="CavityAccessory" Value="8"/>
+        <opc:EnumeratedValue Name="CavityPlug" Value="9"/>
+        <opc:EnumeratedValue Name="CavitySeal" Value="10"/>
+        <opc:EnumeratedValue Name="ConnectorHousing" Value="11"/>
+        <opc:EnumeratedValue Name="ConnectorHousingCap" Value="12"/>
+        <opc:EnumeratedValue Name="ConnectorHousingCover" Value="13"/>
+        <opc:EnumeratedValue Name="CorrugatedPipe" Value="14"/>
+        <opc:EnumeratedValue Name="Diode" Value="15"/>
+        <opc:EnumeratedValue Name="EdgeMountedFixing" Value="16"/>
+        <opc:EnumeratedValue Name="EEComponent" Value="17"/>
+        <opc:EnumeratedValue Name="Ferrite" Value="18"/>
+        <opc:EnumeratedValue Name="Fitting" Value="19"/>
+        <opc:EnumeratedValue Name="Fixing" Value="20"/>
+        <opc:EnumeratedValue Name="Fuse" Value="21"/>
+        <opc:EnumeratedValue Name="Grommet" Value="22"/>
+        <opc:EnumeratedValue Name="HoleMountedFixing" Value="23"/>
+        <opc:EnumeratedValue Name="MultiCavityPlug" Value="24"/>
+        <opc:EnumeratedValue Name="MultiCavitySeal" Value="25"/>
+        <opc:EnumeratedValue Name="MultiFuse" Value="26"/>
+        <opc:EnumeratedValue Name="Other" Value="27"/>
+        <opc:EnumeratedValue Name="OpenWireEndTerminal" Value="28"/>
+        <opc:EnumeratedValue Name="OpenWireEnd" Value="29"/>
+        <opc:EnumeratedValue Name="PartStructure" Value="30"/>
+        <opc:EnumeratedValue Name="PluggableTerminal" Value="31"/>
+        <opc:EnumeratedValue Name="PotentialDistributor" Value="32"/>
+        <opc:EnumeratedValue Name="Relay" Value="33"/>
+        <opc:EnumeratedValue Name="RingTerminal" Value="34"/>
+        <opc:EnumeratedValue Name="ShrinkableTube" Value="35"/>
+        <opc:EnumeratedValue Name="SpliceTerminal" Value="36"/>
+        <opc:EnumeratedValue Name="Stripe" Value="37"/>
+        <opc:EnumeratedValue Name="Tape" Value="38"/>
+        <opc:EnumeratedValue Name="Terminal" Value="39"/>
+        <opc:EnumeratedValue Name="Tube" Value="40"/>
+        <opc:EnumeratedValue Name="Wire" Value="41"/>
+        <opc:EnumeratedValue Name="WireEndAccessory" Value="42"/>
+        <opc:EnumeratedValue Name="WireProtection" Value="43"/>
+    </opc:EnumeratedType>
+</opc:TypeDictionary>
