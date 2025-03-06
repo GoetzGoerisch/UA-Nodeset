@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!--
- * Copyright (c) 2005-2022 The OPC Foundation, Inc. All rights reserved.
+ * Copyright (c) 2005-2024 The OPC Foundation, Inc. All rights reserved.
  *
  * OPC Foundation MIT License 1.00
  * 
@@ -33,18 +33,17 @@
     <Uri>http://opcfoundation.org/UA/PAEFS/</Uri>
     <Uri>http://opcfoundation.org/UA/Machinery/ProcessValues/</Uri>
     <Uri>http://opcfoundation.org/UA/PADIM/</Uri>
-    <Uri>http://opcfoundation.org/UA/Dictionary/IRDI</Uri>
     <Uri>http://opcfoundation.org/UA/DI/</Uri>
     <Uri>http://opcfoundation.org/UA/Machinery/</Uri>
   </NamespaceUris>
   <Models>
-    <Model ModelUri="http://opcfoundation.org/UA/PAEFS/" Version="1.0.0" PublicationDate="2023-10-01T00:00:00Z">
+    <Model ModelUri="http://opcfoundation.org/UA/PAEFS/" Version="1.0.1" PublicationDate="2025-02-01T00:00:00Z" ModelVersion="1.0.1">
       <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.02" PublicationDate="2022-11-01T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.04.0" PublicationDate="2022-11-03T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/Machinery/" Version="1.02.0" PublicationDate="2022-05-01T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/Machinery/" Version="1.02.0" PublicationDate="2021-12-01T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/Dictionary/IRDI" Version="1.00" PublicationDate="2020-02-04T00:00:00Z" />
       <RequiredModel ModelUri="http://opcfoundation.org/UA/PADIM/" Version="1.0.2" PublicationDate="2021-07-21T00:00:00Z" />
-      <RequiredModel ModelUri="http://opcfoundation.org/UA/Machinery/ProcessValues/" Version="1.00.0" PublicationDate="2023-05-01T00:00:00Z" />
+      <RequiredModel ModelUri="http://opcfoundation.org/UA/Machinery/ProcessValues/" Version="1.00.0" PublicationDate="2022-06-20T00:00:00Z" />
     </Model>
   </Models>
   <Aliases>
@@ -70,7 +69,6 @@
     <Alias Alias="Argument">i=296</Alias>
     <Alias Alias="Range">i=884</Alias>
     <Alias Alias="EUInformation">i=887</Alias>
-    <Alias Alias="HasDictionaryEntry">i=17597</Alias>
     <Alias Alias="HasInterface">i=17603</Alias>
     <Alias Alias="HasAddIn">i=17604</Alias>
     <Alias Alias="AnalogDigitalEnum">ns=1;i=3002</Alias>
@@ -80,7 +78,7 @@
   </Aliases>
   <Extensions>
     <Extension>
-      <ua:ModelInfo Tool="UaModeler" Hash="BM/CkTzin7sXmIvp0fbP4Q==" Version="1.6.8" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
+      <ua:ModelInfo Tool="UaModeler" Hash="3ooLrE8PYF3f2SGCOwEBIg==" Version="1.6.11" xmlns:ua="http://unifiedautomation.com/Configuration/NodeSet.xsd" />
     </Extension>
   </Extensions>
   <UADataType NodeId="ns=1;i=3005" BrowseName="1:AirConnectionOpenEnum">
@@ -413,8 +411,8 @@ represents a state of the ducting system where air can pass through to the filte
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6033</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5012</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6040</Reference>
@@ -434,26 +432,25 @@ represents a state of the ducting system where air can pass through to the filte
   <UAVariable NodeId="ns=1;i=6035" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6033" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6033</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6038" BrowseName="EURange" ParentNodeId="ns=1;i=6033" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6033</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6040" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5056" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5056</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7009" BrowseName="1:Close" ParentNodeId="ns=1;i=1007">
@@ -489,8 +486,8 @@ represents a state of the ducting system where air can pass through to the filte
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6124</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5064</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6127</Reference>
@@ -510,26 +507,25 @@ represents a state of the ducting system where air can pass through to the filte
   <UAVariable NodeId="ns=1;i=6125" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6124" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6124</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6126" BrowseName="EURange" ParentNodeId="ns=1;i=6124" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6124</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6127" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5076" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5076</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5066" BrowseName="1:Humidity" ParentNodeId="ns=1;i=1007">
@@ -546,8 +542,8 @@ represents a state of the ducting system where air can pass through to the filte
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6128</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5066</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6131</Reference>
@@ -567,26 +563,25 @@ represents a state of the ducting system where air can pass through to the filte
   <UAVariable NodeId="ns=1;i=6129" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6128" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6128</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6130" BrowseName="EURange" ParentNodeId="ns=1;i=6128" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6128</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6131" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5096" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5096</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6428" BrowseName="1:Malfunction" ParentNodeId="ns=1;i=1007" DataType="Boolean">
@@ -622,8 +617,8 @@ represents a state of the ducting system where air can pass through to the filte
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6045</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5014</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6053</Reference>
@@ -643,26 +638,25 @@ represents a state of the ducting system where air can pass through to the filte
   <UAVariable NodeId="ns=1;i=6051" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6045" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6045</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6052" BrowseName="EURange" ParentNodeId="ns=1;i=6045" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6045</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6053" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5058" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5058</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5067" BrowseName="1:Temperature" ParentNodeId="ns=1;i=1007">
@@ -679,8 +673,8 @@ represents a state of the ducting system where air can pass through to the filte
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6148</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5067</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6152</Reference>
@@ -700,26 +694,25 @@ represents a state of the ducting system where air can pass through to the filte
   <UAVariable NodeId="ns=1;i=6149" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6148" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6148</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6151" BrowseName="EURange" ParentNodeId="ns=1;i=6148" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6148</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6152" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5097" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5097</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1032" BrowseName="1:CompressedAirSupplyInterruptedAlarmType">
@@ -1019,6 +1012,7 @@ represents a state of the ducting system where air can pass through to the filte
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5048</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5051</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5114</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5199</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6406</Reference>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1025</Reference>
@@ -1090,82 +1084,80 @@ represents a state of the ducting system where air can pass through to the filte
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1035</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=5098</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5103</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5098" BrowseName="1:Signal" ParentNodeId="ns=1;i=5077">
+  <UAObject NodeId="ns=1;i=5103" BrowseName="1:Signal" ParentNodeId="ns=1;i=5077">
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6153</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6227</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6174</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6221</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5077</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6156</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6184</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6153" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5098" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6174" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5103" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>AnalogSignal</DisplayName>
     <Description>The process value.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">ns=3;i=1111</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5098</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6154</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6155</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5103</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6175</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6183</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6154" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6153" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6175" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6174" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6153</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6174</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6155" BrowseName="EURange" ParentNodeId="ns=1;i=6153" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6183" BrowseName="EURange" ParentNodeId="ns=1;i=6174" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6153</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6174</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6227" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5098" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6221" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5103" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>ProcessValueSetpoint</DisplayName>
-    <Description>The desired value, may or may not be controlled by the server.</Description>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6228</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6229</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5098</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6222</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6223</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5103</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6228" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6227" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6222" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6221" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6227</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6221</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6229" BrowseName="EURange" ParentNodeId="ns=1;i=6227" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6223" BrowseName="EURange" ParentNodeId="ns=1;i=6221" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6227</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6221</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6156" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5098" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6184" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5103" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5098</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5103</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6187" BrowseName="1:CleaningRecommended" ParentNodeId="ns=1;i=1005" DataType="Boolean">
@@ -1184,96 +1176,95 @@ represents a state of the ducting system where air can pass through to the filte
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1035</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=5074</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5098</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5074" BrowseName="1:Signal" ParentNodeId="ns=1;i=5048">
+  <UAObject NodeId="ns=1;i=5098" BrowseName="1:Signal" ParentNodeId="ns=1;i=5048">
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6116</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6119</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6153</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6216</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5048</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6192</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6156</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6116" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5074" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6153" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5098" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>AnalogSignal</DisplayName>
     <Description>The process value.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">ns=3;i=1111</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5074</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6117</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6118</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5098</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6154</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6155</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6117" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6116" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6154" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6153" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6116</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6153</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6118" BrowseName="EURange" ParentNodeId="ns=1;i=6116" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6155" BrowseName="EURange" ParentNodeId="ns=1;i=6153" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6116</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6153</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6119" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5074" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6216" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5098" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>ProcessValueSetpoint</DisplayName>
-    <Description>The desired value, may or may not be controlled by the server.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6190</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6191</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5074</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6217</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6218</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5098</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6190" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6119" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6217" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6216" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6119</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6216</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6191" BrowseName="EURange" ParentNodeId="ns=1;i=6119" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6218" BrowseName="EURange" ParentNodeId="ns=1;i=6216" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6119</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6216</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6192" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5074" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6156" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5098" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5074</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5098</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5051" BrowseName="5:Identification" ParentNodeId="ns=1;i=1005">
+  <UAObject NodeId="ns=1;i=5051" BrowseName="4:Identification" ParentNodeId="ns=1;i=1005">
     <DisplayName>Identification</DisplayName>
     <Description>Data for machine identification (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1005</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1005</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6199</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6200</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5114</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6199" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5051" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6199" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5051" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -1282,7 +1273,7 @@ represents a state of the ducting system where air can pass through to the filte
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5051</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6200" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5051" DataType="String">
+  <UAVariable NodeId="ns=1;i=6200" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5051" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -1291,14 +1282,25 @@ represents a state of the ducting system where air can pass through to the filte
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5051</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5199" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=1005">
+  <UAObject NodeId="ns=1;i=5114" BrowseName="5:MachineryBuildingBlocks" ParentNodeId="ns=1;i=1005">
+    <DisplayName>MachineryBuildingBlocks</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5051</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5199</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5199" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=1005">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the unit (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6407</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1005</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5114</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6407" BrowseName="CurrentState" ParentNodeId="ns=1;i=5199" DataType="LocalizedText">
@@ -1344,82 +1346,80 @@ represents a state of the ducting system where air can pass through to the filte
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1035</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1005</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=5072</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5073</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5072" BrowseName="1:Signal" ParentNodeId="ns=1;i=5043">
+  <UAObject NodeId="ns=1;i=5073" BrowseName="1:Signal" ParentNodeId="ns=1;i=5043">
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6106</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6221</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6112</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6210</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5043</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6110</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6115</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6106" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5072" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6112" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5073" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>AnalogSignal</DisplayName>
     <Description>The process value.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">ns=3;i=1111</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5072</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6108</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6109</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5073</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6113</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6114</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6108" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6106" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6113" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6112" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6106</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6112</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6109" BrowseName="EURange" ParentNodeId="ns=1;i=6106" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6114" BrowseName="EURange" ParentNodeId="ns=1;i=6112" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6106</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6112</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6221" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5072" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6210" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5073" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>ProcessValueSetpoint</DisplayName>
-    <Description>The desired value, may or may not be controlled by the server.</Description>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6222</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6223</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5072</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6211</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6212</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5073</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6222" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6221" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6211" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6210" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6221</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6210</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6223" BrowseName="EURange" ParentNodeId="ns=1;i=6221" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6212" BrowseName="EURange" ParentNodeId="ns=1;i=6210" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6221</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6210</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6110" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5072" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6115" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5073" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5072</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5073</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6186" BrowseName="1:TotalCleaningCycles" ParentNodeId="ns=1;i=1005" DataType="UInt32">
@@ -1488,8 +1488,8 @@ separator.</Description>
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6072</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5027</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6075</Reference>
@@ -1509,26 +1509,25 @@ separator.</Description>
   <UAVariable NodeId="ns=1;i=6073" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6072" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6072</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6074" BrowseName="EURange" ParentNodeId="ns=1;i=6072" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6072</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6075" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5062" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5062</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1011" BrowseName="1:ConsumptionType">
@@ -1557,8 +1556,8 @@ separator.</Description>
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6055</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5015</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6063</Reference>
@@ -1578,26 +1577,25 @@ separator.</Description>
   <UAVariable NodeId="ns=1;i=6056" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6055" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6055</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6057" BrowseName="EURange" ParentNodeId="ns=1;i=6055" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6055</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6063" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5059" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5059</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6016" BrowseName="1:LifetimeConsumption" ParentNodeId="ns=1;i=1011" DataType="Double">
@@ -1634,6 +1632,7 @@ discharged when a certain filling level is reached.</Description>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5055</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5087</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5115</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5201</Reference>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1039</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6139</Reference>
@@ -1682,8 +1681,8 @@ discharged when a certain filling level is reached.</Description>
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6120</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5055</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6123</Reference>
@@ -1703,40 +1702,40 @@ discharged when a certain filling level is reached.</Description>
   <UAVariable NodeId="ns=1;i=6121" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6120" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6120</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6122" BrowseName="EURange" ParentNodeId="ns=1;i=6120" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6120</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6123" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5075" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5075</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5087" BrowseName="5:Identification" ParentNodeId="ns=1;i=1006">
+  <UAObject NodeId="ns=1;i=5087" BrowseName="4:Identification" ParentNodeId="ns=1;i=1006">
     <DisplayName>Identification</DisplayName>
     <Description>Data for component identification (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1005</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1006</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6020</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6242</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5115</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6020" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5087" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6020" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5087" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -1745,7 +1744,7 @@ discharged when a certain filling level is reached.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5087</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6242" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5087" DataType="String">
+  <UAVariable NodeId="ns=1;i=6242" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5087" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -1754,14 +1753,25 @@ discharged when a certain filling level is reached.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5087</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5201" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=1006">
+  <UAObject NodeId="ns=1;i=5115" BrowseName="5:MachineryBuildingBlocks" ParentNodeId="ns=1;i=1006">
+    <DisplayName>MachineryBuildingBlocks</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5087</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1006</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5201</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5201" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=1006">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the discharge system (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6419</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1006</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5115</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6419" BrowseName="CurrentState" ParentNodeId="ns=1;i=5201" DataType="LocalizedText">
@@ -1810,6 +1820,7 @@ discharged when a certain filling level is reached.</Description>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5080</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5109</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5203</Reference>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1039</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6208</Reference>
@@ -1819,18 +1830,19 @@ discharged when a certain filling level is reached.</Description>
       <Reference ReferenceType="HasComponent">ns=1;i=5013</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="ns=1;i=5080" BrowseName="5:Identification" ParentNodeId="ns=1;i=1009">
+  <UAObject NodeId="ns=1;i=5080" BrowseName="4:Identification" ParentNodeId="ns=1;i=1009">
     <DisplayName>Identification</DisplayName>
     <Description>Data for component identification (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1005</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1009</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6433</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6434</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5109</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6433" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5080" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6433" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5080" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -1839,7 +1851,7 @@ discharged when a certain filling level is reached.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5080</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6434" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5080" DataType="String">
+  <UAVariable NodeId="ns=1;i=6434" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5080" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -1848,14 +1860,25 @@ discharged when a certain filling level is reached.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5080</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5203" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=1009">
+  <UAObject NodeId="ns=1;i=5109" BrowseName="5:MachineryBuildingBlocks" ParentNodeId="ns=1;i=1009">
+    <DisplayName>MachineryBuildingBlocks</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5080</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1009</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5203</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5203" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=1009">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the fan (OPC 40001-1).</Description>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6396</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1009</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5109</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6396" BrowseName="CurrentState" ParentNodeId="ns=1;i=5203" DataType="LocalizedText">
@@ -1909,82 +1932,80 @@ discharged when a certain filling level is reached.</Description>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1035</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1009</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=5057</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5068</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5057" BrowseName="1:Signal" ParentNodeId="ns=1;i=5013">
+  <UAObject NodeId="ns=1;i=5068" BrowseName="1:Signal" ParentNodeId="ns=1;i=5013">
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6041</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6216</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6080</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6193</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5013</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6044</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6085</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6041" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5057" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6080" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5068" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>AnalogSignal</DisplayName>
     <Description>The process value.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">ns=3;i=1111</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5057</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6042</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6043</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5068</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6083</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6084</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6042" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6041" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6083" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6080" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6041</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6080</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6043" BrowseName="EURange" ParentNodeId="ns=1;i=6041" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6084" BrowseName="EURange" ParentNodeId="ns=1;i=6080" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6041</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6080</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6216" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5057" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6193" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5068" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>ProcessValueSetpoint</DisplayName>
-    <Description>The desired value, may or may not be controlled by the server.</Description>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6217</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6218</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5057</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6196</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6197</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5068</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6217" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6216" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6196" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6193" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6216</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6193</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6218" BrowseName="EURange" ParentNodeId="ns=1;i=6216" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6197" BrowseName="EURange" ParentNodeId="ns=1;i=6193" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6216</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6193</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6044" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5057" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6085" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5068" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5057</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5068</Reference>
     </References>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1004" BrowseName="1:FilterAidDeviceType">
@@ -2010,6 +2031,7 @@ discharged when a certain filling level is reached.</Description>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1033</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5085</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5112</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5205</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6145</Reference>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1025</Reference>
@@ -2061,82 +2083,80 @@ discharged when a certain filling level is reached.</Description>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1035</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=5068</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5072</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5068" BrowseName="1:Signal" ParentNodeId="ns=1;i=5031">
+  <UAObject NodeId="ns=1;i=5072" BrowseName="1:Signal" ParentNodeId="ns=1;i=5031">
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6080</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6085</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6106</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6205</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5031</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6234</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6110</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6080" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5068" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6106" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5072" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>AnalogSignal</DisplayName>
     <Description>The process value.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">ns=3;i=1111</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5068</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6083</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6084</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5072</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6108</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6109</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6083" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6080" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6108" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6106" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6080</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6106</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6084" BrowseName="EURange" ParentNodeId="ns=1;i=6080" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6109" BrowseName="EURange" ParentNodeId="ns=1;i=6106" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6080</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6106</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6085" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5068" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6205" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5072" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>ProcessValueSetpoint</DisplayName>
-    <Description>The desired value, may or may not be controlled by the server.</Description>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6231</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6232</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5068</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6207</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6209</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5072</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6231" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6085" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6207" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6205" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6085</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6205</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6232" BrowseName="EURange" ParentNodeId="ns=1;i=6085" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6209" BrowseName="EURange" ParentNodeId="ns=1;i=6205" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6085</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6205</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6234" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5068" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6110" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5072" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5068</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5072</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6144" BrowseName="1:DosingRequested" ParentNodeId="ns=1;i=1004" DataType="Boolean">
@@ -2162,8 +2182,8 @@ discharged when a certain filling level is reached.</Description>
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6024</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5009</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6027</Reference>
@@ -2183,26 +2203,25 @@ discharged when a certain filling level is reached.</Description>
   <UAVariable NodeId="ns=1;i=6025" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6024" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6024</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6026" BrowseName="EURange" ParentNodeId="ns=1;i=6024" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6024</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6027" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5052" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5052</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6143" BrowseName="1:FilterAidDeviceStatus" ParentNodeId="ns=1;i=1004" DataType="FilterAidDeviceStatusEnum">
@@ -2214,18 +2233,19 @@ discharged when a certain filling level is reached.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1004</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5085" BrowseName="5:Identification" ParentNodeId="ns=1;i=1004">
+  <UAObject NodeId="ns=1;i=5085" BrowseName="4:Identification" ParentNodeId="ns=1;i=1004">
     <DisplayName>Identification</DisplayName>
     <Description>Data for machine identification (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1005</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1004</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6462</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6463</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5112</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6462" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5085" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6462" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5085" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -2234,7 +2254,7 @@ discharged when a certain filling level is reached.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5085</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6463" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5085" DataType="String">
+  <UAVariable NodeId="ns=1;i=6463" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5085" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -2243,14 +2263,25 @@ discharged when a certain filling level is reached.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5085</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5205" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=1004">
+  <UAObject NodeId="ns=1;i=5112" BrowseName="5:MachineryBuildingBlocks" ParentNodeId="ns=1;i=1004">
+    <DisplayName>MachineryBuildingBlocks</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5085</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5205</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5205" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=1004">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the device (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6147</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1004</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5112</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6147" BrowseName="CurrentState" ParentNodeId="ns=1;i=5205" DataType="LocalizedText">
@@ -2331,7 +2362,8 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty">ns=1;i=6021</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5084</Reference>
-      <Reference ReferenceType="HasInterface">ns=5;i=480</Reference>
+      <Reference ReferenceType="HasInterface">ns=4;i=480</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5107</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5207</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6238</Reference>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1023</Reference>
@@ -2357,18 +2389,18 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasAddIn">ns=1;i=5204</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5081" BrowseName="5:Identification" ParentNodeId="ns=1;i=5007">
+  <UAObject NodeId="ns=1;i=5081" BrowseName="4:Identification" ParentNodeId="ns=1;i=5007">
     <DisplayName>Identification</DisplayName>
     <Description>Data for component identification (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1005</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5007</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6435</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6436</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6435" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5081" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6435" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5081" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -2377,7 +2409,7 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5081</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6436" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5081" DataType="String">
+  <UAVariable NodeId="ns=1;i=6436" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5081" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -2386,12 +2418,12 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5081</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5204" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=5007">
+  <UAObject NodeId="ns=1;i=5204" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=5007">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the fan (OPC 40001-1).</Description>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=8435</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5007</Reference>
     </References>
@@ -2425,18 +2457,18 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty">ns=1;i=6235</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5086" BrowseName="5:Identification" ParentNodeId="ns=1;i=5004">
+  <UAObject NodeId="ns=1;i=5086" BrowseName="4:Identification" ParentNodeId="ns=1;i=5004">
     <DisplayName>Identification</DisplayName>
     <Description>Data for machine identification (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1005</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5004</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6464</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6465</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6464" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5086" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6464" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5086" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -2445,7 +2477,7 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5086</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6465" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5086" DataType="String">
+  <UAVariable NodeId="ns=1;i=6465" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5086" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -2454,11 +2486,11 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5086</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5206" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=5004">
+  <UAObject NodeId="ns=1;i=5206" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=5004">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the device (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=8438</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5004</Reference>
@@ -2534,11 +2566,11 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5018</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5083" BrowseName="5:Identification" ParentNodeId="ns=1;i=5018">
+  <UAObject NodeId="ns=1;i=5083" BrowseName="4:Identification" ParentNodeId="ns=1;i=5018">
     <DisplayName>Identification</DisplayName>
     <Description>Data for machine identification (OPC 40001-1): The Identification folder can have either the concrete type MachineIdentificationType or MachineryComponentType. If the filter unit is considered a component of a larger filter machine, MachineryComponentType is used. If the filter unit is considered a machine by itself, MachineIdentificationType is used.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1004</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5018</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6446</Reference>
@@ -2547,7 +2579,7 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty">ns=1;i=6447</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6446" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5083" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6446" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5083" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -2610,7 +2642,7 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6259</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6447" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5083" DataType="String">
+  <UAVariable NodeId="ns=1;i=6447" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5083" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -2619,11 +2651,11 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5083</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5208" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=5018">
+  <UAObject NodeId="ns=1;i=5208" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=5018">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the filter unit (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=8442</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5018</Reference>
@@ -2678,8 +2710,8 @@ filter units and other devices and components.</Description>
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6086</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5038</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6096</Reference>
@@ -2699,26 +2731,25 @@ filter units and other devices and components.</Description>
   <UAVariable NodeId="ns=1;i=6094" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6086" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6086</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6095" BrowseName="EURange" ParentNodeId="ns=1;i=6086" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6086</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6096" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5069" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5069</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5006" BrowseName="1:&lt;SafetySystem&gt;" SymbolicName="SafetySystem" ParentNodeId="ns=1;i=1002">
@@ -2735,18 +2766,18 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty">ns=1;i=6220</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5090" BrowseName="5:Identification" ParentNodeId="ns=1;i=5006">
+  <UAObject NodeId="ns=1;i=5090" BrowseName="4:Identification" ParentNodeId="ns=1;i=5006">
     <DisplayName>Identification</DisplayName>
     <Description>Data for component identification (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1005</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5006</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6466</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6467</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6466" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5090" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6466" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5090" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -2755,7 +2786,7 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5090</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6467" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5090" DataType="String">
+  <UAVariable NodeId="ns=1;i=6467" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5090" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -2764,11 +2795,11 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5090</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5210" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=5006">
+  <UAObject NodeId="ns=1;i=5210" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=5006">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the unit (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=8444</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5006</Reference>
@@ -2794,7 +2825,7 @@ filter units and other devices and components.</Description>
   <UAObject NodeId="ns=1;i=5211" BrowseName="1:MachineryState" ParentNodeId="ns=1;i=5006">
     <DisplayName>MachineryState</DisplayName>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=8446</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5006</Reference>
@@ -2880,11 +2911,11 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1002</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5084" BrowseName="5:Identification" ParentNodeId="ns=1;i=1002">
+  <UAObject NodeId="ns=1;i=5084" BrowseName="4:Identification" ParentNodeId="ns=1;i=1002">
     <DisplayName>Identification</DisplayName>
     <Description>Data for identification (OPC 40001-1): The FilterSystem should only have an Identification folder if the system as a whole is considered a machine. If the individual filter units are considered machines, the FilterSystem should not have an Identification folder.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1012</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1012</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6243</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1002</Reference>
@@ -2893,6 +2924,7 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty">ns=1;i=6177</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6244</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6179</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5107</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6243" BrowseName="1:ExIdentification" ParentNodeId="ns=1;i=5084" DataType="String">
@@ -2904,7 +2936,7 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5084</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6178" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5084" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6178" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5084" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -2940,7 +2972,7 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6247</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6177" BrowseName="5:ProductInstanceUri" ParentNodeId="ns=1;i=5084" DataType="String">
+  <UAVariable NodeId="ns=1;i=6177" BrowseName="4:ProductInstanceUri" ParentNodeId="ns=1;i=5084" DataType="String">
     <DisplayName Locale="en">ProductInstanceUri</DisplayName>
     <Description Locale="en">A globally unique resource identifier provided by the manufacturer of the machine</Description>
     <References>
@@ -2976,7 +3008,7 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6244</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6179" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5084" DataType="String">
+  <UAVariable NodeId="ns=1;i=6179" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5084" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -2985,14 +3017,25 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5084</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5207" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=1002">
+  <UAObject NodeId="ns=1;i=5107" BrowseName="5:MachineryBuildingBlocks" ParentNodeId="ns=1;i=1002">
+    <DisplayName>MachineryBuildingBlocks</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5084</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1002</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5207</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5207" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=1002">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the filter system (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=8440</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1002</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5107</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=8440" BrowseName="CurrentState" ParentNodeId="ns=1;i=5207" DataType="LocalizedText">
@@ -3097,8 +3140,8 @@ filter units and other devices and components.</Description>
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6064</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5016</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6067</Reference>
@@ -3118,26 +3161,25 @@ filter units and other devices and components.</Description>
   <UAVariable NodeId="ns=1;i=6065" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6064" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6064</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6066" BrowseName="EURange" ParentNodeId="ns=1;i=6064" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6064</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6067" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5060" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5060</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1012" BrowseName="1:FilterUnitType">
@@ -3163,7 +3205,8 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasComponent">ns=1;i=5023</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5024</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5082</Reference>
-      <Reference ReferenceType="HasInterface">ns=5;i=480</Reference>
+      <Reference ReferenceType="HasInterface">ns=4;i=480</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5108</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5092</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6141</Reference>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1023</Reference>
@@ -3205,18 +3248,18 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5044</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5088" BrowseName="5:Identification" ParentNodeId="ns=1;i=5044">
+  <UAObject NodeId="ns=1;i=5088" BrowseName="4:Identification" ParentNodeId="ns=1;i=5044">
     <DisplayName>Identification</DisplayName>
     <Description>Data for machine identification (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1005</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5044</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6194</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6201</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6194" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5088" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6194" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5088" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -3225,7 +3268,7 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5088</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6201" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5088" DataType="String">
+  <UAVariable NodeId="ns=1;i=6201" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5088" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -3234,11 +3277,11 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5088</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5200" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=5044">
+  <UAObject NodeId="ns=1;i=5200" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=5044">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the unit (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=8429</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5044</Reference>
@@ -3272,11 +3315,11 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty">ns=1;i=6425</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5202" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=5022">
+  <UAObject NodeId="ns=1;i=5202" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=5022">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the discharge system (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=8432</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5022</Reference>
@@ -3333,82 +3376,53 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1034</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=5099</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5100</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5099" BrowseName="1:Signal" ParentNodeId="ns=1;i=5093">
+  <UAObject NodeId="ns=1;i=5100" BrowseName="1:Signal" ParentNodeId="ns=1;i=5093">
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6157</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6193</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6162</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5093</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6160</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6165</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6157" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5099" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6162" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5100" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>AnalogSignal</DisplayName>
     <Description>The process value.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">ns=3;i=1111</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5099</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6158</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6159</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5100</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6163</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6164</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6158" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6157" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6163" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6162" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6157</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6162</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6159" BrowseName="EURange" ParentNodeId="ns=1;i=6157" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6164" BrowseName="EURange" ParentNodeId="ns=1;i=6162" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6157</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6193" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5099" DataType="Number" ValueRank="-2">
-    <DisplayName>ProcessValueSetpoint</DisplayName>
-    <Description>The desired value, may or may not be controlled by the server.</Description>
-    <References>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6196</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6197</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5099</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6196" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6193" DataType="EUInformation">
-    <DisplayName>EngineeringUnits</DisplayName>
-    <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6193</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6162</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6197" BrowseName="EURange" ParentNodeId="ns=1;i=6193" DataType="Range">
-    <DisplayName>EURange</DisplayName>
-    <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6193</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6160" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5099" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6165" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5100" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5099</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5100</Reference>
     </References>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5023" BrowseName="1:AirIntakeConnection" ParentNodeId="ns=1;i=1012">
@@ -3429,11 +3443,11 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5082" BrowseName="5:Identification" ParentNodeId="ns=1;i=1012">
+  <UAObject NodeId="ns=1;i=5082" BrowseName="4:Identification" ParentNodeId="ns=1;i=1012">
     <DisplayName>Identification</DisplayName>
     <Description>Data for machine identification (OPC 40001-1): The Identification folder can have either the concrete type MachineIdentificationType or MachineryComponentType. If the filter unit is considered a component of a larger filter machine, MachineryComponentType is used. If the filter unit is considered a machine by itself, MachineIdentificationType is used.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1004</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1004</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6252</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1012</Reference>
@@ -3441,6 +3455,7 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasComponent">ns=1;i=6253</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6256</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6445</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5108</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6252" BrowseName="1:ExIdentification" ParentNodeId="ns=1;i=5082" DataType="String">
@@ -3452,7 +3467,7 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5082</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6444" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5082" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6444" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5082" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -3515,7 +3530,7 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6256</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6445" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5082" DataType="String">
+  <UAVariable NodeId="ns=1;i=6445" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5082" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -3524,14 +3539,25 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5082</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5092" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=1012">
+  <UAObject NodeId="ns=1;i=5108" BrowseName="5:MachineryBuildingBlocks" ParentNodeId="ns=1;i=1012">
+    <DisplayName>MachineryBuildingBlocks</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5082</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5092</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5092" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=1012">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the filter unit (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6470</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1012</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5108</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6470" BrowseName="CurrentState" ParentNodeId="ns=1;i=5092" DataType="LocalizedText">
@@ -3629,82 +3655,53 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1034</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=5100</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5101</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5100" BrowseName="1:Signal" ParentNodeId="ns=1;i=5094">
+  <UAObject NodeId="ns=1;i=5101" BrowseName="1:Signal" ParentNodeId="ns=1;i=5094">
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6162</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6205</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6166</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5094</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6165</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6169</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6162" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5100" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6166" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5101" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>AnalogSignal</DisplayName>
     <Description>The process value.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">ns=3;i=1111</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5100</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6163</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6164</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5101</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6167</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6168</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6163" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6162" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6167" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6166" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6162</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6166</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6164" BrowseName="EURange" ParentNodeId="ns=1;i=6162" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6168" BrowseName="EURange" ParentNodeId="ns=1;i=6166" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6162</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6205" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5100" DataType="Number" ValueRank="-2">
-    <DisplayName>ProcessValueSetpoint</DisplayName>
-    <Description>The desired value, may or may not be controlled by the server.</Description>
-    <References>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6207</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6209</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5100</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6207" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6205" DataType="EUInformation">
-    <DisplayName>EngineeringUnits</DisplayName>
-    <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6205</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6166</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6209" BrowseName="EURange" ParentNodeId="ns=1;i=6205" DataType="Range">
-    <DisplayName>EURange</DisplayName>
-    <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6205</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6165" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5100" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6169" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5101" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5100</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5101</Reference>
     </References>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5028" BrowseName="1:PressureLoss" ParentNodeId="ns=1;i=1012">
@@ -3721,8 +3718,8 @@ filter units and other devices and components.</Description>
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6076</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5028</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6079</Reference>
@@ -3742,26 +3739,25 @@ filter units and other devices and components.</Description>
   <UAVariable NodeId="ns=1;i=6077" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6076" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6076</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6078" BrowseName="EURange" ParentNodeId="ns=1;i=6076" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6076</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6079" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5063" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5063</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5095" BrowseName="1:RotationalSpeed" ParentNodeId="ns=1;i=1012">
@@ -3771,82 +3767,53 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1034</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1012</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=5101</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5102</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5101" BrowseName="1:Signal" ParentNodeId="ns=1;i=5095">
+  <UAObject NodeId="ns=1;i=5102" BrowseName="1:Signal" ParentNodeId="ns=1;i=5095">
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6166</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6210</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6170</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5095</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6169</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6173</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6166" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5101" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6170" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5102" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>AnalogSignal</DisplayName>
     <Description>The process value.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">ns=3;i=1111</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5101</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6167</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6168</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5102</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6171</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6172</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6167" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6166" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6171" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6170" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6166</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6170</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6168" BrowseName="EURange" ParentNodeId="ns=1;i=6166" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6172" BrowseName="EURange" ParentNodeId="ns=1;i=6170" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6166</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6210" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5101" DataType="Number" ValueRank="-2">
-    <DisplayName>ProcessValueSetpoint</DisplayName>
-    <Description>The desired value, may or may not be controlled by the server.</Description>
-    <References>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
-      <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6211</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6212</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5101</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6211" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6210" DataType="EUInformation">
-    <DisplayName>EngineeringUnits</DisplayName>
-    <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6210</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6170</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6212" BrowseName="EURange" ParentNodeId="ns=1;i=6210" DataType="Range">
-    <DisplayName>EURange</DisplayName>
-    <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6210</Reference>
-    </References>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;i=6169" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5101" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6173" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5102" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5101</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5102</Reference>
     </References>
   </UAVariable>
   <UAMethod NodeId="ns=1;i=7003" BrowseName="1:SetAndActivateAirflowSetpoint" ParentNodeId="ns=1;i=1012">
@@ -3971,7 +3938,7 @@ filter units and other devices and components.</Description>
     <Documentation />
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6440</Reference>
-      <Reference ReferenceType="HasSubtype" IsForward="false">ns=6;i=1012</Reference>
+      <Reference ReferenceType="HasSubtype" IsForward="false">ns=5;i=1012</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6437</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6441</Reference>
     </References>
@@ -4048,7 +4015,7 @@ filter units and other devices and components.</Description>
       <Reference ReferenceType="HasComponent">ns=1;i=5039</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6088</Reference>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1031</Reference>
-      <Reference ReferenceType="HasInterface">ns=5;i=480</Reference>
+      <Reference ReferenceType="HasInterface">ns=4;i=480</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6093</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1023</Reference>
@@ -4084,8 +4051,8 @@ filter units and other devices and components.</Description>
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6102</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5042</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6105</Reference>
@@ -4105,26 +4072,25 @@ filter units and other devices and components.</Description>
   <UAVariable NodeId="ns=1;i=6103" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6102" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6102</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6104" BrowseName="EURange" ParentNodeId="ns=1;i=6102" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6102</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6105" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5071" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5071</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5039" BrowseName="1:&lt;Ionizer&gt;" SymbolicName="Ionizer" ParentNodeId="ns=1;i=1015">
@@ -4151,8 +4117,8 @@ filter units and other devices and components.</Description>
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6097</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5040</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6101</Reference>
@@ -4172,26 +4138,25 @@ filter units and other devices and components.</Description>
   <UAVariable NodeId="ns=1;i=6099" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6097" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6097</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6100" BrowseName="EURange" ParentNodeId="ns=1;i=6097" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6097</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6101" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5070" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5070</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6088" BrowseName="1:CurrentOutput" ParentNodeId="ns=1;i=1015" DataType="Double">
@@ -4296,8 +4261,8 @@ filter units and other devices and components.</Description>
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6028</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5011</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6032</Reference>
@@ -4317,26 +4282,25 @@ filter units and other devices and components.</Description>
   <UAVariable NodeId="ns=1;i=6029" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6028" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6028</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6031" BrowseName="EURange" ParentNodeId="ns=1;i=6028" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6028</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6032" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5053" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5053</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1008" BrowseName="1:SafetySystemType">
@@ -4351,6 +4315,7 @@ reference.</Description>
     <Documentation>https://reference.opcfoundation.org/PAEFS/v100/docs/7.10</Documentation>
     <References>
       <Reference ReferenceType="HasAddIn">ns=1;i=5089</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5111</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5209</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6430</Reference>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1025</Reference>
@@ -4359,18 +4324,19 @@ reference.</Description>
       <Reference ReferenceType="HasProperty">ns=1;i=6219</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="ns=1;i=5089" BrowseName="5:Identification" ParentNodeId="ns=1;i=1008">
+  <UAObject NodeId="ns=1;i=5089" BrowseName="4:Identification" ParentNodeId="ns=1;i=1008">
     <DisplayName>Identification</DisplayName>
     <Description>Data for component identification (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1005</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1008</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6202</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6203</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5111</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6202" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5089" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6202" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5089" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -4379,7 +4345,7 @@ reference.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5089</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6203" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5089" DataType="String">
+  <UAVariable NodeId="ns=1;i=6203" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5089" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -4388,14 +4354,25 @@ reference.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5089</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5209" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=1008">
+  <UAObject NodeId="ns=1;i=5111" BrowseName="5:MachineryBuildingBlocks" ParentNodeId="ns=1;i=1008">
+    <DisplayName>MachineryBuildingBlocks</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5089</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1008</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5209</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5209" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=1008">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the unit (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6429</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1008</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5111</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6429" BrowseName="CurrentState" ParentNodeId="ns=1;i=5209" DataType="LocalizedText">
@@ -4441,23 +4418,25 @@ reference.</Description>
     <Documentation>https://reference.opcfoundation.org/PAEFS/v100/docs/7.1</Documentation>
     <References>
       <Reference ReferenceType="HasAddIn">ns=1;i=5033</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5105</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5026</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6007</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="ns=1;i=5033" BrowseName="5:Identification" ParentNodeId="ns=1;i=1010">
+  <UAObject NodeId="ns=1;i=5033" BrowseName="4:Identification" ParentNodeId="ns=1;i=1010">
     <DisplayName>Identification</DisplayName>
     <Description>Data to identify the sensor (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1005</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1010</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6005</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6006</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5105</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6005" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5033" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6005" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5033" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -4466,7 +4445,7 @@ reference.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5033</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6006" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5033" DataType="String">
+  <UAVariable NodeId="ns=1;i=6006" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5033" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -4475,6 +4454,15 @@ reference.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5033</Reference>
     </References>
   </UAVariable>
+  <UAObject NodeId="ns=1;i=5105" BrowseName="5:MachineryBuildingBlocks" ParentNodeId="ns=1;i=1010">
+    <DisplayName>MachineryBuildingBlocks</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5033</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1010</Reference>
+    </References>
+  </UAObject>
   <UAObject NodeId="ns=1;i=5026" BrowseName="1:Signal" ParentNodeId="ns=1;i=1010">
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
@@ -4490,8 +4478,8 @@ reference.</Description>
     <DisplayName>AnalogSignal</DisplayName>
     <Description>The process value.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=3;i=1111</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=1111</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5026</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6002</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6003</Reference>
@@ -4519,7 +4507,6 @@ reference.</Description>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5026</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6007" BrowseName="1:SignalForm" ParentNodeId="ns=1;i=1010" DataType="AnalogDigitalEnum">
@@ -4540,7 +4527,7 @@ reference.</Description>
     <References>
       <Reference ReferenceType="HasProperty">ns=1;i=6176</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1010</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=5102</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5099</Reference>
     </References>
   </UAObjectType>
   <UAVariable NodeId="ns=1;i=6176" BrowseName="1:IsActiveSetpoint" ParentNodeId="ns=1;i=1034" DataType="Boolean">
@@ -4552,79 +4539,77 @@ reference.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=1034</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5102" BrowseName="1:Signal" ParentNodeId="ns=1;i=1034">
+  <UAObject NodeId="ns=1;i=5099" BrowseName="1:Signal" ParentNodeId="ns=1;i=1034">
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6170</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6157</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6185</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1034</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6173</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6160</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6170" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5102" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6157" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5099" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>AnalogSignal</DisplayName>
     <Description>The process value.</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=3;i=1111</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5102</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6171</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6172</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=3;i=1111</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5099</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6158</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6159</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6171" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6170" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6158" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6157" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6170</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6157</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6172" BrowseName="EURange" ParentNodeId="ns=1;i=6170" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6159" BrowseName="EURange" ParentNodeId="ns=1;i=6157" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6170</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6157</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6185" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5102" DataType="Number" ValueRank="-2">
+  <UAVariable NodeId="ns=1;i=6185" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5099" DataType="Number" ValueRank="-2">
     <DisplayName>ProcessValueSetpoint</DisplayName>
-    <Description>The desired value, may or may not be controlled by the server.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6188</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6189</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5102</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5099</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6188" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6185" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6185</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6189" BrowseName="EURange" ParentNodeId="ns=1;i=6185" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6185</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6173" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5102" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6160" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5099" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5102</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5099</Reference>
     </References>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1035" BrowseName="1:SensorSetpointWriteType">
@@ -4635,82 +4620,80 @@ reference.</Description>
     <Documentation>https://reference.opcfoundation.org/PAEFS/v100/docs/7.3</Documentation>
     <References>
       <Reference ReferenceType="HasSubtype" IsForward="false">ns=1;i=1034</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=5103</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5057</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="ns=1;i=5103" BrowseName="1:Signal" ParentNodeId="ns=1;i=1035">
+  <UAObject NodeId="ns=1;i=5057" BrowseName="1:Signal" ParentNodeId="ns=1;i=1035">
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6174</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6213</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6041</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6190</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1035</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6184</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6044</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6174" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5103" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6041" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5057" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>AnalogSignal</DisplayName>
     <Description>The process value.</Description>
     <References>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=3;i=1111</Reference>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5103</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6175</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6183</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5057</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6042</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6043</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6175" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6174" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6042" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6041" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6174</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6041</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6183" BrowseName="EURange" ParentNodeId="ns=1;i=6174" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6043" BrowseName="EURange" ParentNodeId="ns=1;i=6041" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6174</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6041</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6213" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5103" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6190" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5057" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>ProcessValueSetpoint</DisplayName>
-    <Description>The desired value, may or may not be controlled by the server.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6214</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6215</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5103</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6191</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6192</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5057</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6214" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6213" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6191" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6190" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6213</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6190</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6215" BrowseName="EURange" ParentNodeId="ns=1;i=6213" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6192" BrowseName="EURange" ParentNodeId="ns=1;i=6190" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6213</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6190</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6184" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5103" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6044" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5057" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5103</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5057</Reference>
     </References>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1003" BrowseName="1:SeparatorType" IsAbstract="true">
@@ -4726,6 +4709,7 @@ specification or create their own type.</Description>
       <Reference ReferenceType="HasComponent">ns=1;i=5001</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5003</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5091</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5113</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5104</Reference>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=5025</Reference>
@@ -4754,8 +4738,8 @@ specification or create their own type.</Description>
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6008</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5001</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6017</Reference>
@@ -4775,26 +4759,25 @@ specification or create their own type.</Description>
   <UAVariable NodeId="ns=1;i=6014" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6008" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6008</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6015" BrowseName="EURange" ParentNodeId="ns=1;i=6008" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6008</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6017" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5034" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5034</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5003" BrowseName="1:Humidity" ParentNodeId="ns=1;i=1003">
@@ -4811,8 +4794,8 @@ specification or create their own type.</Description>
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6018</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5003</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6023</Reference>
@@ -4832,40 +4815,40 @@ specification or create their own type.</Description>
   <UAVariable NodeId="ns=1;i=6019" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6018" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6018</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6022" BrowseName="EURange" ParentNodeId="ns=1;i=6018" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6018</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6023" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5050" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5050</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5091" BrowseName="5:Identification" ParentNodeId="ns=1;i=1003">
+  <UAObject NodeId="ns=1;i=5091" BrowseName="4:Identification" ParentNodeId="ns=1;i=1003">
     <DisplayName>Identification</DisplayName>
     <Description>Data for machine identification (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1005</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1003</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6468</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6469</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5113</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6468" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5091" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6468" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5091" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -4874,7 +4857,7 @@ specification or create their own type.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5091</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6469" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5091" DataType="String">
+  <UAVariable NodeId="ns=1;i=6469" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5091" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -4883,14 +4866,25 @@ specification or create their own type.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5091</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5104" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=1003">
+  <UAObject NodeId="ns=1;i=5113" BrowseName="5:MachineryBuildingBlocks" ParentNodeId="ns=1;i=1003">
+    <DisplayName>MachineryBuildingBlocks</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5091</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1003</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5104</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5104" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=1003">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the separator (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6236</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1003</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5113</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6236" BrowseName="CurrentState" ParentNodeId="ns=1;i=5104" DataType="LocalizedText">
@@ -4924,8 +4918,8 @@ specification or create their own type.</Description>
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6068</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5025</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6071</Reference>
@@ -4945,26 +4939,25 @@ specification or create their own type.</Description>
   <UAVariable NodeId="ns=1;i=6069" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6068" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6068</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6070" BrowseName="EURange" ParentNodeId="ns=1;i=6068" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6068</Reference>
     </References>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6071" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5061" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5061</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
     </References>
   </UAVariable>
   <UAObjectType NodeId="ns=1;i=1021" BrowseName="1:AutomaticRollFilterType">
@@ -5084,6 +5077,7 @@ specification or create their own type.</Description>
     <Documentation>https://reference.opcfoundation.org/PAEFS/v100/docs/7.9</Documentation>
     <References>
       <Reference ReferenceType="HasAddIn">ns=1;i=5045</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5110</Reference>
       <Reference ReferenceType="HasAddIn">ns=1;i=5046</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6233</Reference>
       <Reference ReferenceType="GeneratesEvent">ns=1;i=1025</Reference>
@@ -5092,18 +5086,19 @@ specification or create their own type.</Description>
       <Reference ReferenceType="HasSubtype" IsForward="false">i=58</Reference>
     </References>
   </UAObjectType>
-  <UAObject NodeId="ns=1;i=5045" BrowseName="5:Identification" ParentNodeId="ns=1;i=1017">
+  <UAObject NodeId="ns=1;i=5045" BrowseName="4:Identification" ParentNodeId="ns=1;i=1017">
     <DisplayName>Identification</DisplayName>
     <Description>Data for component identification (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1005</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1005</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1017</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6034</Reference>
       <Reference ReferenceType="HasProperty">ns=1;i=6107</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5110</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6034" BrowseName="5:Manufacturer" ParentNodeId="ns=1;i=5045" DataType="LocalizedText">
+  <UAVariable NodeId="ns=1;i=6034" BrowseName="4:Manufacturer" ParentNodeId="ns=1;i=5045" DataType="LocalizedText">
     <DisplayName>Manufacturer</DisplayName>
     <Description Locale="en">A human-readable, localized name of the manufacturer of the MachineryItem.</Description>
     <References>
@@ -5112,7 +5107,7 @@ specification or create their own type.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5045</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6107" BrowseName="5:SerialNumber" ParentNodeId="ns=1;i=5045" DataType="String">
+  <UAVariable NodeId="ns=1;i=6107" BrowseName="4:SerialNumber" ParentNodeId="ns=1;i=5045" DataType="String">
     <DisplayName>SerialNumber</DisplayName>
     <Description Locale="en">A string containing a unique production number of the manufacturer of the MachineryItem. The global uniqueness of the serial number is only given in the context of the manufacturer, and potentially the model. The value shall not change during the life-cycle of the MachineryItem.</Description>
     <References>
@@ -5121,14 +5116,25 @@ specification or create their own type.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5045</Reference>
     </References>
   </UAVariable>
-  <UAObject NodeId="ns=1;i=5046" BrowseName="6:MachineryItemState" ParentNodeId="ns=1;i=1017">
+  <UAObject NodeId="ns=1;i=5110" BrowseName="5:MachineryBuildingBlocks" ParentNodeId="ns=1;i=1017">
+    <DisplayName>MachineryBuildingBlocks</DisplayName>
+    <References>
+      <Reference ReferenceType="HasModellingRule">i=80</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5045</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1017</Reference>
+      <Reference ReferenceType="HasAddIn">ns=1;i=5046</Reference>
+    </References>
+  </UAObject>
+  <UAObject NodeId="ns=1;i=5046" BrowseName="5:MachineryItemState" ParentNodeId="ns=1;i=1017">
     <DisplayName>MachineryItemState</DisplayName>
     <Description>StateMachine representing the operating state of the temperature regulator (OPC 40001-1).</Description>
     <References>
-      <Reference ReferenceType="HasTypeDefinition">ns=6;i=1002</Reference>
+      <Reference ReferenceType="HasTypeDefinition">ns=5;i=1002</Reference>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasComponent">ns=1;i=6111</Reference>
       <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=1017</Reference>
+      <Reference ReferenceType="HasAddIn" IsForward="false">ns=1;i=5110</Reference>
     </References>
   </UAObject>
   <UAVariable NodeId="ns=1;i=6111" BrowseName="CurrentState" ParentNodeId="ns=1;i=5046" DataType="LocalizedText">
@@ -5172,83 +5178,81 @@ specification or create their own type.</Description>
     <References>
       <Reference ReferenceType="HasModellingRule">i=80</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=1;i=1035</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=5073</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=5074</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=1017</Reference>
     </References>
   </UAObject>
-  <UAObject NodeId="ns=1;i=5073" BrowseName="1:Signal" ParentNodeId="ns=1;i=5047">
+  <UAObject NodeId="ns=1;i=5074" BrowseName="1:Signal" ParentNodeId="ns=1;i=5047">
     <DisplayName>Signal</DisplayName>
     <Description>Value of the signal. This includes min/max ranges, unit and other meta information. The optional setpoint should be implemented only for SensorSetpointReadType and SensorSetpointWriteType types.</Description>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6112</Reference>
-      <Reference ReferenceType="HasComponent">ns=1;i=6224</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6116</Reference>
+      <Reference ReferenceType="HasComponent">ns=1;i=6213</Reference>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5047</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6115</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6119</Reference>
     </References>
   </UAObject>
-  <UAVariable NodeId="ns=1;i=6112" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5073" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6116" BrowseName="3:AnalogSignal" ParentNodeId="ns=1;i=5074" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>AnalogSignal</DisplayName>
     <Description>The process value.</Description>
     <References>
       <Reference ReferenceType="HasTypeDefinition">ns=3;i=1111</Reference>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5073</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6113</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6114</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5074</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6117</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6118</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6113" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6112" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6117" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6116" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6112</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6116</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6114" BrowseName="EURange" ParentNodeId="ns=1;i=6112" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6118" BrowseName="EURange" ParentNodeId="ns=1;i=6116" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6112</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6116</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6224" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5073" DataType="Number" ValueRank="-2" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6213" BrowseName="2:ProcessValueSetpoint" ParentNodeId="ns=1;i=5074" DataType="Number" ValueRank="-2" AccessLevel="3">
     <DisplayName>ProcessValueSetpoint</DisplayName>
-    <Description>The desired value, may or may not be controlled by the server.</Description>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">ns=2;i=2003</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6225</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;i=6226</Reference>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5073</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6214</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;i=6215</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;i=5074</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6225" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6224" DataType="EUInformation">
+  <UAVariable NodeId="ns=1;i=6214" BrowseName="EngineeringUnits" ParentNodeId="ns=1;i=6213" DataType="EUInformation">
     <DisplayName>EngineeringUnits</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6224</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6213</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6226" BrowseName="EURange" ParentNodeId="ns=1;i=6224" DataType="Range">
+  <UAVariable NodeId="ns=1;i=6215" BrowseName="EURange" ParentNodeId="ns=1;i=6213" DataType="Range">
     <DisplayName>EURange</DisplayName>
     <References>
       <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6224</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=6213</Reference>
     </References>
   </UAVariable>
-  <UAVariable NodeId="ns=1;i=6115" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5073" DataType="String" AccessLevel="3">
+  <UAVariable NodeId="ns=1;i=6119" BrowseName="3:SignalTag" ParentNodeId="ns=1;i=5074" DataType="String" AccessLevel="3">
     <DisplayName>Tag</DisplayName>
     <References>
-      <Reference ReferenceType="HasModellingRule">i=78</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5073</Reference>
-      <Reference ReferenceType="HasDictionaryEntry">ns=4;s=0112/2///61987#ABB271#007</Reference>
+      <Reference ReferenceType="HasModellingRule">i=78</Reference>
+      <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5074</Reference>
     </References>
   </UAVariable>
   <UAObject NodeId="ns=1;i=5032" BrowseName="1:http://opcfoundation.org/UA/PAEFS/" SymbolicName="http___opcfoundation_org_UA_PAEFS_">
@@ -5283,7 +5287,7 @@ specification or create their own type.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5032</Reference>
     </References>
     <Value>
-      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2023-10-01T00:00:00Z</uax:DateTime>
+      <uax:DateTime xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">2025-02-01T00:00:00Z</uax:DateTime>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6134" BrowseName="NamespaceUri" ParentNodeId="ns=1;i=5032" DataType="String">
@@ -5303,7 +5307,7 @@ specification or create their own type.</Description>
       <Reference ReferenceType="HasProperty" IsForward="false">ns=1;i=5032</Reference>
     </References>
     <Value>
-      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0.0</uax:String>
+      <uax:String xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd">1.0.1</uax:String>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;i=6136" BrowseName="StaticNodeIdTypes" ParentNodeId="ns=1;i=5032" DataType="IdType" ValueRank="1" ArrayDimensions="0">
